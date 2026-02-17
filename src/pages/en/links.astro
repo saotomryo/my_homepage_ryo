@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinkList from '../../components/LinkList.astro';
+import profile from '../../content/generated/en/profile.json';
+---
+
+<BaseLayout locale="en" title="Links" path="/en/links">
+  <section class="page-head">
+    <h1>Links</h1>
+    <p>A curated list of publishing and work contact channels.</p>
+  </section>
+
+  <LinkList items={[...profile.links, ...profile.work_contacts]} />
+</BaseLayout>

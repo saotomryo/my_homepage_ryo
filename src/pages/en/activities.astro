@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ActivityList from '../../components/ActivityList.astro';
+import articles from '../../content/generated/en/articles.json';
+import projects from '../../content/generated/en/projects.json';
+import media from '../../content/generated/en/media.json';
+---
+
+<BaseLayout locale="en" title="Activities" path="/en/activities">
+  <section class="page-head">
+    <h1>Activities</h1>
+    <p>Browse articles, videos, and projects by category.</p>
+  </section>
+
+  <ActivityList locale="en" videos={media.channel_videos || []} articles={articles.items} projects={projects.items} />
+</BaseLayout>

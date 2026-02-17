@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import profile from '../../content/generated/ja/profile.json';
+---
+
+<BaseLayout locale="ja" title="自己紹介" path="/ja/about">
+  <section class="page-head">
+    <h1>自己紹介</h1>
+    <p>
+      フリーランスのAIエンジニアとして、画像処理・AI活用・ロボット関連の実装を中心に活動しています。
+      構想から試作、運用までを一気通貫で進めるスタイルで取り組んでいます。
+    </p>
+  </section>
+
+  <section class="list-block">
+    <h2>プロフィール</h2>
+    <div class="profile-visual">
+      <img src="/images/profile-illustration.jpg" alt="五月女亮のイラスト" loading="lazy" />
+    </div>
+    <ul>
+      <li>名前: {profile.name}</li>
+      <li>職種: フリーランスAIエンジニア</li>
+      <li>拠点: 日本</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>資格・学習歴</h2>
+    <ul>
+      <li>2019年: JDLA G検定 取得</li>
+      <li>2021年: JDLA E資格 取得</li>
+      <li>2022年: データサイエンティスト検定 リテラシーレベル 取得</li>
+      <li>2024年・2025年: 東京大学 松尾研究室 大規模言語モデル講座 受講</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>主な活動</h2>
+    <ul>
+      <li>2023年・2024年: 全国高専生ディープラーニングコンテスト アドバイザー</li>
+      <li>2025年: XROBOCON 出場</li>
+      <li>2024年・2025年: 東京大学 松尾研究室 大規模言語モデル講座 受講</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>対応領域</h2>
+    <ul>
+      <li>画像処理: 製造業向け検査解析（3DデータのAI解析を含む）</li>
+      <li>AI活用: 独自AIモデルの作成から業務適用まで</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>制作・実績リンク</h2>
+    <ul>
+      <li>
+        YouTube: <a href="https://youtu.be/QlmK5ykN0EI?si=ijq2acmKubXsDR2x" target="_blank" rel="noreferrer">手作りAIロボットの紹介動画</a>
+      </li>
+      <li>
+        Zenn: <a href="https://zenn.dev/ryo_saotome/articles/235ba1b5235c63" target="_blank" rel="noreferrer">手作りAIロボットの記事</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>コンペティション実績</h2>
+    <p>SIGNATEで以下のコンペティションにて銅メダルを獲得しています。</p>
+    <ul>
+      <li>凸版印刷株式会社 くずし字認識チャレンジ①</li>
+      <li>パナソニック株式会社 間取り図解析アルゴリズム作成</li>
+      <li>タダノ クレーン旋回操作最適化チャレンジ</li>
+      <li>日本取引所グループ ファンダメンタルズ分析チャレンジ</li>
+      <li>産業技術総合研究所 衛星画像分析コンテスト</li>
+    </ul>
+  </section>
+</BaseLayout>

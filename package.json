@@ -1,0 +1,18 @@
+{
+  "name": "mypage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync:lifestyle": "node scripts/sync_lifestyle_data.mjs",
+    "enrich:media": "node scripts/enrich_media.mjs",
+    "translate:en": "node scripts/translate_content.mjs",
+    "prepare:data": "npm run sync:lifestyle && npm run enrich:media && npm run translate:en"
+  },
+  "dependencies": {
+    "astro": "^4.16.18"
+  }
+}

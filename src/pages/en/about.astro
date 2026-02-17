@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import profile from '../../content/generated/en/profile.json';
+---
+
+<BaseLayout locale="en" title="About" path="/en/about">
+  <section class="page-head">
+    <h1>About</h1>
+    <p>
+      I work as a freelance AI engineer, focusing on practical implementation in computer vision,
+      AI product usage, and robotics-related projects. I usually cover the full cycle from concept to prototype and operation.
+    </p>
+  </section>
+
+  <section class="list-block">
+    <h2>Profile</h2>
+    <div class="profile-visual">
+      <img src="/images/profile-illustration.jpg" alt="Illustration of Ryo Saotome" loading="lazy" />
+    </div>
+    <ul>
+      <li>Name: {profile.name}</li>
+      <li>Role: Freelance AI Engineer</li>
+      <li>Base: Japan</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>Certifications and Learning</h2>
+    <ul>
+      <li>2019: JDLA G Certification</li>
+      <li>2021: JDLA E Certification</li>
+      <li>2022: Data Scientist Certification (Literacy Level)</li>
+      <li>2024 and 2025: Large Language Model Program, Matsuo Lab, The University of Tokyo</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>Main Activities</h2>
+    <ul>
+      <li>2023 and 2024: Advisor, National College of Technology Deep Learning Contest (DCON)</li>
+      <li>2025: Participated in XROBOCON</li>
+      <li>2024 and 2025: Large Language Model Program, Matsuo Lab, The University of Tokyo</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>Service Areas</h2>
+    <ul>
+      <li>Computer Vision: Inspection and analysis for manufacturing (including 3D AI analysis)</li>
+      <li>AI Applications: From custom model development to business use</li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>Selected Works</h2>
+    <ul>
+      <li>
+        YouTube: <a href="https://youtu.be/QlmK5ykN0EI?si=ijq2acmKubXsDR2x" target="_blank" rel="noreferrer">Handmade AI Robot Demo Video</a>
+      </li>
+      <li>
+        Zenn: <a href="https://zenn.dev/ryo_saotome/articles/235ba1b5235c63" target="_blank" rel="noreferrer">Handmade AI Robot Article</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="list-block">
+    <h2>Competition Results</h2>
+    <p>Won bronze medals in the following SIGNATE competitions.</p>
+    <ul>
+      <li>Toppan Printing Co., Ltd. Kuzushiji Recognition Challenge 1</li>
+      <li>Panasonic Corporation Floor Plan Analysis Algorithm Challenge</li>
+      <li>Tadano Crane Swing Operation Optimization Challenge</li>
+      <li>Japan Exchange Group Fundamentals Analysis Challenge</li>
+      <li>AIST Satellite Image Analysis Contest</li>
+    </ul>
+  </section>
+</BaseLayout>

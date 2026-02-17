@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LinkList from '../../components/LinkList.astro';
+import profile from '../../content/generated/ja/profile.json';
+---
+
+<BaseLayout locale="ja" title="リンク" path="/ja/links">
+  <section class="page-head">
+    <h1>リンク</h1>
+    <p>発信活動と受託窓口の一覧です。</p>
+  </section>
+
+  <LinkList items={[...profile.links, ...profile.work_contacts]} />
+</BaseLayout>

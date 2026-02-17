@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import media from '../../content/generated/en/media.json';
+
+const playlist = media.playlist_kuroneko;
+const embedUrl = playlist?.embed_url || null;
+const playlistUrl = playlist?.playlist_url || null;
+---
+
+<BaseLayout locale="en" title="Black Cat Adventure" path="/en/kuroneko">
+  <section class="page-head">
+    <h1>Black Cat Adventure</h1>
+    <p>Play the full Black Cat Adventure playlist continuously.</p>
+  </section>
+
+  <section class="list-block">
+    {embedUrl ? (
+      <>
+        <div class="video-frame-wrap">
+          <iframe
+            class="video-frame"
+            src={embedUrl}
+            title="Black Cat Adventure playlist"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        {playlistUrl && (
+          <p class="video-meta">
+            <a href={playlistUrl} target="_blank" rel="noreferrer">Open playlist on YouTube</a>
+          </p>
+        )}
+      </>
+    ) : (
+      <p>Playlist data is missing. Run `npm run enrich:media`.</p>
+    )}
+  </section>
+</BaseLayout>

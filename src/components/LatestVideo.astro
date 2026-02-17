@@ -1,0 +1,244 @@
+---
+interface VideoInfo {
+  title?: string;
+  embed_url?: string;
+  watch_url?: string;
+  thumbnail_url?: string;
+  published_at?: string;
+  video_id?: string;
+}
+
+interface PlaylistInfo {
+  title?: string;
+  playlist_id?: string;
+  playlist_url?: string;
+  embed_url?: string;
+  videos?: VideoInfo[];
+}
+
+interface Props {
+  locale: 'ja' | 'en';
+  video?: VideoInfo | null;
+  videos?: VideoInfo[] | null;
+  channelUrl?: string | null;
+  playlistKuroneko?: PlaylistInfo | null;
+  showKuroneko?: boolean;
+}
+
+const {
+  locale,
+  video = null,
+  videos = null,
+  channelUrl = null,
+  playlistKuroneko = null,
+  showKuroneko = true
+} = Astro.props;
+
+const labels = {
+  ja: {
+    heading: 'YouTube',
+    tabChannel: '通常投稿',
+    tabKuroneko: '黒猫の大冒険',
+    channelEmpty: '通常投稿の動画はまだ取得されていません。',
+    playlistEmpty: '黒猫の大冒険プレイリストはまだ取得されていません。',
+    watch: 'YouTubeで見る',
+    channel: 'チャンネルへ',
+    playlist: '再生リストを開く',
+    prev: '前の動画',
+    next: '次の動画'
+  },
+  en: {
+    heading: 'YouTube',
+    tabChannel: 'Channel Posts',
+    tabKuroneko: 'Black Cat Adventure',
+    channelEmpty: 'No channel videos fetched yet.',
+    playlistEmpty: 'Kuroneko playlist is not available yet.',
+    watch: 'Watch on YouTube',
+    channel: 'Open Channel',
+    playlist: 'Open Playlist',
+    prev: 'Previous',
+    next: 'Next'
+  }
+};
+
+const t = labels[locale];
+const channelVideos = Array.isArray(videos) && videos.length > 0 ? videos : (video ? [video] : []);
+const hasChannelSlider = channelVideos.length > 1;
+const playlistVideos = Array.isArray(playlistKuroneko?.videos) ? playlistKuroneko.videos : [];
+const hasPlaylistSlider = playlistVideos.length > 1;
+const hasPlaylistEmbed = Boolean(playlistKuroneko?.embed_url || playlistVideos[0]?.embed_url);
+---
+
+<section class="list-block video-block">
+  <h2>{t.heading}</h2>
+
+  <div class="video-tabs" role="tablist" aria-label="YouTube type switch">
+    <button class="video-tab is-active" data-target="channel" type="button" role="tab" aria-selected="true">{t.tabChannel}</button>
+    {showKuroneko && <button class="video-tab" data-target="kuroneko" type="button" role="tab" aria-selected="false">{t.tabKuroneko}</button>}
+  </div>
+
+  <div class="video-panel is-active" data-panel="channel" id="youtube-channel">
+    {channelVideos.length > 0 && channelVideos[0]?.embed_url ? (
+      <div class="video-slider" data-videos={JSON.stringify(channelVideos)}>
+        <div class="video-frame-wrap">
+          <iframe
+            class="video-frame js-video-iframe"
+            src={channelVideos[0].embed_url}
+            title={channelVideos[0].title || 'YouTube video player'}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="video-meta js-video-title">{channelVideos[0].title}</p>
+        <div class="video-links">
+          <a class="js-watch-link" href={channelVideos[0].watch_url} target="_blank" rel="noreferrer">{t.watch}</a>
+          {channelUrl && <a href={channelUrl} target="_blank" rel="noreferrer">{t.channel}</a>}
+        </div>
+
+        {hasChannelSlider && (
+          <div class="video-controls">
+            <button type="button" class="video-nav js-video-prev">{t.prev}</button>
+            <span class="video-index js-video-index">1 / {channelVideos.length}</span>
+            <button type="button" class="video-nav js-video-next">{t.next}</button>
+          </div>
+        )}
+      </div>
+    ) : (
+      <>
+        <p>{t.channelEmpty}</p>
+        {channelUrl && <a href={channelUrl} target="_blank" rel="noreferrer">{t.channel}</a>}
+      </>
+    )}
+  </div>
+
+  {showKuroneko && <div class="video-panel" data-panel="kuroneko" id="youtube-kuroneko">
+    {hasPlaylistEmbed ? (
+      <div class="playlist-player" data-playlist={JSON.stringify(playlistVideos)} data-playlist-id={playlistKuroneko?.playlist_id || ''}>
+        <div class="video-frame-wrap">
+          <iframe
+            class="video-frame js-playlist-iframe"
+            src={playlistKuroneko?.embed_url || playlistVideos[0]?.embed_url}
+            title={playlistKuroneko?.title || 'YouTube playlist player'}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="video-meta js-playlist-title">{playlistVideos[0]?.title || playlistKuroneko?.title}</p>
+        <div class="video-links">
+          {playlistVideos[0]?.watch_url && <a class="js-playlist-watch" href={playlistVideos[0].watch_url} target="_blank" rel="noreferrer">{t.watch}</a>}
+          {playlistKuroneko?.playlist_url && <a href={playlistKuroneko.playlist_url} target="_blank" rel="noreferrer">{t.playlist}</a>}
+        </div>
+
+        {hasPlaylistSlider && (
+          <div class="video-controls">
+            <button type="button" class="video-nav js-playlist-prev">{t.prev}</button>
+            <span class="video-index js-playlist-index">1 / {playlistVideos.length}</span>
+            <button type="button" class="video-nav js-playlist-next">{t.next}</button>
+          </div>
+        )}
+      </div>
+    ) : (
+      <>
+        <p>{t.playlistEmpty}</p>
+        {playlistKuroneko?.playlist_url && <a href={playlistKuroneko.playlist_url} target="_blank" rel="noreferrer">{t.playlist}</a>}
+      </>
+    )}
+  </div>}
+</section>
+
+<script>
+  const roots = document.querySelectorAll('.video-block');
+
+  for (const root of roots) {
+    const tabs = root.querySelectorAll('.video-tab');
+    const panels = root.querySelectorAll('.video-panel');
+
+    const activateTab = (target) => {
+      tabs.forEach((t) => {
+        const active = t.getAttribute('data-target') === target;
+        t.classList.toggle('is-active', active);
+        t.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach((p) => p.classList.toggle('is-active', p.getAttribute('data-panel') === target));
+    };
+
+    for (const tab of tabs) {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-target');
+        activateTab(target);
+      });
+    }
+
+    const hash = window.location.hash;
+    if (hash === '#youtube-kuroneko') activateTab('kuroneko');
+    if (hash === '#youtube-channel') activateTab('channel');
+
+    const initSlider = (container, prefix) => {
+      if (!container) return;
+      const raw = container.getAttribute(prefix === 'playlist' ? 'data-playlist' : 'data-videos');
+      if (!raw) return;
+
+      let items = [];
+      try {
+        items = JSON.parse(raw);
+      } catch {
+        items = [];
+      }
+      if (!Array.isArray(items) || items.length < 2) return;
+
+      let index = 0;
+      const iframe = container.querySelector(prefix === 'playlist' ? '.js-playlist-iframe' : '.js-video-iframe');
+      const title = container.querySelector(prefix === 'playlist' ? '.js-playlist-title' : '.js-video-title');
+      const watch = container.querySelector(prefix === 'playlist' ? '.js-playlist-watch' : '.js-watch-link');
+      const indicator = container.querySelector(prefix === 'playlist' ? '.js-playlist-index' : '.js-video-index');
+      const prevBtn = container.querySelector(prefix === 'playlist' ? '.js-playlist-prev' : '.js-video-prev');
+      const nextBtn = container.querySelector(prefix === 'playlist' ? '.js-playlist-next' : '.js-video-next');
+      const playlistId = container.getAttribute('data-playlist-id') || '';
+
+      const buildEmbed = (item, i) => {
+        if (prefix !== 'playlist') return item?.embed_url || '';
+        if (!item?.video_id || !playlistId) return item?.embed_url || '';
+        return `https://www.youtube.com/embed/${item.video_id}?list=${playlistId}&index=${i}&rel=0`;
+      };
+
+      const render = () => {
+        const current = items[index];
+        const embed = buildEmbed(current, index);
+        if (iframe && embed) iframe.src = embed;
+        if (iframe && current?.title) iframe.title = current.title;
+        if (title) title.textContent = current?.title || '';
+        if (watch && current?.watch_url) watch.href = current.watch_url;
+        if (indicator) indicator.textContent = `${index + 1} / ${items.length}`;
+      };
+
+      prevBtn?.addEventListener('click', () => {
+        index = (index - 1 + items.length) % items.length;
+        render();
+      });
+
+      nextBtn?.addEventListener('click', () => {
+        index = (index + 1) % items.length;
+        render();
+      });
+
+      let touchStartX = 0;
+      let touchEndX = 0;
+      container.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0]?.clientX || 0;
+      }, { passive: true });
+      container.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0]?.clientX || 0;
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) < 30) return;
+        if (diff > 0) index = (index - 1 + items.length) % items.length;
+        else index = (index + 1) % items.length;
+        render();
+      }, { passive: true });
+    };
+
+    initSlider(root.querySelector('.video-slider'), 'channel');
+    initSlider(root.querySelector('.playlist-player'), 'playlist');
+  }
+</script>

@@ -1,0 +1,315 @@
+{
+  "items": [
+    {
+      "name": "LifeStyle",
+      "summary": "GitHub Issues / Projects を中心に「タスク・アイデア・振り返り」を一元管理するための個人用リポジトリ雛形です。",
+      "status": "active",
+      "last_activity": "2026-02-17T07:36:23Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/MyLifeStyle_Ryo"
+      ],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "MyPage",
+      "summary": "Astro + GitHub Pages で公開する個人ホームページです。",
+      "status": "active",
+      "last_activity": "2026-02-17T07:07:56.280182Z",
+      "repo_urls": [],
+      "tags": [
+        "node"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "MyPortfolio",
+      "summary": "日次の資産スナップショット（CSV）を貯めて集計・可視化する前提の作業場所です。",
+      "status": "active",
+      "last_activity": "2026-02-17T05:30:40Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/MyPortfolio_ryo"
+      ],
+      "tags": [
+        "python"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "記事執筆",
+      "summary": "記事執筆 の開発プロジェクト（汎用）。",
+      "status": "active",
+      "last_activity": "2026-02-10T07:01:41.063541Z",
+      "repo_urls": [],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "国会活動の見える化",
+      "summary": "公式公開データをもとに、会派単位の国会活動を可視化するプロジェクトです。",
+      "status": "active",
+      "last_activity": "2026-02-10T06:17:18Z",
+      "repo_urls": [],
+      "tags": [
+        "python"
+      ],
+      "category_key": "politics"
+    },
+    {
+      "name": "動画生成",
+      "summary": "記事（Markdown）をベースに、解説動画（長尺）を半自動で生成し、必要なら Shorts（縦動画）も切り出すためのリポジトリです。",
+      "status": "active",
+      "last_activity": "2026-02-05T00:17:14Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/article-to-video-pipeline"
+      ],
+      "tags": [
+        "python"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "国家版資金丸見えツール",
+      "summary": "行政事業レビュー（RSシステム）から取得したCSV（特に 2-2「予算種別・歳出予算項目」）を、ブラウザだけで可視化するための静的Webアプ。",
+      "status": "active",
+      "last_activity": "2026-01-29T06:19:04Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/rssystem-budget-viz"
+      ],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "各政党の考え方を可視化するアプリケーション",
+      "summary": "仕様書に基づき、政党・政治家の立場を公式一次情報から可視化するアプリケーションの開発リポジトリです。",
+      "status": "active",
+      "last_activity": "2026-01-29T04:50:48Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/partyviz-japan"
+      ],
+      "tags": [],
+      "category_key": "politics"
+    },
+    {
+      "name": "DroneSimulatorForLLM",
+      "summary": "DroneSimulatorForLLM の開発プロジェクト（汎用）。",
+      "status": "warm",
+      "last_activity": "2026-01-15T09:51:35Z",
+      "repo_urls": [
+        "https://github.com/PX4/PX4-Autopilot",
+        "https://github.com/toppers/hakoniwa-core",
+        "https://github.com/toppers/hakoniwa-unity-drone-model"
+      ],
+      "tags": [],
+      "category_key": "robotics"
+    },
+    {
+      "name": "Artificial_Life_Simulator_GUI",
+      "summary": "人工生命シミュレーションを操作・観察するための PySide6 製 GUI アプリケーションです。",
+      "status": "warm",
+      "last_activity": "2026-01-14T06:30:06Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/Artificial_Life_Simulator_GUI"
+      ],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "SampleAppForBlog",
+      "summary": "ブログ記事向けの「公開手順を説明できる」サンプルアプリを2つまとめたリポジトリです。",
+      "status": "warm",
+      "last_activity": "2026-01-09T00:52:55Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/fifteenPuzzle",
+        "https://huggingface.co/spaces/ryosao/maze-runner-space"
+      ],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "画像判定AI",
+      "summary": "画像判定AI の開発プロジェクト（汎用）。",
+      "status": "warm",
+      "last_activity": "2026-01-08T01:27:55Z",
+      "repo_urls": [
+        "https://huggingface.co/spaces/ryosao/prompt_base_inspection"
+      ],
+      "tags": [],
+      "category_key": "ai"
+    },
+    {
+      "name": "OCR_TEST",
+      "summary": "OCR_TEST の開発プロジェクト（python）。",
+      "status": "warm",
+      "last_activity": "2025-12-23T00:23:53.914823Z",
+      "repo_urls": [],
+      "tags": [
+        "python"
+      ],
+      "category_key": "ai"
+    },
+    {
+      "name": "OCR_TEST_20240415",
+      "summary": "OCR_TEST_20240415 の開発プロジェクト（python）。",
+      "status": "warm",
+      "last_activity": "2025-12-23T00:23:53.906946Z",
+      "repo_urls": [],
+      "tags": [
+        "python"
+      ],
+      "category_key": "ai"
+    },
+    {
+      "name": "LLM-Curriculum-Architect",
+      "summary": "LLM駆動の完全自律型 強化学習フレームワーク。",
+      "status": "warm",
+      "last_activity": "2025-12-09T08:43:49Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/LLM-Curriculum-Architect"
+      ],
+      "tags": [
+        "python"
+      ],
+      "category_key": "ai"
+    },
+    {
+      "name": "GenesisRobotics",
+      "summary": "NHK学生ロボコン2025「XROBOCON」のシミュレーター環境。",
+      "status": "warm",
+      "last_activity": "2025-12-09T04:47:18Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/GenesisRobotics2025ForXrobocon"
+      ],
+      "tags": [
+        "python"
+      ],
+      "category_key": "robotics"
+    },
+    {
+      "name": "GenesisRobotics2025ForXrobocon",
+      "summary": "NHK学生ロボコン2025「XROBOCON」のシミュレーター環境。",
+      "status": "warm",
+      "last_activity": "2025-12-09T04:47:18Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/GenesisRobotics2025ForXrobocon"
+      ],
+      "tags": [
+        "python"
+      ],
+      "category_key": "robotics"
+    },
+    {
+      "name": "Create3Dmodel",
+      "summary": "Create3Dmodel の開発プロジェクト（汎用）。",
+      "status": "warm",
+      "last_activity": "2025-12-09T01:14:02.700000Z",
+      "repo_urls": [],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "ドローンテスト",
+      "summary": "ドローンテスト の開発プロジェクト（汎用）。",
+      "status": "warm",
+      "last_activity": "2025-12-02T02:08:10.230000Z",
+      "repo_urls": [],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "gemini-er-agentic-dashboard-test",
+      "summary": "Gemini Robotics-ER を使った自律ロボット制御デモ。",
+      "status": "warm",
+      "last_activity": "2025-11-23T23:49:10Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/gemini-er-agentic-dashboard-test"
+      ],
+      "tags": [],
+      "category_key": "ai"
+    },
+    {
+      "name": "self-driving-3.8-competition.proj",
+      "summary": "このサンプルコードでは, ニューロ進化(Neuro Evolution)とQ学習で車が各コースを走れるようになる進化・学習をします. \\。",
+      "status": "warm",
+      "last_activity": "2025-11-19T10:54:52.120000Z",
+      "repo_urls": [],
+      "tags": [
+        "unity"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "self-driving-3.7-challenges.proj",
+      "summary": "このサンプルコードでは, ニューロ進化(Neuro Evolution)とQ学習で車が各コースを走れるようになる進化・学習をします. \\。",
+      "status": "warm",
+      "last_activity": "2025-11-13T03:14:32.540000Z",
+      "repo_urls": [],
+      "tags": [
+        "unity"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "AL_movie",
+      "summary": "AL_movie の開発プロジェクト（汎用）。",
+      "status": "warm",
+      "last_activity": "2025-11-13T01:53:03.450000Z",
+      "repo_urls": [],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "self-driving-3.4-basic.proj",
+      "summary": "このサンプルコードでは, ニューロ進化(Neuro Evolution)とQ学習で車が各コースを走れるようになる進化・学習をします. \\。",
+      "status": "warm",
+      "last_activity": "2025-11-12T05:47:28.010000Z",
+      "repo_urls": [],
+      "tags": [
+        "unity"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "auto-visual-inspection-generator",
+      "summary": "このプロジェクトは、**画像アップロード → 日本語仕様の入力**を受け。",
+      "status": "warm",
+      "last_activity": "2025-10-20T07:56:10Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/auto-visual-inspection-generator"
+      ],
+      "tags": [
+        "python"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "test_projects",
+      "summary": "test_projects の開発プロジェクト（汎用）。",
+      "status": "warm",
+      "last_activity": "2025-08-23T09:36:39Z",
+      "repo_urls": [
+        "https://github.com/ed-donner/agents"
+      ],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "Xrobocon",
+      "summary": "Xrobocon の開発プロジェクト（汎用）。",
+      "status": "stale",
+      "last_activity": "2025-08-14T07:56:45.600532Z",
+      "repo_urls": [],
+      "tags": [],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "test_mcp",
+      "summary": "test_mcp の開発プロジェクト（汎用）。",
+      "status": "stale",
+      "last_activity": "2025-08-12T07:04:12.491034Z",
+      "repo_urls": [],
+      "tags": [],
+      "category_key": "other_tech"
+    }
+  ]
+}

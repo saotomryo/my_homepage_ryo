@@ -1,0 +1,35 @@
+---
+interface Props {
+  locale: 'ja' | 'en';
+  name: string;
+  headline: string;
+  summary: string;
+}
+
+const { locale, name, headline, summary } = Astro.props;
+const text = {
+  ja: {
+    badge: 'Personal Hub',
+    cta1: '活動を見る',
+    cta2: '仕事を依頼する'
+  },
+  en: {
+    badge: 'Personal Hub',
+    cta1: 'View Activities',
+    cta2: 'Hire Me'
+  }
+};
+
+const t = text[locale];
+---
+
+<section class="hero">
+  <p class="badge">{t.badge}</p>
+  <h1>{name}</h1>
+  <p class="headline">{headline}</p>
+  <p class="summary">{summary}</p>
+  <div class="hero-actions">
+    <a href={`/${locale}/activities`}>{t.cta1}</a>
+    <a href={`/${locale}/links`}>{t.cta2}</a>
+  </div>
+</section>

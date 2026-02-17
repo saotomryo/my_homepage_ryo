@@ -1,0 +1,79 @@
+{
+  "name": "Ryo Saotome",
+  "headline": "AI Engineer / Builder / Writer",
+  "summary": "AI開発・記事発信・動画制作を横断して、実装と検証を高速に回しながら価値提供するエンジニア。",
+  "links": [
+    {
+      "category": "発信/プロフィール",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ryosaotome2021/"
+    },
+    {
+      "category": "発信/プロフィール",
+      "label": "Qiita",
+      "url": "https://qiita.com/ryosao"
+    },
+    {
+      "category": "発信/プロフィール",
+      "label": "Zenn",
+      "url": "https://zenn.dev/ryo_saotome"
+    },
+    {
+      "category": "発信/プロフィール",
+      "label": "GitHub",
+      "url": "https://github.com/saotomryo"
+    },
+    {
+      "category": "発信/プロフィール",
+      "label": "note",
+      "url": "https://note.com/ryosao"
+    },
+    {
+      "category": "発信/プロフィール",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w"
+    },
+    {
+      "category": "コミュニティ/実績",
+      "label": "DCON 2023",
+      "url": "https://dcon.ai/2023/"
+    },
+    {
+      "category": "コミュニティ/実績",
+      "label": "DCON 2024",
+      "url": "https://dcon.ai/2024/"
+    },
+    {
+      "category": "コミュニティ/実績",
+      "label": "XROBOCON",
+      "url": "https://www.xrobocon.tech/resources"
+    }
+  ],
+  "work_contacts": [
+    {
+      "category": "受託窓口（国内）",
+      "label": "Lancers（プロフィール）",
+      "url": "https://www.lancers.jp/profile/ryosao"
+    },
+    {
+      "category": "受託窓口（国内）",
+      "label": "Lancers（メニュー）",
+      "url": "https://www.lancers.jp/menu/detail/1249783"
+    },
+    {
+      "category": "受託窓口（国内）",
+      "label": "Lancers（メニュー）",
+      "url": "https://www.lancers.jp/menu/detail/1264901"
+    },
+    {
+      "category": "受託窓口（国内）",
+      "label": "CrowdWorks",
+      "url": "https://crowdworks.jp/public/employees/5478283"
+    },
+    {
+      "category": "受託窓口（海外）",
+      "label": "Freelancer",
+      "url": "https://www.freelancer.com/hireme/ryosao6"
+    }
+  ]
+}

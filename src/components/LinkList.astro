@@ -1,0 +1,30 @@
+---
+interface Item {
+  category: string;
+  label: string;
+  url: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+const grouped = new Map();
+
+for (const item of items) {
+  if (!grouped.has(item.category)) grouped.set(item.category, []);
+  grouped.get(item.category).push(item);
+}
+---
+
+{Array.from(grouped.entries()).map(([category, list]) => (
+  <section class="list-block">
+    <h2>{category}</h2>
+    <ul>
+      {list.map((item) => (
+        <li><a href={item.url} target="_blank" rel="noreferrer">{item.label}</a></li>
+      ))}
+    </ul>
+  </section>
+))}

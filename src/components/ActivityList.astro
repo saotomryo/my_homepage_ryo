@@ -1,0 +1,214 @@
+---
+interface ArticleItem {
+  date: string;
+  title: string;
+  url: string;
+  source: string;
+  thumbnail_url?: string | null;
+  og_description?: string | null;
+  category_key?: string;
+}
+
+interface ProjectItem {
+  name: string;
+  summary?: string;
+  status: string;
+  last_activity: string;
+  repo_urls: string[];
+  tags: string[];
+  category_key?: string;
+}
+
+interface VideoItem {
+  title: string;
+  watch_url: string;
+  thumbnail_url?: string;
+  published_at?: string;
+  category_key?: string;
+}
+
+interface Props {
+  locale: 'ja' | 'en';
+  articles: ArticleItem[];
+  projects: ProjectItem[];
+  videos?: VideoItem[];
+}
+
+const { locale, articles, projects, videos = [] } = Astro.props;
+
+const categories = ['politics', 'ai', 'robotics', 'other_tech', 'hobby'] as const;
+
+const labels = {
+  ja: {
+    sections: {
+      politics: '政治関連',
+      ai: 'AI関連',
+      robotics: 'ロボット関連',
+      other_tech: '他技術関連',
+      hobby: '音楽等趣味関連'
+    },
+    videos: '動画',
+    latestArticles: '記事',
+    devProjects: 'プロジェクト',
+    status: '状態',
+    updated: '最終更新',
+    repo: 'リポジトリ',
+    read: '記事を読む',
+    watch: '動画を見る',
+    none: '該当するデータはまだありません。'
+  },
+  en: {
+    sections: {
+      politics: 'Politics',
+      ai: 'AI',
+      robotics: 'Robotics',
+      other_tech: 'Other Tech',
+      hobby: 'Music / Hobby'
+    },
+    videos: 'Videos',
+    latestArticles: 'Articles',
+    devProjects: 'Projects',
+    status: 'Status',
+    updated: 'Last Updated',
+    repo: 'Repository',
+    read: 'Read Article',
+    watch: 'Watch Video',
+    none: 'No items in this category yet.'
+  }
+};
+
+const t = labels[locale];
+
+function byCategory(items, key) {
+  return items.filter((item) => (item.category_key || 'other_tech') === key);
+}
+
+function formatDateOnly(value) {
+  if (typeof value !== 'string' || !value) return '-';
+  const m = value.match(/^(\d{4}-\d{2}-\d{2})/u);
+  return m ? m[1] : value;
+}
+---
+
+<section class="list-block activity-layout">
+  <div class="category-tabs" role="tablist" aria-label="activity categories">
+    {categories.map((cat, idx) => (
+      <button
+        class={`category-tab ${idx === 0 ? 'is-active' : ''}`}
+        data-target={cat}
+        type="button"
+        role="tab"
+        aria-selected={idx === 0 ? 'true' : 'false'}
+      >
+        {t.sections[cat]}
+      </button>
+    ))}
+  </div>
+
+  {categories.map((cat, idx) => {
+    const articleItems = byCategory(articles, cat);
+    const projectItems = byCategory(projects, cat);
+    const videoItems = byCategory(videos, cat);
+    const empty = articleItems.length === 0 && projectItems.length === 0 && videoItems.length === 0;
+
+    return (
+      <div class={`category-panel ${idx === 0 ? 'is-active' : ''}`} data-panel={cat}>
+        {empty && <p>{t.none}</p>}
+
+        {videoItems.length > 0 && (
+          <>
+            <h3>{t.videos}</h3>
+            <div class="video-card-grid">
+              {videoItems.slice(0, 6).map((video) => (
+                <article class="video-card">
+                  <a href={video.watch_url} target="_blank" rel="noreferrer">
+                    {video.thumbnail_url ? (
+                      <img class="article-thumb" src={video.thumbnail_url} alt={video.title} loading="lazy" />
+                    ) : (
+                      <div class="article-thumb article-thumb-fallback" aria-hidden="true"></div>
+                    )}
+                  </a>
+                  <div class="article-body">
+                    <h4>{video.title}</h4>
+                    <a href={video.watch_url} target="_blank" rel="noreferrer">{t.watch}</a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </>
+        )}
+
+        {articleItems.length > 0 && (
+          <>
+            <h3>{t.latestArticles}</h3>
+            <div class="article-grid">
+              {articleItems.slice(0, 6).map((article) => (
+                <article class="article-card">
+                  <a href={article.url} target="_blank" rel="noreferrer" class="article-thumb-link">
+                    {article.thumbnail_url ? (
+                      <img class="article-thumb" src={article.thumbnail_url} alt={article.title} loading="lazy" />
+                    ) : (
+                      <div class="article-thumb article-thumb-fallback" aria-hidden="true"></div>
+                    )}
+                  </a>
+                  <div class="article-body">
+                    <p class="article-meta">{article.source} / {article.date}</p>
+                    <h4>{article.title}</h4>
+                    {article.og_description && <p class="article-desc">{article.og_description}</p>}
+                    <a href={article.url} target="_blank" rel="noreferrer">{t.read}</a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </>
+        )}
+
+        {projectItems.length > 0 && (
+          <>
+            <h3>{t.devProjects}</h3>
+            <ul>
+              {projectItems.slice(0, 10).map((project) => (
+                <li>
+                  <strong>{project.name}</strong>
+                  {project.summary && <p class="project-summary">{project.summary}</p>}
+                  <small>{t.updated}: {formatDateOnly(project.last_activity)}</small>
+                  {project.repo_urls.length > 0 && (
+                    <div class="repo-links">
+                      {project.repo_urls.map((url) => (
+                        <a href={url} target="_blank" rel="noreferrer">{t.repo}</a>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
+    );
+  })}
+</section>
+
+<script>
+  const rootBlocks = document.querySelectorAll('.activity-layout');
+  for (const root of rootBlocks) {
+    const tabs = root.querySelectorAll('.category-tab');
+    const panels = root.querySelectorAll('.category-panel');
+    if (!tabs.length || !panels.length) continue;
+
+    const activate = (target) => {
+      tabs.forEach((tab) => {
+        const active = tab.getAttribute('data-target') === target;
+        tab.classList.toggle('is-active', active);
+        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach((panel) => {
+        panel.classList.toggle('is-active', panel.getAttribute('data-panel') === target);
+      });
+    };
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => activate(tab.getAttribute('data-target')));
+    });
+  }
+</script>

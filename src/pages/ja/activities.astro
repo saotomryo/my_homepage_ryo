@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ActivityList from '../../components/ActivityList.astro';
+import articles from '../../content/generated/ja/articles.json';
+import projects from '../../content/generated/ja/projects.json';
+import media from '../../content/generated/ja/media.json';
+---
+
+<BaseLayout locale="ja" title="活動まとめ" path="/ja/activities">
+  <section class="page-head">
+    <h1>活動まとめ</h1>
+    <p>記事・動画・開発プロジェクトをカテゴリ別で見られます。</p>
+  </section>
+
+  <ActivityList locale="ja" videos={media.channel_videos || []} articles={articles.items} projects={projects.items} />
+</BaseLayout>

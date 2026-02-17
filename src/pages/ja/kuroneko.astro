@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import media from '../../content/generated/ja/media.json';
+
+const playlist = media.playlist_kuroneko;
+const embedUrl = playlist?.embed_url || null;
+const playlistUrl = playlist?.playlist_url || null;
+---
+
+<BaseLayout locale="ja" title="黒猫の大冒険" path="/ja/kuroneko">
+  <section class="page-head">
+    <h1>黒猫の大冒険</h1>
+    <p>黒猫の大冒険プレイリストを連続再生できます。</p>
+  </section>
+
+  <section class="list-block">
+    {embedUrl ? (
+      <>
+        <div class="video-frame-wrap">
+          <iframe
+            class="video-frame"
+            src={embedUrl}
+            title="黒猫の大冒険 playlist"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        {playlistUrl && (
+          <p class="video-meta">
+            <a href={playlistUrl} target="_blank" rel="noreferrer">YouTubeでプレイリストを開く</a>
+          </p>
+        )}
+      </>
+    ) : (
+      <p>プレイリスト情報を取得できていません。`npm run enrich:media` を実行してください。</p>
+    )}
+  </section>
+</BaseLayout>

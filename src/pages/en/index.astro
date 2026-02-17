@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import SectionCard from '../../components/SectionCard.astro';
+import LatestVideo from '../../components/LatestVideo.astro';
+import profile from '../../content/generated/en/profile.json';
+import siteMeta from '../../content/generated/en/site-meta.json';
+import media from '../../content/generated/en/media.json';
+
+const cards = [
+  { title: 'Articles', description: 'Read my latest posts from Qiita, Zenn, and note.', href: '/en/activities' },
+  { title: 'Videos', description: 'Access my YouTube channel and video activities.', href: '/en/links' },
+  { title: 'Code', description: 'Browse my development projects and repositories.', href: '/en/activities' },
+  { title: 'Work Requests', description: 'See contact channels for freelance work.', href: '/en/links' }
+];
+---
+
+<BaseLayout locale="en" title="Ryo Saotome | Home" path="/en">
+  <Hero locale="en" name={profile.name} headline={profile.headline} summary={profile.summary} />
+
+  <section class="stats">
+    <p>Articles: {siteMeta.counts.articles}</p>
+    <p>Projects: {siteMeta.counts.projects}</p>
+    <p>Updated: {siteMeta.updated_at}</p>
+  </section>
+
+  <section class="card-grid">
+    {cards.map((card) => <SectionCard {...card} />)}
+  </section>
+
+  <LatestVideo locale="en" video={media.latest_video} videos={media.videos} playlistKuroneko={media.playlist_kuroneko} channelUrl={media.youtube_channel_url} />
+</BaseLayout>

@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  locale: 'ja' | 'en';
+  title: string;
+  description?: string;
+  path: string;
+}
+
+const { locale, title, description = '', path } = Astro.props;
+
+const navText = {
+  ja: {
+    home: 'トップ',
+    about: '自己紹介',
+    links: 'リンク',
+    activities: '活動まとめ',
+    kuroneko: '黒猫の大冒険',
+    lang: 'Language'
+  },
+  en: {
+    home: 'Home',
+    about: 'About',
+    links: 'Links',
+    activities: 'Activities',
+    kuroneko: 'Black Cat Adventure',
+    lang: '言語'
+  }
+};
+
+const t = navText[locale];
+const oppositeLocale = locale === 'ja' ? 'en' : 'ja';
+const switchedPath = path.replace(/^\/(ja|en)/, `/${oppositeLocale}`);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href={`/${locale}`}>Ryo Saotome</a>
+      <nav>
+        <a href={`/${locale}`}>{t.home}</a>
+        <a href={`/${locale}/about`}>{t.about}</a>
+        <a href={`/${locale}/links`}>{t.links}</a>
+        <a href={`/${locale}/activities`}>{t.activities}</a>
+        <a href={`/${locale}/kuroneko`}>{t.kuroneko}</a>
+      </nav>
+      <a class="lang" href={switchedPath}>{t.lang}: {oppositeLocale.toUpperCase()}</a>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+  </body>
+</html>

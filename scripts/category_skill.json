@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "default_category": "other_tech",
+  "rules": [
+    {
+      "key": "politics",
+      "patterns": [
+        "政治", "政党", "選挙", "マニフェスト", "国会", "行政", "政策", "予算", "政府",
+        "国のお金の使い方", "立憲民主党", "公明党", "衆院選", "参院選",
+        "politic", "party", "election", "manifesto", "policy", "government", "parliament", "budget"
+      ]
+    },
+    {
+      "key": "robotics",
+      "patterns": [
+        "gemini robotics", "robot", "robotics", "drone", "px4", "hakoniwa", "ros", "ロボット", "ドローン", "自動運転"
+      ]
+    },
+    {
+      "key": "ai",
+      "patterns": [
+        "ai", "llm", "gpt", "openai", "gemini", "prompt", "machine learning", "deep learning",
+        "生成ai", "画像認識", "ocr", "nlp", "realtime api"
+      ]
+    },
+    {
+      "key": "hobby",
+      "patterns": [
+        "music", "song", "guitar", "piano", "haiku", "短歌", "俳句", "猫", "黒猫", "cat", "shorts", "趣味"
+      ]
+    }
+  ],
+  "video_override": {
+    "other_tech_to": "hobby"
+  }
+}
