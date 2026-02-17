@@ -6,9 +6,15 @@ interface Props {
 }
 
 const { title, description, href } = Astro.props;
+const basePath = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
+
+function withBase(inputPath: string) {
+  if (!inputPath.startsWith('/')) return inputPath;
+  return `${basePath}${inputPath}`;
+}
 ---
 
-<a class="section-card" href={href}>
+<a class="section-card" href={withBase(href)}>
   <h3>{title}</h3>
   <p>{description}</p>
 </a>

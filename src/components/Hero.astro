@@ -21,6 +21,12 @@ const text = {
 };
 
 const t = text[locale];
+const basePath = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
+
+function withBase(inputPath: string) {
+  if (!inputPath.startsWith('/')) return inputPath;
+  return `${basePath}${inputPath}`;
+}
 ---
 
 <section class="hero">
@@ -29,7 +35,7 @@ const t = text[locale];
   <p class="headline">{headline}</p>
   <p class="summary">{summary}</p>
   <div class="hero-actions">
-    <a href={`/${locale}/activities`}>{t.cta1}</a>
-    <a href={`/${locale}/links`}>{t.cta2}</a>
+    <a href={withBase(`/${locale}/activities`)}>{t.cta1}</a>
+    <a href={withBase(`/${locale}/links`)}>{t.cta2}</a>
   </div>
 </section>

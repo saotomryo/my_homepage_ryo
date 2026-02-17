@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import profile from '../../content/generated/en/profile.json';
+const base = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
 ---
 
 <BaseLayout locale="en" title="About" path="/en/about">
@@ -15,7 +16,7 @@ import profile from '../../content/generated/en/profile.json';
   <section class="list-block">
     <h2>Profile</h2>
     <div class="profile-visual">
-      <img src="/images/profile-illustration.jpg" alt="Illustration of Ryo Saotome" loading="lazy" />
+      <img src={`${base}/images/profile-illustration.jpg`} alt="Illustration of Ryo Saotome" loading="lazy" />
     </div>
     <ul>
       <li>Name: {profile.name}</li>

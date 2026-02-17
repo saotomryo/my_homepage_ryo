@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import profile from '../../content/generated/ja/profile.json';
+const base = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
 ---
 
 <BaseLayout locale="ja" title="自己紹介" path="/ja/about">
@@ -15,7 +16,7 @@ import profile from '../../content/generated/ja/profile.json';
   <section class="list-block">
     <h2>プロフィール</h2>
     <div class="profile-visual">
-      <img src="/images/profile-illustration.jpg" alt="五月女亮のイラスト" loading="lazy" />
+      <img src={`${base}/images/profile-illustration.jpg`} alt="五月女亮のイラスト" loading="lazy" />
     </div>
     <ul>
       <li>名前: {profile.name}</li>

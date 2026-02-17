@@ -1,3 +1,4 @@
 ---
-return Astro.redirect('/ja');
+const normalized = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
+return Astro.redirect(`${normalized}/ja`);
 ---

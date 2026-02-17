@@ -32,6 +32,12 @@ const navText = {
 const t = navText[locale];
 const oppositeLocale = locale === 'ja' ? 'en' : 'ja';
 const switchedPath = path.replace(/^\/(ja|en)/, `/${oppositeLocale}`);
+const basePath = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
+
+function withBase(inputPath: string) {
+  if (!inputPath.startsWith('/')) return inputPath;
+  return `${basePath}${inputPath}`;
+}
 ---
 
 <!doctype html>
@@ -44,15 +50,15 @@ const switchedPath = path.replace(/^\/(ja|en)/, `/${oppositeLocale}`);
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href={`/${locale}`}>Ryo Saotome</a>
+      <a class="logo" href={withBase(`/${locale}`)}>Ryo Saotome</a>
       <nav>
-        <a href={`/${locale}`}>{t.home}</a>
-        <a href={`/${locale}/about`}>{t.about}</a>
-        <a href={`/${locale}/links`}>{t.links}</a>
-        <a href={`/${locale}/activities`}>{t.activities}</a>
-        <a href={`/${locale}/kuroneko`}>{t.kuroneko}</a>
+        <a href={withBase(`/${locale}`)}>{t.home}</a>
+        <a href={withBase(`/${locale}/about`)}>{t.about}</a>
+        <a href={withBase(`/${locale}/links`)}>{t.links}</a>
+        <a href={withBase(`/${locale}/activities`)}>{t.activities}</a>
+        <a href={withBase(`/${locale}/kuroneko`)}>{t.kuroneko}</a>
       </nav>
-      <a class="lang" href={switchedPath}>{t.lang}: {oppositeLocale.toUpperCase()}</a>
+      <a class="lang" href={withBase(switchedPath)}>{t.lang}: {oppositeLocale.toUpperCase()}</a>
     </header>
     <main class="container">
       <slot />
