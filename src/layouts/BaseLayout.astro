@@ -47,6 +47,13 @@ function withBase(inputPath: string) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCBQR9FHCM"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BCBQR9FHCM');
+    </script>
   </head>
   <body>
     <header class="site-header">
