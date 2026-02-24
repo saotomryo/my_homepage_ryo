@@ -4,7 +4,12 @@ import profile from '../../content/generated/en/profile.json';
 const base = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
 ---
 
-<BaseLayout locale="en" title="About" path="/en/about">
+<BaseLayout
+  locale="en"
+  title="About"
+  description="Profile of Ryo Saotome, including key activities, achievements, and service areas."
+  path="/en/about"
+>
   <section class="page-head">
     <h1>About</h1>
     <p>

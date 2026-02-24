@@ -7,7 +7,12 @@ const embedUrl = playlist?.embed_url || null;
 const playlistUrl = playlist?.playlist_url || null;
 ---
 
-<BaseLayout locale="ja" title="黒猫の大冒険" path="/ja/kuroneko">
+<BaseLayout
+  locale="ja"
+  title="黒猫の大冒険"
+  description="YouTubeプレイリスト「黒猫の大冒険」をこのページで連続再生できます。"
+  path="/ja/kuroneko"
+>
   <section class="page-head">
     <h1>黒猫の大冒険</h1>
     <p>黒猫の大冒険プレイリストを連続再生できます。</p>
@@ -16,15 +21,15 @@ const playlistUrl = playlist?.playlist_url || null;
   <section class="list-block">
     {embedUrl ? (
       <>
-        <div class="video-frame-wrap">
-          <iframe
-            class="video-frame"
-            src={embedUrl}
-            title="黒猫の大冒険 playlist"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div
+          class="video-shell"
+          data-current-embed={embedUrl?.replace('https://www.youtube.com/embed/', 'https://www.youtube-nocookie.com/embed/')}
+          data-current-title="黒猫の大冒険 playlist"
+        >
+          <button class="video-launch" type="button" aria-label="再生する: 黒猫の大冒険">
+            <img class="video-poster" src="https://i.ytimg.com/vi/bYfGTm8RH0U/hqdefault.jpg" alt="黒猫の大冒険 サムネイル" loading="lazy" decoding="async" />
+            <span class="video-launch-text">再生する</span>
+          </button>
         </div>
         {playlistUrl && (
           <p class="video-meta">
@@ -36,4 +41,26 @@ const playlistUrl = playlist?.playlist_url || null;
       <p>プレイリスト情報を取得できていません。`npm run enrich:media` を実行してください。</p>
     )}
   </section>
+
+  <script is:inline>
+    (() => {
+      const shell = document.querySelector('.video-shell');
+      const launch = shell?.querySelector('.video-launch');
+      if (!shell || !launch) return;
+      launch.addEventListener('click', () => {
+        if (shell.querySelector('iframe')) return;
+        const src = shell.getAttribute('data-current-embed');
+        if (!src) return;
+        const iframe = document.createElement('iframe');
+        iframe.className = 'video-frame';
+        iframe.src = src;
+        iframe.title = shell.getAttribute('data-current-title') || 'YouTube playlist player';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.allowFullscreen = true;
+        shell.innerHTML = '';
+        shell.appendChild(iframe);
+      });
+    })();
+  </script>
 </BaseLayout>

@@ -45,7 +45,8 @@ const labels = {
     channel: 'チャンネルへ',
     playlist: '再生リストを開く',
     prev: '前の動画',
-    next: '次の動画'
+    next: '次の動画',
+    play: '再生する'
   },
   en: {
     heading: 'YouTube',
@@ -57,7 +58,8 @@ const labels = {
     channel: 'Open Channel',
     playlist: 'Open Playlist',
     prev: 'Previous',
-    next: 'Next'
+    next: 'Next',
+    play: 'Play'
   }
 };
 
@@ -67,6 +69,25 @@ const hasChannelSlider = channelVideos.length > 1;
 const playlistVideos = Array.isArray(playlistKuroneko?.videos) ? playlistKuroneko.videos : [];
 const hasPlaylistSlider = playlistVideos.length > 1;
 const hasPlaylistEmbed = Boolean(playlistKuroneko?.embed_url || playlistVideos[0]?.embed_url);
+
+function toNoCookieEmbed(url?: string) {
+  if (!url) return '';
+  return url.replace('https://www.youtube.com/embed/', 'https://www.youtube-nocookie.com/embed/');
+}
+
+function thumbOf(item?: VideoInfo) {
+  if (!item) return '';
+  if (item.thumbnail_url) return item.thumbnail_url;
+  if (item.video_id) return `https://i.ytimg.com/vi/${item.video_id}/hqdefault.jpg`;
+  return '';
+}
+
+const initialChannel = channelVideos[0];
+const initialPlaylist = playlistVideos[0];
+
+const initialPlaylistEmbed = toNoCookieEmbed(
+  playlistKuroneko?.embed_url || playlistVideos[0]?.embed_url
+);
 ---
 
 <section class="list-block video-block">
@@ -78,21 +99,21 @@ const hasPlaylistEmbed = Boolean(playlistKuroneko?.embed_url || playlistVideos[0
   </div>
 
   <div class="video-panel is-active" data-panel="channel" id="youtube-channel">
-    {channelVideos.length > 0 && channelVideos[0]?.embed_url ? (
+    {initialChannel && initialChannel.embed_url ? (
       <div class="video-slider" data-videos={JSON.stringify(channelVideos)}>
-        <div class="video-frame-wrap">
-          <iframe
-            class="video-frame js-video-iframe"
-            src={channelVideos[0].embed_url}
-            title={channelVideos[0].title || 'YouTube video player'}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div
+          class="video-shell"
+          data-current-embed={toNoCookieEmbed(initialChannel.embed_url)}
+          data-current-title={initialChannel.title || 'YouTube video player'}
+        >
+          <button class="video-launch" type="button" aria-label={`${t.play}: ${initialChannel.title || ''}`}>
+            <img class="video-poster" src={thumbOf(initialChannel)} alt={initialChannel.title || 'YouTube thumbnail'} loading="lazy" decoding="async" />
+            <span class="video-launch-text">{t.play}</span>
+          </button>
         </div>
-        <p class="video-meta js-video-title">{channelVideos[0].title}</p>
+        <p class="video-meta js-video-title">{initialChannel.title}</p>
         <div class="video-links">
-          <a class="js-watch-link" href={channelVideos[0].watch_url} target="_blank" rel="noreferrer">{t.watch}</a>
+          <a class="js-watch-link" href={initialChannel.watch_url} target="_blank" rel="noreferrer">{t.watch}</a>
           {channelUrl && <a href={channelUrl} target="_blank" rel="noreferrer">{t.channel}</a>}
         </div>
 
@@ -115,19 +136,19 @@ const hasPlaylistEmbed = Boolean(playlistKuroneko?.embed_url || playlistVideos[0
   {showKuroneko && <div class="video-panel" data-panel="kuroneko" id="youtube-kuroneko">
     {hasPlaylistEmbed ? (
       <div class="playlist-player" data-playlist={JSON.stringify(playlistVideos)} data-playlist-id={playlistKuroneko?.playlist_id || ''}>
-        <div class="video-frame-wrap">
-          <iframe
-            class="video-frame js-playlist-iframe"
-            src={playlistKuroneko?.embed_url || playlistVideos[0]?.embed_url}
-            title={playlistKuroneko?.title || 'YouTube playlist player'}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div
+          class="video-shell"
+          data-current-embed={initialPlaylistEmbed}
+          data-current-title={initialPlaylist?.title || playlistKuroneko?.title || 'YouTube playlist player'}
+        >
+          <button class="video-launch" type="button" aria-label={`${t.play}: ${initialPlaylist?.title || playlistKuroneko?.title || ''}`}>
+            <img class="video-poster" src={thumbOf(initialPlaylist)} alt={initialPlaylist?.title || 'YouTube playlist thumbnail'} loading="lazy" decoding="async" />
+            <span class="video-launch-text">{t.play}</span>
+          </button>
         </div>
-        <p class="video-meta js-playlist-title">{playlistVideos[0]?.title || playlistKuroneko?.title}</p>
+        <p class="video-meta js-playlist-title">{initialPlaylist?.title || playlistKuroneko?.title}</p>
         <div class="video-links">
-          {playlistVideos[0]?.watch_url && <a class="js-playlist-watch" href={playlistVideos[0].watch_url} target="_blank" rel="noreferrer">{t.watch}</a>}
+          {initialPlaylist?.watch_url && <a class="js-playlist-watch" href={initialPlaylist.watch_url} target="_blank" rel="noreferrer">{t.watch}</a>}
           {playlistKuroneko?.playlist_url && <a href={playlistKuroneko.playlist_url} target="_blank" rel="noreferrer">{t.playlist}</a>}
         </div>
 
@@ -151,6 +172,49 @@ const hasPlaylistEmbed = Boolean(playlistKuroneko?.embed_url || playlistVideos[0
 <script>
   const roots = document.querySelectorAll('.video-block');
 
+  const toNoCookieEmbed = (url) => {
+    if (!url) return '';
+    return url.replace('https://www.youtube.com/embed/', 'https://www.youtube-nocookie.com/embed/');
+  };
+
+  const thumbOf = (item) => {
+    if (!item) return '';
+    if (item.thumbnail_url) return item.thumbnail_url;
+    if (item.video_id) return `https://i.ytimg.com/vi/${item.video_id}/hqdefault.jpg`;
+    return '';
+  };
+
+  const createPlayer = (shell) => {
+    if (!shell || shell.querySelector('iframe')) return;
+    const src = shell.getAttribute('data-current-embed') || '';
+    if (!src) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.className = 'video-frame';
+    iframe.src = src;
+    iframe.title = shell.getAttribute('data-current-title') || 'YouTube player';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+
+    shell.innerHTML = '';
+    shell.appendChild(iframe);
+  };
+
+  const updateShellPoster = (shell, item, playText) => {
+    if (!shell || shell.querySelector('iframe')) return;
+    shell.setAttribute('data-current-title', item?.title || 'YouTube player');
+
+    const launch = shell.querySelector('.video-launch');
+    const poster = shell.querySelector('.video-poster');
+    if (launch) launch.setAttribute('aria-label', `${playText}: ${item?.title || ''}`);
+    if (poster) {
+      const nextThumb = thumbOf(item);
+      if (nextThumb) poster.setAttribute('src', nextThumb);
+      poster.setAttribute('alt', item?.title || 'YouTube thumbnail');
+    }
+  };
+
   for (const root of roots) {
     const tabs = root.querySelectorAll('.video-tab');
     const panels = root.querySelectorAll('.video-panel');
@@ -171,6 +235,13 @@ const hasPlaylistEmbed = Boolean(playlistKuroneko?.embed_url || playlistVideos[0
       });
     }
 
+    root.querySelectorAll('.video-launch').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const shell = btn.closest('.video-shell');
+        createPlayer(shell);
+      });
+    });
+
     const hash = window.location.hash;
     if (hash === '#youtube-kuroneko') activateTab('kuroneko');
     if (hash === '#youtube-channel') activateTab('channel');
@@ -189,25 +260,36 @@ const hasPlaylistEmbed = Boolean(playlistKuroneko?.embed_url || playlistVideos[0
       if (!Array.isArray(items) || items.length < 2) return;
 
       let index = 0;
-      const iframe = container.querySelector(prefix === 'playlist' ? '.js-playlist-iframe' : '.js-video-iframe');
+      const shell = container.querySelector('.video-shell');
       const title = container.querySelector(prefix === 'playlist' ? '.js-playlist-title' : '.js-video-title');
       const watch = container.querySelector(prefix === 'playlist' ? '.js-playlist-watch' : '.js-watch-link');
       const indicator = container.querySelector(prefix === 'playlist' ? '.js-playlist-index' : '.js-video-index');
       const prevBtn = container.querySelector(prefix === 'playlist' ? '.js-playlist-prev' : '.js-video-prev');
       const nextBtn = container.querySelector(prefix === 'playlist' ? '.js-playlist-next' : '.js-video-next');
       const playlistId = container.getAttribute('data-playlist-id') || '';
+      const playText = root.querySelector('.video-launch-text')?.textContent || 'Play';
 
       const buildEmbed = (item, i) => {
-        if (prefix !== 'playlist') return item?.embed_url || '';
-        if (!item?.video_id || !playlistId) return item?.embed_url || '';
-        return `https://www.youtube.com/embed/${item.video_id}?list=${playlistId}&index=${i}&rel=0`;
+        if (prefix !== 'playlist') return toNoCookieEmbed(item?.embed_url || '');
+        if (!item?.video_id || !playlistId) return toNoCookieEmbed(item?.embed_url || '');
+        return `https://www.youtube-nocookie.com/embed/${item.video_id}?list=${playlistId}&index=${i}&rel=0`;
       };
 
       const render = () => {
         const current = items[index];
         const embed = buildEmbed(current, index);
-        if (iframe && embed) iframe.src = embed;
-        if (iframe && current?.title) iframe.title = current.title;
+
+        if (shell) {
+          shell.setAttribute('data-current-embed', embed);
+          shell.setAttribute('data-current-title', current?.title || 'YouTube player');
+          const iframe = shell.querySelector('iframe');
+          if (iframe && embed) {
+            iframe.src = embed;
+            if (current?.title) iframe.title = current.title;
+          }
+          updateShellPoster(shell, current, playText);
+        }
+
         if (title) title.textContent = current?.title || '';
         if (watch && current?.watch_url) watch.href = current.watch_url;
         if (indicator) indicator.textContent = `${index + 1} / ${items.length}`;

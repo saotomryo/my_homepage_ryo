@@ -4,17 +4,17 @@ import '../styles/global.css';
 interface Props {
   locale: 'ja' | 'en';
   title: string;
-  description?: string;
+  description: string;
   path: string;
 }
 
-const { locale, title, description = '', path } = Astro.props;
+const { locale, title, description, path } = Astro.props;
 
 const navText = {
   ja: {
     home: 'トップ',
     about: '自己紹介',
-    links: 'リンク',
+    links: 'リンク集',
     activities: '活動まとめ',
     kuroneko: '黒猫の大冒険',
     lang: 'Language'
@@ -47,12 +47,34 @@ function withBase(inputPath: string) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCBQR9FHCM"></script>
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BCBQR9FHCM');
+      (() => {
+        const measurementId = 'G-BCBQR9FHCM';
+        const loadGtag = () => {
+          if (window.__gaLoaded) return;
+          window.__gaLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function gtag() {
+            window.dataLayer.push(arguments);
+          };
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+          script.onload = () => {
+            window.gtag('js', new Date());
+            window.gtag('config', measurementId);
+          };
+          document.head.appendChild(script);
+        };
+
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(loadGtag, { timeout: 2500 });
+        } else {
+          window.addEventListener('load', () => {
+            window.setTimeout(loadGtag, 1200);
+          }, { once: true });
+        }
+      })();
     </script>
   </head>
   <body>

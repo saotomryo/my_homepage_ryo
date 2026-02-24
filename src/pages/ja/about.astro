@@ -4,7 +4,12 @@ import profile from '../../content/generated/ja/profile.json';
 const base = Astro.site ? new URL(Astro.site).pathname.replace(/\/$/, '') : '';
 ---
 
-<BaseLayout locale="ja" title="自己紹介" path="/ja/about">
+<BaseLayout
+  locale="ja"
+  title="自己紹介"
+  description="五月女亮のプロフィール、主な活動、実績、対応領域を紹介します。"
+  path="/ja/about"
+>
   <section class="page-head">
     <h1>自己紹介</h1>
     <p>

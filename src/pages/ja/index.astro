@@ -15,7 +15,12 @@ const cards = [
 ];
 ---
 
-<BaseLayout locale="ja" title="Ryo Saotome | トップ" path="/ja">
+<BaseLayout
+  locale="ja"
+  title="Ryo Saotome | トップ"
+  description="五月女亮のホームページ。記事、動画、開発プロジェクト、仕事の相談先をまとめて見られます。"
+  path="/ja"
+>
   <Hero locale="ja" name={profile.name} headline={profile.headline} summary={profile.summary} />
 
   <section class="stats">
@@ -24,8 +29,11 @@ const cards = [
     <p>更新: {siteMeta.updated_at}</p>
   </section>
 
-  <section class="card-grid">
+  <section>
+    <h2>できること</h2>
+    <div class="card-grid">
     {cards.map((card) => <SectionCard {...card} />)}
+    </div>
   </section>
 
   <LatestVideo locale="ja" video={media.latest_video} videos={media.videos} playlistKuroneko={media.playlist_kuroneko} channelUrl={media.youtube_channel_url} />
