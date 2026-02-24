@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://top.ryosailabo.com',
+  site: 'https://ryosailabo.com',
   output: 'static',
   i18n: {
     defaultLocale: 'ja',
