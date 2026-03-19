@@ -1,22 +1,49 @@
 {
   "youtube_channel_url": "https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w",
   "latest_video": {
-    "title": "国のお金の使い方を考える（行政事業レビュー見える化アプリケーション）_対話編",
-    "video_id": "rJd8_BS5Pzs",
-    "watch_url": "https://www.youtube.com/watch?v=rJd8_BS5Pzs",
-    "embed_url": "https://www.youtube.com/embed/rJd8_BS5Pzs",
-    "thumbnail_url": "https://i.ytimg.com/vi/rJd8_BS5Pzs/hqdefault.jpg",
-    "published_at": "20260204",
-    "category_key": "politics"
+    "title": "黒猫の大冒険27 #cat",
+    "video_id": "CHQczcYaOcE",
+    "watch_url": "https://www.youtube.com/shorts/CHQczcYaOcE",
+    "embed_url": "https://www.youtube.com/embed/CHQczcYaOcE",
+    "thumbnail_url": "https://i.ytimg.com/vi/CHQczcYaOcE/hqdefault.jpg",
+    "published_at": "2026-03-18T08:04:22+00:00",
+    "category_key": "hobby"
   },
   "channel_videos": [
+    {
+      "title": "黒猫の大冒険27 #cat",
+      "video_id": "CHQczcYaOcE",
+      "watch_url": "https://www.youtube.com/shorts/CHQczcYaOcE",
+      "embed_url": "https://www.youtube.com/embed/CHQczcYaOcE",
+      "thumbnail_url": "https://i.ytimg.com/vi/CHQczcYaOcE/hqdefault.jpg",
+      "published_at": "2026-03-18T08:04:22+00:00",
+      "category_key": "hobby"
+    },
+    {
+      "title": "黒猫の大冒険26",
+      "video_id": "LqXrHQmMY9M",
+      "watch_url": "https://www.youtube.com/shorts/LqXrHQmMY9M",
+      "embed_url": "https://www.youtube.com/embed/LqXrHQmMY9M",
+      "thumbnail_url": "https://i.ytimg.com/vi/LqXrHQmMY9M/hqdefault.jpg",
+      "published_at": "2026-03-16T02:52:44+00:00",
+      "category_key": "hobby"
+    },
+    {
+      "title": "黒猫の大冒険25",
+      "video_id": "2dJtNTCHB4Q",
+      "watch_url": "https://www.youtube.com/shorts/2dJtNTCHB4Q",
+      "embed_url": "https://www.youtube.com/embed/2dJtNTCHB4Q",
+      "thumbnail_url": "https://i.ytimg.com/vi/2dJtNTCHB4Q/hqdefault.jpg",
+      "published_at": "2026-02-18T16:46:40+00:00",
+      "category_key": "hobby"
+    },
     {
       "title": "国のお金の使い方を考える（行政事業レビュー見える化アプリケーション）_対話編",
       "video_id": "rJd8_BS5Pzs",
       "watch_url": "https://www.youtube.com/watch?v=rJd8_BS5Pzs",
       "embed_url": "https://www.youtube.com/embed/rJd8_BS5Pzs",
       "thumbnail_url": "https://i.ytimg.com/vi/rJd8_BS5Pzs/hqdefault.jpg",
-      "published_at": "20260204",
+      "published_at": "2026-02-04T23:32:45+00:00",
       "category_key": "politics"
     },
     {
@@ -25,153 +52,45 @@
       "watch_url": "https://www.youtube.com/watch?v=dofMvWmBv3c",
       "embed_url": "https://www.youtube.com/embed/dofMvWmBv3c",
       "thumbnail_url": "https://i.ytimg.com/vi/dofMvWmBv3c/hqdefault.jpg",
-      "published_at": "20260204",
+      "published_at": "2026-02-04T11:25:27+00:00",
       "category_key": "politics"
-    },
-    {
-      "title": "衆院選2026の各党のマニュフェストをAIで見える化",
-      "video_id": "nHUzUE-RZKU",
-      "watch_url": "https://www.youtube.com/watch?v=nHUzUE-RZKU",
-      "embed_url": "https://www.youtube.com/embed/nHUzUE-RZKU",
-      "thumbnail_url": "https://i.ytimg.com/vi/nHUzUE-RZKU/hqdefault.jpg",
-      "published_at": "20260129",
-      "category_key": "politics"
-    },
-    {
-      "title": "黒猫の災難と白猫のツッコミ",
-      "video_id": "Vl6vKn9hIGg",
-      "watch_url": "https://www.youtube.com/watch?v=Vl6vKn9hIGg",
-      "embed_url": "https://www.youtube.com/embed/Vl6vKn9hIGg",
-      "thumbnail_url": "https://i.ytimg.com/vi/Vl6vKn9hIGg/hqdefault.jpg",
-      "published_at": "20260106",
-      "category_key": "hobby"
-    },
-    {
-      "title": "黒猫と白猫の漫才動画（音声なし,字幕あり）",
-      "video_id": "mmjQ7rckUgk",
-      "watch_url": "https://www.youtube.com/watch?v=mmjQ7rckUgk",
-      "embed_url": "https://www.youtube.com/embed/mmjQ7rckUgk",
-      "thumbnail_url": "https://i.ytimg.com/vi/mmjQ7rckUgk/hqdefault.jpg",
-      "published_at": "20260106",
-      "category_key": "ai"
-    },
-    {
-      "title": "Gemini Robotics ERが公開されていたのでデモシミュレータを作ってみた",
-      "video_id": "hKd4zjAj48w",
-      "watch_url": "https://www.youtube.com/watch?v=hKd4zjAj48w",
-      "embed_url": "https://www.youtube.com/embed/hKd4zjAj48w",
-      "thumbnail_url": "https://i.ytimg.com/vi/hKd4zjAj48w/hqdefault.jpg",
-      "published_at": "20251123",
-      "category_key": "robotics"
-    },
-    {
-      "title": "自作人工生命シミュレーターでシミュレータ内の栄枯盛衰を語る①",
-      "video_id": "bjwHm59hWhY",
-      "watch_url": "https://www.youtube.com/watch?v=bjwHm59hWhY",
-      "embed_url": "https://www.youtube.com/embed/bjwHm59hWhY",
-      "thumbnail_url": "https://i.ytimg.com/vi/bjwHm59hWhY/hqdefault.jpg",
-      "published_at": "20251113",
-      "category_key": "ai"
-    },
-    {
-      "title": "対話AIでボードゲームをする",
-      "video_id": "Z0XKRmywZis",
-      "watch_url": "https://www.youtube.com/watch?v=Z0XKRmywZis",
-      "embed_url": "https://www.youtube.com/embed/Z0XKRmywZis",
-      "thumbnail_url": "https://i.ytimg.com/vi/Z0XKRmywZis/hqdefault.jpg",
-      "published_at": "20240707",
-      "category_key": "ai"
-    },
-    {
-      "title": "手作りAIロボットに俳句を詠ます",
-      "video_id": "irvW8ykPRlk",
-      "watch_url": "https://www.youtube.com/watch?v=irvW8ykPRlk",
-      "embed_url": "https://www.youtube.com/embed/irvW8ykPRlk",
-      "thumbnail_url": "https://i.ytimg.com/vi/irvW8ykPRlk/hqdefault.jpg",
-      "published_at": "20240704",
-      "category_key": "robotics"
-    },
-    {
-      "title": "手作りAIロボット紹介動画",
-      "video_id": "O2vAdzCsDhg",
-      "watch_url": "https://www.youtube.com/watch?v=O2vAdzCsDhg",
-      "embed_url": "https://www.youtube.com/embed/O2vAdzCsDhg",
-      "thumbnail_url": "https://i.ytimg.com/vi/O2vAdzCsDhg/hqdefault.jpg",
-      "published_at": "20240627",
-      "category_key": "robotics"
-    },
-    {
-      "title": "手作りAIロボット紹介",
-      "video_id": "QlmK5ykN0EI",
-      "watch_url": "https://www.youtube.com/watch?v=QlmK5ykN0EI",
-      "embed_url": "https://www.youtube.com/embed/QlmK5ykN0EI",
-      "thumbnail_url": "https://i.ytimg.com/vi/QlmK5ykN0EI/hqdefault.jpg",
-      "published_at": "20240613",
-      "category_key": "robotics"
-    },
-    {
-      "title": "手作りAIロボット（名前はまだない）誕生",
-      "video_id": "qRwn2_yp7VU",
-      "watch_url": "https://www.youtube.com/watch?v=qRwn2_yp7VU",
-      "embed_url": "https://www.youtube.com/embed/qRwn2_yp7VU",
-      "thumbnail_url": "https://i.ytimg.com/vi/qRwn2_yp7VU/hqdefault.jpg",
-      "published_at": "20240531",
-      "category_key": "robotics"
-    },
-    {
-      "title": "Black cat is comin' to my knee.（クロネコがひざにやってくる）",
-      "video_id": "hedr1KcBcfs",
-      "watch_url": "https://www.youtube.com/watch?v=hedr1KcBcfs",
-      "embed_url": "https://www.youtube.com/embed/hedr1KcBcfs",
-      "thumbnail_url": "https://i.ytimg.com/vi/hedr1KcBcfs/hqdefault.jpg",
-      "published_at": "20151220",
-      "category_key": "hobby"
-    },
-    {
-      "title": "猫を膝に乗せてスペインを弾いてみた",
-      "video_id": "jhr3xfYUyUk",
-      "watch_url": "https://www.youtube.com/watch?v=jhr3xfYUyUk",
-      "embed_url": "https://www.youtube.com/embed/jhr3xfYUyUk",
-      "thumbnail_url": "https://i.ytimg.com/vi/jhr3xfYUyUk/hqdefault.jpg",
-      "published_at": "20150927",
-      "category_key": "hobby"
-    },
-    {
-      "title": "蓄音機でルパン",
-      "video_id": "DASbNqB_oSo",
-      "watch_url": "https://www.youtube.com/watch?v=DASbNqB_oSo",
-      "embed_url": "https://www.youtube.com/embed/DASbNqB_oSo",
-      "thumbnail_url": "https://i.ytimg.com/vi/DASbNqB_oSo/hqdefault.jpg",
-      "published_at": "20121006",
-      "category_key": "hobby"
-    },
-    {
-      "title": "秒速５センチメートル　エンディングテーマ",
-      "video_id": "4TmJWYbm218",
-      "watch_url": "https://www.youtube.com/watch?v=4TmJWYbm218",
-      "embed_url": "https://www.youtube.com/embed/4TmJWYbm218",
-      "thumbnail_url": "https://i.ytimg.com/vi/4TmJWYbm218/hqdefault.jpg",
-      "published_at": "20110109",
-      "category_key": "hobby"
-    },
-    {
-      "title": "初コンサート",
-      "video_id": "DeWMh68RphE",
-      "watch_url": "https://www.youtube.com/watch?v=DeWMh68RphE",
-      "embed_url": "https://www.youtube.com/embed/DeWMh68RphE",
-      "thumbnail_url": "https://i.ytimg.com/vi/DeWMh68RphE/hqdefault.jpg",
-      "published_at": "20090203",
-      "category_key": "hobby"
     }
   ],
   "videos": [
     {
+      "title": "黒猫の大冒険27 #cat",
+      "video_id": "CHQczcYaOcE",
+      "watch_url": "https://www.youtube.com/shorts/CHQczcYaOcE",
+      "embed_url": "https://www.youtube.com/embed/CHQczcYaOcE",
+      "thumbnail_url": "https://i.ytimg.com/vi/CHQczcYaOcE/hqdefault.jpg",
+      "published_at": "2026-03-18T08:04:22+00:00",
+      "category_key": "hobby"
+    },
+    {
+      "title": "黒猫の大冒険26",
+      "video_id": "LqXrHQmMY9M",
+      "watch_url": "https://www.youtube.com/shorts/LqXrHQmMY9M",
+      "embed_url": "https://www.youtube.com/embed/LqXrHQmMY9M",
+      "thumbnail_url": "https://i.ytimg.com/vi/LqXrHQmMY9M/hqdefault.jpg",
+      "published_at": "2026-03-16T02:52:44+00:00",
+      "category_key": "hobby"
+    },
+    {
+      "title": "黒猫の大冒険25",
+      "video_id": "2dJtNTCHB4Q",
+      "watch_url": "https://www.youtube.com/shorts/2dJtNTCHB4Q",
+      "embed_url": "https://www.youtube.com/embed/2dJtNTCHB4Q",
+      "thumbnail_url": "https://i.ytimg.com/vi/2dJtNTCHB4Q/hqdefault.jpg",
+      "published_at": "2026-02-18T16:46:40+00:00",
+      "category_key": "hobby"
+    },
+    {
       "title": "国のお金の使い方を考える（行政事業レビュー見える化アプリケーション）_対話編",
       "video_id": "rJd8_BS5Pzs",
       "watch_url": "https://www.youtube.com/watch?v=rJd8_BS5Pzs",
       "embed_url": "https://www.youtube.com/embed/rJd8_BS5Pzs",
       "thumbnail_url": "https://i.ytimg.com/vi/rJd8_BS5Pzs/hqdefault.jpg",
-      "published_at": "20260204",
+      "published_at": "2026-02-04T23:32:45+00:00",
       "category_key": "politics"
     },
     {
@@ -180,143 +99,8 @@
       "watch_url": "https://www.youtube.com/watch?v=dofMvWmBv3c",
       "embed_url": "https://www.youtube.com/embed/dofMvWmBv3c",
       "thumbnail_url": "https://i.ytimg.com/vi/dofMvWmBv3c/hqdefault.jpg",
-      "published_at": "20260204",
+      "published_at": "2026-02-04T11:25:27+00:00",
       "category_key": "politics"
-    },
-    {
-      "title": "衆院選2026の各党のマニュフェストをAIで見える化",
-      "video_id": "nHUzUE-RZKU",
-      "watch_url": "https://www.youtube.com/watch?v=nHUzUE-RZKU",
-      "embed_url": "https://www.youtube.com/embed/nHUzUE-RZKU",
-      "thumbnail_url": "https://i.ytimg.com/vi/nHUzUE-RZKU/hqdefault.jpg",
-      "published_at": "20260129",
-      "category_key": "politics"
-    },
-    {
-      "title": "黒猫の災難と白猫のツッコミ",
-      "video_id": "Vl6vKn9hIGg",
-      "watch_url": "https://www.youtube.com/watch?v=Vl6vKn9hIGg",
-      "embed_url": "https://www.youtube.com/embed/Vl6vKn9hIGg",
-      "thumbnail_url": "https://i.ytimg.com/vi/Vl6vKn9hIGg/hqdefault.jpg",
-      "published_at": "20260106",
-      "category_key": "hobby"
-    },
-    {
-      "title": "黒猫と白猫の漫才動画（音声なし,字幕あり）",
-      "video_id": "mmjQ7rckUgk",
-      "watch_url": "https://www.youtube.com/watch?v=mmjQ7rckUgk",
-      "embed_url": "https://www.youtube.com/embed/mmjQ7rckUgk",
-      "thumbnail_url": "https://i.ytimg.com/vi/mmjQ7rckUgk/hqdefault.jpg",
-      "published_at": "20260106",
-      "category_key": "ai"
-    },
-    {
-      "title": "Gemini Robotics ERが公開されていたのでデモシミュレータを作ってみた",
-      "video_id": "hKd4zjAj48w",
-      "watch_url": "https://www.youtube.com/watch?v=hKd4zjAj48w",
-      "embed_url": "https://www.youtube.com/embed/hKd4zjAj48w",
-      "thumbnail_url": "https://i.ytimg.com/vi/hKd4zjAj48w/hqdefault.jpg",
-      "published_at": "20251123",
-      "category_key": "robotics"
-    },
-    {
-      "title": "自作人工生命シミュレーターでシミュレータ内の栄枯盛衰を語る①",
-      "video_id": "bjwHm59hWhY",
-      "watch_url": "https://www.youtube.com/watch?v=bjwHm59hWhY",
-      "embed_url": "https://www.youtube.com/embed/bjwHm59hWhY",
-      "thumbnail_url": "https://i.ytimg.com/vi/bjwHm59hWhY/hqdefault.jpg",
-      "published_at": "20251113",
-      "category_key": "ai"
-    },
-    {
-      "title": "対話AIでボードゲームをする",
-      "video_id": "Z0XKRmywZis",
-      "watch_url": "https://www.youtube.com/watch?v=Z0XKRmywZis",
-      "embed_url": "https://www.youtube.com/embed/Z0XKRmywZis",
-      "thumbnail_url": "https://i.ytimg.com/vi/Z0XKRmywZis/hqdefault.jpg",
-      "published_at": "20240707",
-      "category_key": "ai"
-    },
-    {
-      "title": "手作りAIロボットに俳句を詠ます",
-      "video_id": "irvW8ykPRlk",
-      "watch_url": "https://www.youtube.com/watch?v=irvW8ykPRlk",
-      "embed_url": "https://www.youtube.com/embed/irvW8ykPRlk",
-      "thumbnail_url": "https://i.ytimg.com/vi/irvW8ykPRlk/hqdefault.jpg",
-      "published_at": "20240704",
-      "category_key": "robotics"
-    },
-    {
-      "title": "手作りAIロボット紹介動画",
-      "video_id": "O2vAdzCsDhg",
-      "watch_url": "https://www.youtube.com/watch?v=O2vAdzCsDhg",
-      "embed_url": "https://www.youtube.com/embed/O2vAdzCsDhg",
-      "thumbnail_url": "https://i.ytimg.com/vi/O2vAdzCsDhg/hqdefault.jpg",
-      "published_at": "20240627",
-      "category_key": "robotics"
-    },
-    {
-      "title": "手作りAIロボット紹介",
-      "video_id": "QlmK5ykN0EI",
-      "watch_url": "https://www.youtube.com/watch?v=QlmK5ykN0EI",
-      "embed_url": "https://www.youtube.com/embed/QlmK5ykN0EI",
-      "thumbnail_url": "https://i.ytimg.com/vi/QlmK5ykN0EI/hqdefault.jpg",
-      "published_at": "20240613",
-      "category_key": "robotics"
-    },
-    {
-      "title": "手作りAIロボット（名前はまだない）誕生",
-      "video_id": "qRwn2_yp7VU",
-      "watch_url": "https://www.youtube.com/watch?v=qRwn2_yp7VU",
-      "embed_url": "https://www.youtube.com/embed/qRwn2_yp7VU",
-      "thumbnail_url": "https://i.ytimg.com/vi/qRwn2_yp7VU/hqdefault.jpg",
-      "published_at": "20240531",
-      "category_key": "robotics"
-    },
-    {
-      "title": "Black cat is comin' to my knee.（クロネコがひざにやってくる）",
-      "video_id": "hedr1KcBcfs",
-      "watch_url": "https://www.youtube.com/watch?v=hedr1KcBcfs",
-      "embed_url": "https://www.youtube.com/embed/hedr1KcBcfs",
-      "thumbnail_url": "https://i.ytimg.com/vi/hedr1KcBcfs/hqdefault.jpg",
-      "published_at": "20151220",
-      "category_key": "hobby"
-    },
-    {
-      "title": "猫を膝に乗せてスペインを弾いてみた",
-      "video_id": "jhr3xfYUyUk",
-      "watch_url": "https://www.youtube.com/watch?v=jhr3xfYUyUk",
-      "embed_url": "https://www.youtube.com/embed/jhr3xfYUyUk",
-      "thumbnail_url": "https://i.ytimg.com/vi/jhr3xfYUyUk/hqdefault.jpg",
-      "published_at": "20150927",
-      "category_key": "hobby"
-    },
-    {
-      "title": "蓄音機でルパン",
-      "video_id": "DASbNqB_oSo",
-      "watch_url": "https://www.youtube.com/watch?v=DASbNqB_oSo",
-      "embed_url": "https://www.youtube.com/embed/DASbNqB_oSo",
-      "thumbnail_url": "https://i.ytimg.com/vi/DASbNqB_oSo/hqdefault.jpg",
-      "published_at": "20121006",
-      "category_key": "hobby"
-    },
-    {
-      "title": "秒速５センチメートル　エンディングテーマ",
-      "video_id": "4TmJWYbm218",
-      "watch_url": "https://www.youtube.com/watch?v=4TmJWYbm218",
-      "embed_url": "https://www.youtube.com/embed/4TmJWYbm218",
-      "thumbnail_url": "https://i.ytimg.com/vi/4TmJWYbm218/hqdefault.jpg",
-      "published_at": "20110109",
-      "category_key": "hobby"
-    },
-    {
-      "title": "初コンサート",
-      "video_id": "DeWMh68RphE",
-      "watch_url": "https://www.youtube.com/watch?v=DeWMh68RphE",
-      "embed_url": "https://www.youtube.com/embed/DeWMh68RphE",
-      "thumbnail_url": "https://i.ytimg.com/vi/DeWMh68RphE/hqdefault.jpg",
-      "published_at": "20090203",
-      "category_key": "hobby"
     }
   ],
   "playlist_kuroneko": {
