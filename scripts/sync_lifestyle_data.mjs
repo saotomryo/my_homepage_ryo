@@ -12,6 +12,7 @@ const INPUTS = {
 };
 
 const CATEGORY_SKILL_PATH = '/Users/saotome2/develop/MyPage/scripts/category_skill.json';
+const GITHUB_PUBLIC_REPOS_PATH = '/Users/saotome2/develop/MyPage/scripts/github_public_repos.json';
 
 const FALLBACK_CATEGORY_RULES = [
   {
@@ -232,6 +233,18 @@ function normalizeRepoUrl(url) {
   return out;
 }
 
+function loadPublicGithubRepoSet() {
+  const rows = readJsonIfExists(GITHUB_PUBLIC_REPOS_PATH, []);
+  if (!Array.isArray(rows)) return new Set();
+  return new Set(
+    rows
+      .map((url) => normalizeRepoUrl(url))
+      .filter((url) => typeof url === 'string' && url.startsWith('https://github.com/saotomryo/'))
+  );
+}
+
+const PUBLIC_GITHUB_REPOS = loadPublicGithubRepoSet();
+
 function mergeArticleMetadata(nextArticles, prevArticles) {
   const prevItems = Array.isArray(prevArticles?.items) ? prevArticles.items : [];
   const prevByUrl = new Map(prevItems.map((x) => [x.url, x]));
@@ -265,7 +278,10 @@ function parseProjects(jsonText, projectsMarkdown = '') {
           .map((repo) => repo?.origin)
           .map((origin) => normalizeRepoUrl(origin))
           .filter((origin) => typeof origin === 'string' && origin.length > 0)
+          .filter((origin) => PUBLIC_GITHUB_REPOS.has(origin))
       : [];
+
+    if (repoUrls.length === 0) continue;
 
     const summary =
       (typeof row.summary === 'string' && row.summary.trim()) ||
