@@ -1,8 +1,8 @@
 {
   "items": [
     {
-      "name": "動画生成",
-      "summary": "記事（Markdown）をベースに、解説動画（長尺）を半自動で生成し、必要なら Shorts（縦動画）も切り出すためのリポジトリです。",
+      "name": "Video Generation",
+      "summary": "A repository for semi-automatically generating long-form explainer videos from Markdown articles, with optional Shorts generation.",
       "status": "active",
       "last_activity": "2026-02-05T00:17:14Z",
       "repo_urls": [
@@ -14,8 +14,8 @@
       "category_key": "other_tech"
     },
     {
-      "name": "国家版資金丸見えツール",
-      "summary": "行政事業レビュー（RSシステム）から取得したCSV（特に 2-2「予算種別・歳出予算項目」）を、ブラウザだけで可視化するための静的Webアプ。",
+      "name": "National Budget Visualization Tool",
+      "summary": "A static web app for visualizing budget review CSV data from the RS system entirely in the browser.",
       "status": "active",
       "last_activity": "2026-01-29T06:19:04Z",
       "repo_urls": [
@@ -25,8 +25,8 @@
       "category_key": "other_tech"
     },
     {
-      "name": "各政党の考え方を可視化するアプリケーション",
-      "summary": "仕様書に基づき、政党・政治家の立場を公式一次情報から可視化するアプリケーションの開発リポジトリです。",
+      "name": "Political Position Visualization Application",
+      "summary": "A development repository for an application that visualizes political parties and politicians from primary official sources based on a specification.",
       "status": "active",
       "last_activity": "2026-01-29T04:50:48Z",
       "repo_urls": [
@@ -37,7 +37,7 @@
     },
     {
       "name": "Artificial_Life_Simulator_GUI",
-      "summary": "人工生命シミュレーションを操作・観察するための PySide6 製 GUI アプリケーションです。",
+      "summary": "A PySide6 GUI application for operating and observing an artificial life simulation.",
       "status": "warm",
       "last_activity": "2026-01-14T06:30:06Z",
       "repo_urls": [
@@ -48,7 +48,7 @@
     },
     {
       "name": "SampleAppForBlog",
-      "summary": "ブログ記事向けの「公開手順を説明できる」サンプルアプリを2つまとめたリポジトリです。",
+      "summary": "A repository bundling two sample apps that can be used in blog posts explaining publishing workflows.",
       "status": "warm",
       "last_activity": "2026-01-09T00:52:55Z",
       "repo_urls": [
@@ -59,7 +59,7 @@
     },
     {
       "name": "LLM-Curriculum-Architect",
-      "summary": "LLM駆動の完全自律型 強化学習フレームワーク。",
+      "summary": "A fully autonomous reinforcement learning framework driven by LLMs.",
       "status": "warm",
       "last_activity": "2025-12-09T08:43:49Z",
       "repo_urls": [
@@ -72,7 +72,7 @@
     },
     {
       "name": "GenesisRobotics",
-      "summary": "NHK学生ロボコン2025「XROBOCON」のシミュレーター環境。",
+      "summary": "A simulator environment for NHK Student Robocon 2025 XROBOCON.",
       "status": "warm",
       "last_activity": "2025-12-09T04:47:18Z",
       "repo_urls": [
@@ -85,7 +85,7 @@
     },
     {
       "name": "GenesisRobotics2025ForXrobocon",
-      "summary": "NHK学生ロボコン2025「XROBOCON」のシミュレーター環境。",
+      "summary": "A simulator environment for NHK Student Robocon 2025 XROBOCON.",
       "status": "warm",
       "last_activity": "2025-12-09T04:47:18Z",
       "repo_urls": [
@@ -98,7 +98,7 @@
     },
     {
       "name": "gemini-er-agentic-dashboard-test",
-      "summary": "Gemini Robotics-ER を使った自律ロボット制御デモ。",
+      "summary": "An autonomous robot control demo using Gemini Robotics-ER.",
       "status": "warm",
       "last_activity": "2025-11-23T23:49:10Z",
       "repo_urls": [
@@ -109,7 +109,7 @@
     },
     {
       "name": "auto-visual-inspection-generator",
-      "summary": "このプロジェクトは、**画像アップロード → 日本語仕様の入力**を受け。",
+      "summary": "This project accepts image uploads and Japanese specification inputs for automated visual inspection workflows.",
       "status": "warm",
       "last_activity": "2025-10-20T07:56:10Z",
       "repo_urls": [

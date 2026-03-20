@@ -2,7 +2,7 @@
   "items": [
     {
       "date": "2026-03-17",
-      "title": "デジタル民主主義：新しい民主主義のカタチ",
+      "title": "Digital Democracy: A New Form of Democracy",
       "url": "https://note.com/ryosao/n/nda6f5880fef8",
       "source": "note",
       "category_key": "other_tech",
@@ -13,7 +13,7 @@
     },
     {
       "date": "2026-03-16",
-      "title": "自動で日本の市況を海外に発信する",
+      "title": "Automatically Share Japanese Market Conditions Overseas",
       "url": "https://note.com/ryosao/n/n43a27f45b6eb",
       "source": "note",
       "category_key": "other_tech",
@@ -24,17 +24,17 @@
     },
     {
       "date": "2026-02-18",
-      "title": "黒猫の大冒険！",
+      "title": "Black Cat Adventure！",
       "url": "https://note.com/ryosao/n/n0c7f00cf01c1",
       "source": "note",
       "category_key": "hobby",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/252709663/rectangle_large_type_2_987327ba03c033c3e7c877d6d7295870.jpeg?fit=bounds&quality=85&width=1280",
-      "og_title": "黒猫の大冒険！｜五月女亮",
+      "og_title": "Black Cat Adventure！｜五月女亮",
       "og_url": "https://note.com/ryosao/n/n0c7f00cf01c1"
     },
     {
       "date": "2026-02-03",
-      "title": "国のお金の使い方を考える",
+      "title": "Rethinking how national budgets are used",
       "url": "https://note.com/ryosao/n/n407dea59634c",
       "source": "note",
       "category_key": "politics",
@@ -44,7 +44,7 @@
     },
     {
       "date": "2026-01-29",
-      "title": "各政党の方針・姿勢のAIによる見える化アプリケーションについて（2026年衆院選マニュフェストより）",
+      "title": "AI visualization app for policy positions of political parties (from the 2026 lower house election manifestos)",
       "url": "https://note.com/ryosao/n/nf4e55ba39d08",
       "source": "note",
       "category_key": "politics",
@@ -54,7 +54,7 @@
     },
     {
       "date": "2026-01-22",
-      "title": "そもそも国は何にお金を使っているのかを分析する",
+      "title": "Analyzing what the government actually spends money on",
       "url": "https://note.com/ryosao/n/n3a325f00b070",
       "source": "note",
       "category_key": "other_tech",
@@ -64,7 +64,7 @@
     },
     {
       "date": "2026-01-21",
-      "title": "ADHD的な私のAI活用法",
+      "title": "How I Use AI with My ADHD-like Work Style",
       "url": "https://note.com/ryosao/n/n488f12dc92f4",
       "source": "note",
       "category_key": "ai",
@@ -75,7 +75,7 @@
     },
     {
       "date": "2026-01-16",
-      "title": "立憲民主党と公明党の合併報道が出たので比べてみた",
+      "title": "Comparing the Constitutional Democratic Party and Komeito After the Merger Reports",
       "url": "https://note.com/ryosao/n/n101c77e03e7f",
       "source": "note",
       "category_key": "politics",
@@ -85,7 +85,7 @@
     },
     {
       "date": "2026-01-14",
-      "title": "政党の「方針・姿勢」を可視化して比べる",
+      "title": "Visualizing and Comparing Political Party Positions",
       "url": "https://note.com/ryosao/n/n95d9b75bdebe",
       "source": "note",
       "category_key": "politics",
@@ -95,7 +95,7 @@
     },
     {
       "date": "2026-01-09",
-      "title": "アプリケーションを作ってWebで公開しよう！",
+      "title": "Build an Application and Publish It on the Web",
       "url": "https://note.com/ryosao/n/ne336682f5228",
       "source": "note",
       "category_key": "other_tech",
@@ -106,7 +106,7 @@
     },
     {
       "date": "2026-01-08",
-      "title": "プロンプトベース画像検査アプリの可能性",
+      "title": "The Potential of Prompt-based Image Inspection Apps",
       "url": "https://note.com/ryosao/n/n76eeee977c5a",
       "source": "note",
       "category_key": "other_tech",
@@ -117,7 +117,7 @@
     },
     {
       "date": "2025-12-26",
-      "title": "多党化時代の政治メディアについて",
+      "title": "Political Media in the Age of Multi-party Politics",
       "url": "https://note.com/ryosao/n/n8bc97e8747e7",
       "source": "note",
       "category_key": "politics",
@@ -127,127 +127,127 @@
     },
     {
       "date": "2025-12-16",
-      "title": "生成AIで「政党の公式発信」から政策スタンスを相対評価して可視化する",
+      "title": "Using Generative AI to Visualize Policy Stances from Official Political Party Messaging",
       "url": "https://zenn.dev/ryo_saotome/articles/4bb384dfd438fe",
       "source": "zenn",
       "category_key": "politics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--fdLhKfvN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%259F%25E6%2588%2590AI%25E3%2581%25A7%25E3%2580%258C%25E6%2594%25BF%25E5%2585%259A%25E3%2581%25AE%25E5%2585%25AC%25E5%25BC%258F%25E7%2599%25BA%25E4%25BF%25A1%25E3%2580%258D%25E3%2581%258B%25E3%2582%2589%25E6%2594%25BF%25E7%25AD%2596%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2582%25B9%25E3%2582%2592%25E7%259B%25B8%25E5%25AF%25BE%25E8%25A9%2595%25E4%25BE%25A1%25E3%2581%2597%25E3%2581%25A6%25E5%258F%25AF%25E8%25A6%2596%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "生成AIで「政党の公式発信」から政策スタンスを相対評価して可視化する",
+      "og_title": "Using Generative AI to Visualize Policy Stances from Official Political Party Messaging",
       "og_url": "https://zenn.dev/ryo_saotome/articles/4bb384dfd438fe"
     },
     {
       "date": "2025-11-24",
-      "title": "Gemini Robotics-ER で動作するサンプルロボットシミュレータを作成",
+      "title": "Building a Sample Robot Simulator Powered by Gemini Robotics-ER",
       "url": "https://zenn.dev/ryo_saotome/articles/99987092e48511",
       "source": "zenn",
       "category_key": "robotics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--fyUFwrAQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Gemini%2520Robotics-ER%2520%25E3%2581%25A7%25E5%258B%2595%25E4%25BD%259C%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2583%25AD%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2582%25B7%25E3%2583%259F%25E3%2583%25A5%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "Gemini Robotics-ER で動作するサンプルロボットシミュレータを作成",
+      "og_title": "Building a Sample Robot Simulator Powered by Gemini Robotics-ER",
       "og_url": "https://zenn.dev/ryo_saotome/articles/99987092e48511"
     },
     {
       "date": "2025-10-20",
-      "title": "画像検査自動生成アプリケーション",
+      "title": "Automatic Image Inspection App Generator",
       "url": "https://zenn.dev/ryo_saotome/articles/9ec029bcb691a5",
       "source": "zenn",
       "category_key": "other_tech",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--Kgc83U6P--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%25BB%25E5%2583%258F%25E6%25A4%259C%25E6%259F%25BB%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "画像検査自動生成アプリケーション",
+      "og_title": "Automatic Image Inspection App Generator",
       "og_url": "https://zenn.dev/ryo_saotome/articles/9ec029bcb691a5"
     },
     {
       "date": "2025-07-16",
-      "title": "チーム未来のマニュフェストを投稿してみた。",
+      "title": "I Tried Publishing Team Mirai's Manifesto",
       "url": "https://zenn.dev/ryo_saotome/articles/9d8a9262923339",
       "source": "zenn",
       "category_key": "other_tech",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--ZTAbmQcl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2581%25E3%2583%25BC%25E3%2583%25A0%25E6%259C%25AA%25E6%259D%25A5%25E3%2581%25AE%25E3%2583%259E%25E3%2583%258B%25E3%2583%25A5%25E3%2583%2595%25E3%2582%25A7%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E6%258A%2595%25E7%25A8%25BF%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "チーム未来のマニュフェストを投稿してみた。",
+      "og_title": "I Tried Publishing Team Mirai's Manifesto",
       "og_url": "https://zenn.dev/ryo_saotome/articles/9d8a9262923339"
     },
     {
       "date": "2024-10-12",
-      "title": "OpenAIのrealtime apiを使ってchatGPTでサンプルコードを書かせてみました。",
+      "title": "Using the OpenAI Realtime API to Generate Sample Code with ChatGPT",
       "url": "https://zenn.dev/ryo_saotome/articles/4d6a2cfcae2942",
       "source": "zenn",
       "category_key": "ai",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--dA2aWff9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenAI%25E3%2581%25AErealtime%2520api%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6chatGPT%25E3%2581%25A7%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258B%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "OpenAIのrealtime apiを使ってchatGPTでサンプルコードを書かせてみました。",
+      "og_title": "Using the OpenAI Realtime API to Generate Sample Code with ChatGPT",
       "og_url": "https://zenn.dev/ryo_saotome/articles/4d6a2cfcae2942"
     },
     {
       "date": "2024-09-11",
-      "title": "AIの学習についての考察",
+      "title": "Thoughts on Learning AI",
       "url": "https://zenn.dev/ryo_saotome/articles/15f16c5066aa48",
       "source": "zenn",
       "category_key": "ai",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--BIUb7HU6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AE%25E5%25AD%25A6%25E7%25BF%2592%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25AE%25E8%2580%2583%25E5%25AF%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "AIの学習についての考察",
+      "og_title": "Thoughts on Learning AI",
       "og_url": "https://zenn.dev/ryo_saotome/articles/15f16c5066aa48"
     },
     {
       "date": "2024-09-01",
-      "title": "本音と建前を出力するGPTs",
+      "title": "A GPTs App that Outputs True Feelings and Formal Responses",
       "url": "https://zenn.dev/ryo_saotome/articles/f66331c259b144",
       "source": "zenn",
       "category_key": "ai",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--oMv4pbMw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%25AC%25E9%259F%25B3%25E3%2581%25A8%25E5%25BB%25BA%25E5%2589%258D%25E3%2582%2592%25E5%2587%25BA%25E5%258A%259B%25E3%2581%2599%25E3%2582%258BGPTs%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "本音と建前を出力するGPTs",
+      "og_title": "A GPTs App that Outputs True Feelings and Formal Responses",
       "og_url": "https://zenn.dev/ryo_saotome/articles/f66331c259b144"
     },
     {
       "date": "2024-07-31",
-      "title": "単眼Depth推定を試してみました。",
+      "title": "Trying Monocular Depth Estimation",
       "url": "https://zenn.dev/ryo_saotome/articles/4df5ca94e1797f",
       "source": "zenn",
       "category_key": "other_tech",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--NQD1ByD4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%258D%2598%25E7%259C%25BCDepth%25E6%258E%25A8%25E5%25AE%259A%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "単眼Depth推定を試してみました。",
+      "og_title": "Trying Monocular Depth Estimation",
       "og_url": "https://zenn.dev/ryo_saotome/articles/4df5ca94e1797f"
     },
     {
       "date": "2024-07-21",
-      "title": "ロボットに個性を持たせる",
+      "title": "Giving Robots Personality",
       "url": "https://zenn.dev/ryo_saotome/articles/0553079d418aab",
       "source": "zenn",
       "category_key": "robotics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--nF2NDBYv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AD%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AB%25E5%2580%258B%25E6%2580%25A7%25E3%2582%2592%25E6%258C%2581%25E3%2581%259F%25E3%2581%259B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "ロボットに個性を持たせる",
+      "og_title": "Giving Robots Personality",
       "og_url": "https://zenn.dev/ryo_saotome/articles/0553079d418aab"
     },
     {
       "date": "2024-07-07",
-      "title": "AIにボードゲームをさせてみる",
+      "title": "Letting AI Play Board Games",
       "url": "https://zenn.dev/ryo_saotome/articles/217b7e4bc4302f",
       "source": "zenn",
       "category_key": "ai",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--3fC8GPvM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25AB%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592%25E3%2581%2595%25E3%2581%259B%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "AIにボードゲームをさせてみる",
+      "og_title": "Letting AI Play Board Games",
       "og_url": "https://zenn.dev/ryo_saotome/articles/217b7e4bc4302f"
     },
     {
       "date": "2024-07-05",
-      "title": "手作りAIロボットに俳句や短歌を詠ませる",
+      "title": "Making a Handmade AI Robot Compose Haiku and Tanka",
       "url": "https://zenn.dev/ryo_saotome/articles/81f418f0f583b3",
       "source": "zenn",
       "category_key": "robotics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--vCWAbSnF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2589%258B%25E4%25BD%259C%25E3%2582%258AAI%25E3%2583%25AD%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AB%25E4%25BF%25B3%25E5%258F%25A5%25E3%2582%2584%25E7%259F%25AD%25E6%25AD%258C%25E3%2582%2592%25E8%25A9%25A0%25E3%2581%25BE%25E3%2581%259B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "手作りAIロボットに俳句や短歌を詠ませる",
+      "og_title": "Making a Handmade AI Robot Compose Haiku and Tanka",
       "og_url": "https://zenn.dev/ryo_saotome/articles/81f418f0f583b3"
     },
     {
       "date": "2024-06-14",
-      "title": "手作りでAIロボットを作成",
+      "title": "Building an AI Robot by Hand",
       "url": "https://zenn.dev/ryo_saotome/articles/235ba1b5235c63",
       "source": "zenn",
       "category_key": "robotics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--COgHkFCf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2589%258B%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25A7AI%25E3%2583%25AD%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
-      "og_title": "手作りでAIロボットを作成",
+      "og_title": "Building an AI Robot by Hand",
       "og_url": "https://zenn.dev/ryo_saotome/articles/235ba1b5235c63"
     },
     {
       "date": "2022-10-17",
-      "title": "海外クラウドソーシングへの挑戦①",
+      "title": "Taking on Overseas Crowdsourcing 1",
       "url": "https://qiita.com/ryosao/items/c1104c7cdd9b4cde288d",
       "source": "qiita",
       "category_key": "other_tech",
@@ -258,7 +258,7 @@
     },
     {
       "date": "2022-08-01",
-      "title": "Open MMLabの画像解析の記事及びサンプルコードのまとめ",
+      "title": "A Roundup of OpenMMLab Image Analysis Articles and Sample Code",
       "url": "https://qiita.com/ryosao/items/b415169dceee42d62e75",
       "source": "qiita",
       "category_key": "other_tech",
@@ -269,7 +269,7 @@
     },
     {
       "date": "2022-07-26",
-      "title": "MMGenerationを利用したGANの学習(cycle GAN)",
+      "title": "Training a GAN with MMGeneration (CycleGAN)",
       "url": "https://qiita.com/ryosao/items/ece4b9357d8147c78e37",
       "source": "qiita",
       "category_key": "other_tech",
@@ -280,133 +280,133 @@
     },
     {
       "date": "2022-07-22",
-      "title": "MMGenerationを利用した画像生成（サンプルコード編）",
+      "title": "Image Generation with MMGeneration (Sample Code Edition)",
       "url": "https://qiita.com/ryosao/items/d7ed14aa17db7716bf6b",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2022-07-18",
-      "title": "Pycaret3.0の時系列分析を試してみた",
+      "title": "Trying Time Series Analysis with PyCaret 3.0",
       "url": "https://qiita.com/ryosao/items/edec743257116bee1c6f",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2022-05-06",
-      "title": "MMOCRを使ってOCRを作成する（Text Recognation)②",
+      "title": "Building OCR with MMOCR (Text Recognition) 2",
       "url": "https://qiita.com/ryosao/items/28bb50ceb74b10c8cf32",
       "source": "qiita",
       "category_key": "ai"
     },
     {
       "date": "2022-05-06",
-      "title": "MMOCRを使ってOCRを作成する（Text Detection)③",
+      "title": "Building OCR with MMOCR (Text Detection) 3",
       "url": "https://qiita.com/ryosao/items/14fc0cef4fe43afe158f",
       "source": "qiita",
       "category_key": "ai"
     },
     {
       "date": "2022-05-02",
-      "title": "MMOCRを使ってOCRを作成する（Text Recognation)①",
+      "title": "Building OCR with MMOCR (Text Recognition) 1",
       "url": "https://qiita.com/ryosao/items/c0a0cc274508759bbdc7",
       "source": "qiita",
       "category_key": "ai"
     },
     {
       "date": "2022-04-15",
-      "title": "ほぼ自動で画像認識アプリケーションを作ろう",
+      "title": "Build an Image Recognition Application Almost Automatically",
       "url": "https://qiita.com/ryosao/items/44c8a6af21eb086d5782",
       "source": "qiita",
       "category_key": "ai"
     },
     {
       "date": "2022-04-15",
-      "title": "MMDETECTIONをgoogle colabolatoryで使うサンプルコード集",
+      "title": "Sample Code for Using MMDetection on Google Colab",
       "url": "https://qiita.com/ryosao/items/cbf5f56130a63a27d229",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-07-19",
-      "title": "MMSegmentationを使ってみた　オリジナルデータトレーニング編",
+      "title": "Trying MMSegmentation: Custom Data Training Edition",
       "url": "https://qiita.com/ryosao/items/d753a7d2c01f4c3f520f",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-07-18",
-      "title": "MMSegmentationを使ってみた　Training編",
+      "title": "Trying MMSegmentation: Training Edition",
       "url": "https://qiita.com/ryosao/items/0ada096efddaac0ee803",
       "source": "qiita",
       "category_key": "ai"
     },
     {
       "date": "2021-07-16",
-      "title": "MMSgmentationをGoogle Collaboratoryで使ってみた",
+      "title": "Trying MMSegmentation on Google Colab",
       "url": "https://qiita.com/ryosao/items/2e25eb93abb9b29ae3fa",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-06-25",
-      "title": "Pycaretを使って複数モデルをマージして予測してみました",
+      "title": "Using PyCaret to Merge Multiple Models for Prediction",
       "url": "https://qiita.com/ryosao/items/ee1aa64c972a6674f0af",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-05-18",
-      "title": "E-statAPIを使ってPythonで分析をしてみる",
+      "title": "Analyzing Data in Python with the e-Stat API",
       "url": "https://qiita.com/ryosao/items/0f5d327605adaef35517",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-05-13",
-      "title": "AIエンジニアの実装スキルを証明するための項目について",
+      "title": "Items That Demonstrate an AI Engineer's Implementation Skills",
       "url": "https://qiita.com/ryosao/items/41e2aba5f861e64d4aaa",
       "source": "qiita",
       "category_key": "ai"
     },
     {
       "date": "2021-05-12",
-      "title": "Streamlitによる為替チャートの作成",
+      "title": "Creating an Exchange Rate Chart with Streamlit",
       "url": "https://qiita.com/ryosao/items/2429c1b04e0c91975c2b",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-04-13",
-      "title": "MMdetectionでポリゴンの予測を実施する",
+      "title": "Running Polygon Prediction with MMDetection",
       "url": "https://qiita.com/ryosao/items/f613d58ffe35c97f9968",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-03-24",
-      "title": "MMDetectionで独自のCOCOデータセットを利用する",
+      "title": "Using a Custom COCO Dataset with MMDetection",
       "url": "https://qiita.com/ryosao/items/908b05f4da6648931134",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-03-13",
-      "title": "PyTorchで画像分析により為替(FX）予測　②",
+      "title": "Foreign Exchange (FX) Prediction with Image Analysis in PyTorch 2",
       "url": "https://qiita.com/ryosao/items/70e51cead23e58237623",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-03-10",
-      "title": "PyTorchで画像分析により為替(FX）予測　①",
+      "title": "Foreign Exchange (FX) Prediction with Image Analysis in PyTorch 1",
       "url": "https://qiita.com/ryosao/items/32e30baa7374f78aeaf0",
       "source": "qiita",
       "category_key": "other_tech"
     },
     {
       "date": "2021-03-03",
-      "title": "JDLA E資格取得までの学習内容のまとめ",
+      "title": "A Summary of My Study Process for the JDLA E Qualification",
       "url": "https://qiita.com/ryosao/items/416ac6eaa9db7b6d025b",
       "source": "qiita",
       "category_key": "other_tech"
