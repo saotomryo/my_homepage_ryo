@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ActivityList from '../../components/ActivityList.astro';
+import PodcastSection from '../../components/PodcastSection.astro';
 import articles from '../../content/generated/en/articles.json';
 import projects from '../../content/generated/en/projects.json';
 import media from '../../content/generated/en/media.json';
@@ -17,5 +18,6 @@ import media from '../../content/generated/en/media.json';
     <p>Browse articles, videos, and projects by category.</p>
   </section>
 
-  <ActivityList locale="en" videos={media.channel_videos || []} articles={articles.items} projects={projects.items} />
+  <PodcastSection locale="en" podcast={media.podcasts_en} />
+  <ActivityList locale="en" videos={media.channel_videos_en || media.channel_videos || []} articles={articles.items} projects={projects.items} />
 </BaseLayout>

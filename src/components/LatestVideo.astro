@@ -6,6 +6,7 @@ interface VideoInfo {
   thumbnail_url?: string;
   published_at?: string;
   video_id?: string;
+  channel_url?: string;
 }
 
 interface PlaylistInfo {
@@ -84,6 +85,7 @@ function thumbOf(item?: VideoInfo) {
 
 const initialChannel = channelVideos[0];
 const initialPlaylist = playlistVideos[0];
+const initialChannelUrl = initialChannel?.channel_url || channelUrl;
 
 const initialPlaylistEmbed = toNoCookieEmbed(
   playlistKuroneko?.embed_url || playlistVideos[0]?.embed_url
@@ -114,7 +116,7 @@ const initialPlaylistEmbed = toNoCookieEmbed(
         <p class="video-meta js-video-title">{initialChannel.title}</p>
         <div class="video-links">
           <a class="js-watch-link" href={initialChannel.watch_url} target="_blank" rel="noreferrer">{t.watch}</a>
-          {channelUrl && <a href={channelUrl} target="_blank" rel="noreferrer">{t.channel}</a>}
+          {initialChannelUrl && <a class="js-channel-link" href={initialChannelUrl} target="_blank" rel="noreferrer">{t.channel}</a>}
         </div>
 
         {hasChannelSlider && (
@@ -263,6 +265,7 @@ const initialPlaylistEmbed = toNoCookieEmbed(
       const shell = container.querySelector('.video-shell');
       const title = container.querySelector(prefix === 'playlist' ? '.js-playlist-title' : '.js-video-title');
       const watch = container.querySelector(prefix === 'playlist' ? '.js-playlist-watch' : '.js-watch-link');
+      const channel = container.querySelector('.js-channel-link');
       const indicator = container.querySelector(prefix === 'playlist' ? '.js-playlist-index' : '.js-video-index');
       const prevBtn = container.querySelector(prefix === 'playlist' ? '.js-playlist-prev' : '.js-video-prev');
       const nextBtn = container.querySelector(prefix === 'playlist' ? '.js-playlist-next' : '.js-video-next');
@@ -292,6 +295,10 @@ const initialPlaylistEmbed = toNoCookieEmbed(
 
         if (title) title.textContent = current?.title || '';
         if (watch && current?.watch_url) watch.href = current.watch_url;
+        if (channel) {
+          const nextChannelUrl = current?.channel_url || '';
+          if (nextChannelUrl) channel.href = nextChannelUrl;
+        }
         if (indicator) indicator.textContent = `${index + 1} / ${items.length}`;
       };
 

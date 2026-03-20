@@ -36,5 +36,11 @@ const cards = [
     </div>
   </section>
 
-  <LatestVideo locale="ja" video={media.latest_video} videos={media.videos} playlistKuroneko={media.playlist_kuroneko} channelUrl={media.youtube_channel_url} />
+  <LatestVideo
+    locale="ja"
+    video={media.latest_video_ja || media.latest_video}
+    videos={media.videos_ja || media.videos}
+    playlistKuroneko={media.playlist_kuroneko}
+    channelUrl={media.youtube_channel_url}
+  />
 </BaseLayout>

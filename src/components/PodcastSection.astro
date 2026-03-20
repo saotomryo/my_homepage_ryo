@@ -1,0 +1,66 @@
+---
+interface PodcastItem {
+  title: string;
+  watch_url: string;
+  thumbnail_url?: string;
+  published_at?: string;
+}
+
+interface PodcastCollection {
+  title?: string;
+  playlist_url?: string | null;
+  videos?: PodcastItem[];
+}
+
+interface Props {
+  locale: 'ja' | 'en';
+  podcast?: PodcastCollection | null;
+}
+
+const { locale, podcast = null } = Astro.props;
+
+const labels = {
+  ja: {
+    heading: 'ポッドキャスト',
+    watch: '聴く',
+    openPlaylist: 'プレイリストを開く'
+  },
+  en: {
+    heading: 'Podcast',
+    watch: 'Listen',
+    openPlaylist: 'Open Playlist'
+  }
+};
+
+const t = labels[locale];
+const items = Array.isArray(podcast?.videos) ? podcast.videos : [];
+---
+
+{items.length > 0 && (
+  <section class="list-block">
+    <h2>{podcast?.title || t.heading}</h2>
+    <div class="video-card-grid">
+      {items.slice(0, 6).map((item) => (
+        <article class="video-card">
+          <a href={item.watch_url} target="_blank" rel="noreferrer">
+            {item.thumbnail_url ? (
+              <img class="article-thumb" src={item.thumbnail_url} alt={item.title} loading="lazy" />
+            ) : (
+              <div class="article-thumb article-thumb-fallback" aria-hidden="true"></div>
+            )}
+          </a>
+          <div class="article-body">
+            {item.published_at && <p class="article-meta">{item.published_at.slice(0, 10)}</p>}
+            <h4>{item.title}</h4>
+            <a href={item.watch_url} target="_blank" rel="noreferrer">{t.watch}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+    {podcast?.playlist_url && (
+      <p class="video-links">
+        <a href={podcast.playlist_url} target="_blank" rel="noreferrer">{t.openPlaylist}</a>
+      </p>
+    )}
+  </section>
+)}

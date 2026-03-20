@@ -14,6 +14,9 @@ const CHANNEL_META_PATH = path.join(
   LIFESTYLE_ROOT,
   'publications/youtube/metadata/channel_videos.json'
 );
+const STUDIO_CHANNEL_URL = 'https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw';
+const PODCAST_JA_TITLE = '日本市場概説';
+const PODCAST_EN_TITLE = 'Japan Market Brief';
 const KURONEKO_PLAYLIST_EMBED_SI = '4yWuDHW-jbvnrjqw';
 const CATEGORY_SKILL_PATH = '/Users/saotome2/develop/MyPage/scripts/category_skill.json';
 const FALLBACK_CATEGORY_RULES = [
@@ -114,7 +117,7 @@ function extractPlaylistId(url) {
   return m ? m[1] : null;
 }
 
-function parseYoutubeEntries(xml, limit = 12) {
+function parseYoutubeEntries(xml, limit = 12, channelUrl = null) {
   const entries = [];
   for (const m of xml.matchAll(/<entry>([\s\S]*?)<\/entry>/gu)) {
     const body = m[1];
@@ -122,6 +125,7 @@ function parseYoutubeEntries(xml, limit = 12) {
     const videoId = body.match(/<yt:videoId>([\s\S]*?)<\/yt:videoId>/u)?.[1]?.trim() || '';
     const watchUrl = body.match(/<link[^>]+href="([^"]+)"/u)?.[1]?.trim() || '';
     const publishedAt = body.match(/<published>([\s\S]*?)<\/published>/u)?.[1]?.trim() || '';
+    const description = body.match(/<media:description>([\s\S]*?)<\/media:description>/u)?.[1]?.trim() || '';
     if (!videoId) continue;
     entries.push({
       title,
@@ -130,6 +134,8 @@ function parseYoutubeEntries(xml, limit = 12) {
       embed_url: `https://www.youtube.com/embed/${videoId}`,
       thumbnail_url: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
       published_at: publishedAt,
+      description,
+      channel_url: channelUrl,
       category_key: classifyVideoCategory(title)
     });
     if (entries.length >= limit) break;
@@ -214,7 +220,7 @@ function normalizeKuronekoPlaylist(meta) {
   };
 }
 
-function normalizeChannelMeta(meta) {
+function normalizeChannelMeta(meta, channelUrl = null) {
   if (!meta || typeof meta !== 'object') return [];
   const rows = Array.isArray(meta.videos) ? meta.videos : [];
   return rows.slice(0, 100).map((v) => {
@@ -226,9 +232,50 @@ function normalizeChannelMeta(meta) {
       embed_url: videoId ? `https://www.youtube.com/embed/${videoId}` : '',
       thumbnail_url: videoId ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg` : '',
       published_at: String(v.upload_date || ''),
+      channel_url: channelUrl,
       category_key: classifyVideoCategory(`${v.title || ''} ${v.description || ''}`)
     };
   }).filter((x) => x.video_id);
+}
+
+function hasJapanese(text) {
+  return /[ぁ-んァ-ヶ一-龠々]/u.test(String(text || ''));
+}
+
+function isPodcastTitle(title) {
+  const value = String(title || '');
+  return value.startsWith(PODCAST_JA_TITLE) || value.startsWith(PODCAST_EN_TITLE);
+}
+
+function extractPlaylistUrl(text) {
+  const match = String(text || '').match(/https:\/\/www\.youtube\.com\/playlist\?list=[A-Za-z0-9_-]+/u);
+  return match ? match[0] : null;
+}
+
+function sortVideos(videos) {
+  return [...videos].sort((a, b) => String(b.published_at || b.uploaded_at || '').localeCompare(String(a.published_at || a.uploaded_at || '')));
+}
+
+function uniqueByVideoId(videos) {
+  const seen = new Set();
+  const out = [];
+  for (const video of videos) {
+    const id = String(video?.video_id || '');
+    if (!id || seen.has(id)) continue;
+    seen.add(id);
+    out.push(video);
+  }
+  return out;
+}
+
+function buildPodcastCollection(title, videos) {
+  const items = sortVideos(uniqueByVideoId(videos));
+  const playlistUrl = items.map((item) => extractPlaylistUrl(item.description)).find(Boolean) || null;
+  return {
+    title,
+    playlist_url: playlistUrl,
+    videos: items
+  };
 }
 
 async function main() {
@@ -239,13 +286,14 @@ async function main() {
   const youtubeLink = (profile.links || []).find((x) => String(x.label).toLowerCase() === 'youtube');
   const channelUrl = youtubeLink?.url || null;
   const channelId = channelUrl ? extractYoutubeChannelId(channelUrl) : null;
+  const studioChannelId = extractYoutubeChannelId(STUDIO_CHANNEL_URL);
 
   let latestVideo = null;
   let channelVideos = [];
   if (channelId) {
     try {
       const xml = await fetchText(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
-      channelVideos = parseYoutubeEntries(xml, 20);
+      channelVideos = parseYoutubeEntries(xml, 20, channelUrl);
       latestVideo = channelVideos[0] || null;
     } catch {
       latestVideo = null;
@@ -258,10 +306,34 @@ async function main() {
   const kuronekoIds = new Set((kuronekoPlaylist?.videos || []).map((v) => v.video_id).filter(Boolean));
   channelVideos = channelVideos.filter((v) => !kuronekoIds.has(v.video_id));
   if (channelVideos.length === 0) {
-    const channelMetaVideos = normalizeChannelMeta(readJsonIfExists(CHANNEL_META_PATH, null));
+    const channelMetaVideos = normalizeChannelMeta(readJsonIfExists(CHANNEL_META_PATH, null), channelUrl);
     channelVideos = channelMetaVideos.filter((v) => !kuronekoIds.has(v.video_id)).slice(0, 20);
   }
   latestVideo = channelVideos[0] || null;
+
+  let studioVideos = [];
+  if (studioChannelId) {
+    try {
+      const xml = await fetchText(`https://www.youtube.com/feeds/videos.xml?channel_id=${studioChannelId}`);
+      studioVideos = parseYoutubeEntries(xml, 30, STUDIO_CHANNEL_URL);
+    } catch {
+      studioVideos = [];
+    }
+  }
+
+  const studioPodcastJa = studioVideos.filter((video) => String(video.title || '').startsWith(PODCAST_JA_TITLE));
+  const studioPodcastEn = studioVideos.filter((video) => String(video.title || '').startsWith(PODCAST_EN_TITLE));
+  const studioRegularVideos = studioVideos.filter((video) => !isPodcastTitle(video.title));
+  const studioJaVideos = studioRegularVideos.filter((video) => hasJapanese(video.title));
+  const studioEnVideos = studioRegularVideos.filter((video) => !hasJapanese(video.title));
+
+  const channelVideosJa = sortVideos(uniqueByVideoId([...channelVideos, ...studioJaVideos]));
+  const channelVideosEn = sortVideos(uniqueByVideoId([...channelVideos, ...studioEnVideos]));
+  const latestVideoJa = channelVideosJa[0] || null;
+  const latestVideoEn = channelVideosEn[0] || null;
+
+  const podcastsJa = buildPodcastCollection(PODCAST_JA_TITLE, studioPodcastJa);
+  const podcastsEn = buildPodcastCollection(PODCAST_EN_TITLE, studioPodcastEn);
 
   const items = Array.isArray(articlesData.items) ? articlesData.items : [];
   const targets = items.slice(0, 24);
@@ -278,16 +350,25 @@ async function main() {
 
   const media = {
     youtube_channel_url: channelUrl,
-    latest_video: latestVideo,
-    channel_videos: channelVideos,
-    videos: channelVideos,
+    youtube_studio_channel_url: STUDIO_CHANNEL_URL,
+    latest_video: latestVideoJa,
+    latest_video_ja: latestVideoJa,
+    latest_video_en: latestVideoEn,
+    channel_videos: channelVideosJa,
+    channel_videos_ja: channelVideosJa,
+    channel_videos_en: channelVideosEn,
+    videos: channelVideosJa,
+    videos_ja: channelVideosJa,
+    videos_en: channelVideosEn,
+    podcasts_ja: podcastsJa,
+    podcasts_en: podcastsEn,
     playlist_kuroneko: kuronekoPlaylist
   };
   writeJson(MEDIA_PATH, media);
 
   console.log('enrich:media success');
   console.log(
-    `youtube_channel: ${latestVideo ? 'fetched' : 'not-found'}, channel_videos: ${channelVideos.length}, playlist_videos: ${kuronekoPlaylist?.videos?.length || 0}, article_thumbnails_checked: ${targets.length}`
+    `youtube_channel: ${latestVideo ? 'fetched' : 'not-found'}, channel_videos_ja: ${channelVideosJa.length}, channel_videos_en: ${channelVideosEn.length}, podcast_ja: ${podcastsJa.videos.length}, podcast_en: ${podcastsEn.videos.length}, playlist_videos: ${kuronekoPlaylist?.videos?.length || 0}, article_thumbnails_checked: ${targets.length}`
   );
 }
 
