@@ -17,6 +17,7 @@ const navText = {
     links: 'リンク集',
     activities: '活動まとめ',
     kuroneko: '黒猫の大冒険',
+    marketBrief: '日本市場概説',
     lang: 'Language'
   },
   en: {
@@ -25,6 +26,7 @@ const navText = {
     links: 'Links',
     activities: 'Activities',
     kuroneko: 'Black Cat Adventure',
+    marketBrief: 'Japan Market Brief',
     lang: '言語'
   }
 };
@@ -86,6 +88,7 @@ function withBase(inputPath: string) {
         <a href={withBase(`/${locale}/links`)}>{t.links}</a>
         <a href={withBase(`/${locale}/activities`)}>{t.activities}</a>
         <a href={withBase(`/${locale}/kuroneko`)}>{t.kuroneko}</a>
+        <a href={withBase(`/${locale}/market-brief`)}>{t.marketBrief}</a>
       </nav>
       <a class="lang" href={withBase(switchedPath)}>{t.lang}: {oppositeLocale.toUpperCase()}</a>
     </header>

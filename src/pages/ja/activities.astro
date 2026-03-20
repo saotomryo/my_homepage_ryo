@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ActivityList from '../../components/ActivityList.astro';
-import PodcastSection from '../../components/PodcastSection.astro';
 import articles from '../../content/generated/ja/articles.json';
 import projects from '../../content/generated/ja/projects.json';
 import media from '../../content/generated/ja/media.json';
@@ -18,6 +17,5 @@ import media from '../../content/generated/ja/media.json';
     <p>記事・動画・開発プロジェクトをカテゴリ別で見られます。</p>
   </section>
 
-  <PodcastSection locale="ja" podcast={media.podcasts_ja} />
   <ActivityList locale="ja" videos={media.channel_videos_ja || media.channel_videos || []} articles={articles.items} projects={projects.items} />
 </BaseLayout>
