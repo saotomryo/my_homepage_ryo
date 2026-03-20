@@ -247,6 +247,10 @@ function isPodcastTitle(title) {
   return value.startsWith(PODCAST_JA_TITLE) || value.startsWith(PODCAST_EN_TITLE);
 }
 
+function isKuronekoTitle(title) {
+  return String(title || '').includes('黒猫の大冒険');
+}
+
 function extractPlaylistUrl(text) {
   const match = String(text || '').match(/https:\/\/www\.youtube\.com\/playlist\?list=[A-Za-z0-9_-]+/u);
   return match ? match[0] : null;
@@ -327,8 +331,10 @@ async function main() {
   const studioJaVideos = studioRegularVideos.filter((video) => hasJapanese(video.title));
   const studioEnVideos = studioRegularVideos.filter((video) => !hasJapanese(video.title));
 
-  const channelVideosJa = sortVideos(uniqueByVideoId([...channelVideos, ...studioJaVideos]));
-  const channelVideosEn = sortVideos(uniqueByVideoId([...channelVideos, ...studioEnVideos]));
+  const channelVideosJa = sortVideos(uniqueByVideoId([...channelVideos, ...studioJaVideos]))
+    .filter((video) => !isKuronekoTitle(video.title));
+  const channelVideosEn = sortVideos(uniqueByVideoId([...channelVideos, ...studioEnVideos]))
+    .filter((video) => !isKuronekoTitle(video.title));
   const latestVideoJa = channelVideosJa[0] || null;
   const latestVideoEn = channelVideosEn[0] || null;
 
