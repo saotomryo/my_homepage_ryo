@@ -238,12 +238,30 @@ function loadPublicGithubRepoSet() {
   if (!Array.isArray(rows)) return new Set();
   return new Set(
     rows
+      .map((row) => (typeof row === 'string' ? row : row?.repo_url))
       .map((url) => normalizeRepoUrl(url))
       .filter((url) => typeof url === 'string' && url.startsWith('https://github.com/saotomryo/'))
   );
 }
 
 const PUBLIC_GITHUB_REPOS = loadPublicGithubRepoSet();
+
+function loadGithubRepoAppUrlMap() {
+  const rows = readJsonIfExists(GITHUB_PUBLIC_REPOS_PATH, []);
+  const map = new Map();
+  if (!Array.isArray(rows)) return map;
+
+  for (const row of rows) {
+    if (!row || typeof row !== 'object' || typeof row === 'string') continue;
+    const repoUrl = normalizeRepoUrl(row.repo_url);
+    const appUrl = typeof row.app_url === 'string' && row.app_url.trim() ? row.app_url.trim() : null;
+    if (!repoUrl || !appUrl) continue;
+    map.set(repoUrl, appUrl);
+  }
+  return map;
+}
+
+const GITHUB_REPO_APP_URL_MAP = loadGithubRepoAppUrlMap();
 
 function mergeArticleMetadata(nextArticles, prevArticles) {
   const prevItems = Array.isArray(prevArticles?.items) ? prevArticles.items : [];
@@ -281,6 +299,12 @@ function parseProjects(jsonText, projectsMarkdown = '') {
           .filter((origin) => PUBLIC_GITHUB_REPOS.has(origin))
       : [];
 
+    const appUrls = [...new Set(
+      repoUrls
+        .map((repoUrl) => GITHUB_REPO_APP_URL_MAP.get(repoUrl))
+        .filter((url) => typeof url === 'string' && url.length > 0)
+    )];
+
     if (repoUrls.length === 0) continue;
 
     const summary =
@@ -295,6 +319,7 @@ function parseProjects(jsonText, projectsMarkdown = '') {
       status: row.status || 'unknown',
       last_activity: row.last_activity || '',
       repo_urls: repoUrls,
+      app_urls: appUrls,
       tags: Array.isArray(row.tech_hints) ? row.tech_hints : [],
       category_key: classifyCategory(`${row.name || ''} ${(Array.isArray(row.tech_hints) ? row.tech_hints.join(' ') : '')}`)
     });

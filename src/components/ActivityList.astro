@@ -15,6 +15,7 @@ interface ProjectItem {
   status: string;
   last_activity: string;
   repo_urls: string[];
+  app_urls?: string[];
   tags: string[];
   category_key?: string;
 }
@@ -53,6 +54,7 @@ const labels = {
     status: '状態',
     updated: '最終更新',
     repo: 'リポジトリ',
+    webApp: 'Webアプリ',
     read: '記事を読む',
     watch: '動画を見る',
     none: '該当するデータはまだありません。'
@@ -71,6 +73,7 @@ const labels = {
     status: 'Status',
     updated: 'Last Updated',
     repo: 'Repository',
+    webApp: 'Web App',
     read: 'Read Article',
     watch: 'Watch Video',
     none: 'No items in this category yet.'
@@ -176,6 +179,9 @@ function formatDateOnly(value) {
                     <div class="repo-links">
                       {project.repo_urls.map((url) => (
                         <a href={url} target="_blank" rel="noreferrer">{t.repo}</a>
+                      ))}
+                      {(project.app_urls || []).map((url) => (
+                        <a href={url} target="_blank" rel="noreferrer">{t.webApp}</a>
                       ))}
                     </div>
                   )}

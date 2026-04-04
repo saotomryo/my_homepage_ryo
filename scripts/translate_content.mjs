@@ -128,7 +128,7 @@ function pseudoTranslateText(value) {
 
 function deepTranslate(node, keyHint = '') {
   if (typeof node === 'string') {
-    const protectedKeys = new Set(['url', 'repo_urls']);
+    const protectedKeys = new Set(['url', 'repo_urls', 'app_urls']);
     if (protectedKeys.has(keyHint)) {
       return node;
     }
