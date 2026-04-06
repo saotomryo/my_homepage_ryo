@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "name": "政策シミュレーター",
+      "summary": "政策の違いや考え方を見比べながら確認できるアプリケーションです。",
+      "status": "active",
+      "last_activity": "2026-04-02T07:56:23Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/policy-visualizer-jp"
+      ],
+      "app_urls": [
+        "https://saotomryo.github.io/policy-visualizer-jp/"
+      ],
+      "tags": [],
+      "category_key": "politics"
+    },
+    {
       "name": "Video Generation",
       "summary": "A repository for semi-automatically generating long-form explainer videos from Markdown articles, with optional Shorts generation.",
       "status": "active",
@@ -34,12 +48,10 @@
       "status": "active",
       "last_activity": "2026-01-29T04:50:48Z",
       "repo_urls": [
-        "https://github.com/saotomryo/partyviz-japan",
-        "https://github.com/saotomryo/policy-visualizer-jp"
+        "https://github.com/saotomryo/partyviz-japan"
       ],
       "app_urls": [
-        "https://saotomryo.github.io/partyviz-japan/",
-        "https://saotomryo.github.io/policy-visualizer-jp/"
+        "https://saotomryo.github.io/partyviz-japan/"
       ],
       "tags": [],
       "category_key": "politics"
