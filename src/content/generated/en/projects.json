@@ -34,10 +34,12 @@
       "status": "active",
       "last_activity": "2026-01-29T04:50:48Z",
       "repo_urls": [
-        "https://github.com/saotomryo/partyviz-japan"
+        "https://github.com/saotomryo/partyviz-japan",
+        "https://github.com/saotomryo/policy-visualizer-jp"
       ],
       "app_urls": [
-        "https://saotomryo.github.io/partyviz-japan/"
+        "https://saotomryo.github.io/partyviz-japan/",
+        "https://saotomryo.github.io/policy-visualizer-jp/"
       ],
       "tags": [],
       "category_key": "politics"
