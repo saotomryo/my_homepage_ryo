@@ -1,6 +1,28 @@
 {
   "items": [
     {
+      "date": "2026-04-06",
+      "title": "AIロボットと宇宙開発",
+      "url": "https://note.com/ryosao/n/n24ca61916fc8",
+      "source": "note",
+      "category_key": "robotics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/265420809/rectangle_large_type_2_ddfb42a052b7391f176e0588525c0d52.png?fit=bounds&quality=85&width=1280",
+      "og_title": "AIロボットと宇宙開発｜五月女亮",
+      "og_description": "アルテミス計画で半世紀ぶりに有人月軌道に宇宙船がいくというので、宇宙開発について考えてみました。 アルテミス計画では、2028年後半に持続的な月面探査拠点の建設開始とあるのですが、個人的に今の情勢を考えると難しいかなと思ったりしてます。   実際問題、ゲートウェイや月面探査拠点といった、宇宙環境での建設作業はコストや期間的に現実的なのかなとは思ってしまっています。  コストや期間において、もっともボトルネックになるのは、有人での建設作業という部分になるのでは無いかと考えて、gemini deep researchに有人建設と無人建設（AGI達成と人並みのロボティクスが達成したと仮定）の",
+      "og_url": "https://note.com/ryosao/n/n24ca61916fc8"
+    },
+    {
+      "date": "2026-04-02",
+      "title": "「原子力」か「太陽光+蓄電池」か",
+      "url": "https://note.com/ryosao/n/n66d149738472",
+      "source": "note",
+      "category_key": "other_tech",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/264150068/rectangle_large_type_2_141443b4a80b0573f9a7888e7968f8f7.jpeg?fit=bounds&quality=85&width=1280",
+      "og_title": "「原子力」か「太陽光+蓄電池」か｜五月女亮",
+      "og_description": "最近の状況を考えると原発回帰はある程度仕方がないことかと考えてましたが、以下のYouTube動画見るとどうも経済的には太陽光+蓄電池の方が合理的になってきているようです。       そもそも、世の中が原発回帰に進んでいる要因は、以下のような点だと思います。        AIの爆発的普及：生成AIを動かすデータセンターには膨大な電力が必要です。24時間安定して供給できるクリーンな電源として、原子力が再び脚光を浴びています。    メガソーラーへの反発：山を削り、景観を損なう大規模な太陽光発電に対する拒否感が、国内外で強まっています。    地政学的な不安：イラン情勢など中東の緊迫化、",
+      "og_url": "https://note.com/ryosao/n/n66d149738472"
+    },
+    {
       "date": "2026-03-17",
       "title": "デジタル民主主義：新しい民主主義のカタチ",
       "url": "https://note.com/ryosao/n/nda6f5880fef8",
@@ -250,8 +272,7 @@
       "category_key": "robotics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--vCWAbSnF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2589%258B%25E4%25BD%259C%25E3%2582%258AAI%25E3%2583%25AD%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2581%25AB%25E4%25BF%25B3%25E5%258F%25A5%25E3%2582%2584%25E7%259F%25AD%25E6%25AD%258C%25E3%2582%2592%25E8%25A9%25A0%25E3%2581%25BE%25E3%2581%259B%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "og_title": "手作りAIロボットに俳句や短歌を詠ませる",
-      "og_url": "https://zenn.dev/ryo_saotome/articles/81f418f0f583b3",
-      "og_description": null
+      "og_url": "https://zenn.dev/ryo_saotome/articles/81f418f0f583b3"
     },
     {
       "date": "2024-06-14",
@@ -261,8 +282,7 @@
       "category_key": "robotics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--COgHkFCf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2589%258B%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25A7AI%25E3%2583%25AD%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "og_title": "手作りでAIロボットを作成",
-      "og_url": "https://zenn.dev/ryo_saotome/articles/235ba1b5235c63",
-      "og_description": null
+      "og_url": "https://zenn.dev/ryo_saotome/articles/235ba1b5235c63"
     },
     {
       "date": "2022-10-17",

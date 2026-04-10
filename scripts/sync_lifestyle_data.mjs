@@ -10,6 +10,8 @@ const INPUTS = {
   projects: path.join(LIFESTYLE_ROOT, 'inventory/develop/projects.json'),
   projectsMd: path.join(LIFESTYLE_ROOT, 'inventory/develop/projects.md')
 };
+const NOTE_RSS_URL = 'https://note.com/ryosao/rss';
+const UA = 'Mozilla/5.0 (compatible; MyPageBot/1.0)';
 
 const CATEGORY_SKILL_PATH = '/Users/saotome2/develop/MyPage/scripts/category_skill.json';
 const GITHUB_PUBLIC_REPOS_PATH = '/Users/saotome2/develop/MyPage/scripts/github_public_repos.json';
@@ -42,6 +44,17 @@ const FALLBACK_CATEGORY_RULES = [
 
 function readText(filePath) {
   return fs.readFileSync(filePath, 'utf8');
+}
+
+async function fetchText(url) {
+  const res = await fetch(url, {
+    headers: {
+      'user-agent': UA,
+      'accept-language': 'ja,en-US;q=0.9,en;q=0.8'
+    }
+  });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  return await res.text();
 }
 
 function readJsonIfExists(filePath, fallback = null) {
@@ -171,6 +184,55 @@ function parseCatalog(markdown) {
 
   items.sort((a, b) => b.date.localeCompare(a.date));
   return { items };
+}
+
+function decodeXml(text) {
+  return String(text || '')
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/gu, '$1')
+    .replace(/&amp;/gu, '&')
+    .replace(/&lt;/gu, '<')
+    .replace(/&gt;/gu, '>')
+    .replace(/&quot;/gu, '"')
+    .replace(/&#39;/gu, "'");
+}
+
+function parseRfc822Date(text) {
+  const value = new Date(String(text || ''));
+  if (Number.isNaN(value.getTime())) return '';
+  return value.toISOString().slice(0, 10);
+}
+
+function parseNoteRss(xmlText) {
+  const items = [];
+  for (const m of String(xmlText || '').matchAll(/<item>([\s\S]*?)<\/item>/gu)) {
+    const body = m[1];
+    const title = decodeXml(body.match(/<title>([\s\S]*?)<\/title>/u)?.[1] || '').trim();
+    const link = decodeXml(body.match(/<link>([\s\S]*?)<\/link>/u)?.[1] || '').trim();
+    const pubDate = parseRfc822Date(body.match(/<pubDate>([\s\S]*?)<\/pubDate>/u)?.[1] || '');
+    if (!title || !link || !pubDate) continue;
+    items.push({
+      date: pubDate,
+      title,
+      url: link,
+      source: 'note',
+      category_key: classifyCategory(`${title} note`)
+    });
+  }
+  return items;
+}
+
+function mergeCatalogWithNoteRss(catalogArticles, noteRssItems) {
+  const byUrl = new Map();
+  for (const item of [...catalogArticles.items, ...noteRssItems]) {
+    if (!item?.url) continue;
+    const prev = byUrl.get(item.url);
+    if (!prev || String(item.date || '') > String(prev.date || '')) {
+      byUrl.set(item.url, item);
+    }
+  }
+  return {
+    items: [...byUrl.values()].sort((a, b) => String(b.date).localeCompare(String(a.date)))
+  };
 }
 
 function parseProjectSummariesFromMarkdown(markdown) {
@@ -358,14 +420,21 @@ function writeJson(fileName, data) {
   fs.writeFileSync(outPath, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
-function main() {
+async function main() {
   ensureDir(OUT_DIR);
   const prevArticles = readJsonIfExists(path.join(OUT_DIR, 'articles.json'), { items: [] });
   const prevMedia = readJsonIfExists(path.join(OUT_DIR, 'media.json'), null);
 
   const profile = parseProfile(readText(INPUTS.profiles));
   const rawArticles = parseCatalog(readText(INPUTS.catalog));
-  const articles = mergeArticleMetadata(rawArticles, prevArticles);
+  let noteRssItems = [];
+  try {
+    noteRssItems = parseNoteRss(await fetchText(NOTE_RSS_URL));
+  } catch {
+    noteRssItems = [];
+  }
+  const mergedArticles = mergeCatalogWithNoteRss(rawArticles, noteRssItems);
+  const articles = mergeArticleMetadata(mergedArticles, prevArticles);
   const projects = parseProjects(readText(INPUTS.projects), readText(INPUTS.projectsMd));
   const siteMeta = buildSiteMeta(profile, articles, projects);
   const media = prevMedia && typeof prevMedia === 'object' ? {
@@ -386,7 +455,7 @@ function main() {
   writeJson('media.json', media);
 
   console.log('sync:lifestyle success');
-  console.log(`inputs: 3, articles: ${articles.items.length}, projects: ${projects.items.length}`);
+  console.log(`inputs: 3, articles: ${articles.items.length}, projects: ${projects.items.length}, note_rss_added: ${noteRssItems.length}`);
 }
 
 main();

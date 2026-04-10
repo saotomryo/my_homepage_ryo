@@ -14,8 +14,10 @@ const CHANNEL_META_PATH = path.join(
   LIFESTYLE_ROOT,
   'publications/youtube/metadata/channel_videos.json'
 );
+const STUDIO_CHANNEL_META_PATH = '/Users/saotome2/develop/MyPage/scripts/studio_channel_videos.json';
 const STUDIO_CHANNEL_URL = 'https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw';
 const PODCAST_JA_TITLE = '日本市場概説';
+const PODCAST_JA_ALT_TITLE = '日本市況概説';
 const PODCAST_EN_TITLE = 'Japan Market Brief';
 const KURONEKO_PLAYLIST_EMBED_SI = '4yWuDHW-jbvnrjqw';
 const CATEGORY_SKILL_PATH = '/Users/saotome2/develop/MyPage/scripts/category_skill.json';
@@ -244,7 +246,7 @@ function hasJapanese(text) {
 
 function isPodcastTitle(title) {
   const value = String(title || '');
-  return value.includes(PODCAST_JA_TITLE) || value.includes(PODCAST_EN_TITLE);
+  return value.includes(PODCAST_JA_TITLE) || value.includes(PODCAST_JA_ALT_TITLE) || value.includes(PODCAST_EN_TITLE);
 }
 
 function isKuronekoTitle(title) {
@@ -308,11 +310,11 @@ async function main() {
   const playlistMeta = readJsonIfExists(KURONEKO_PLAYLIST_META_PATH, null);
   const kuronekoPlaylist = normalizeKuronekoPlaylist(playlistMeta) || prevMedia.playlist_kuroneko || null;
   const kuronekoIds = new Set((kuronekoPlaylist?.videos || []).map((v) => v.video_id).filter(Boolean));
-  channelVideos = channelVideos.filter((v) => !kuronekoIds.has(v.video_id));
-  if (channelVideos.length === 0) {
-    const channelMetaVideos = normalizeChannelMeta(readJsonIfExists(CHANNEL_META_PATH, null), channelUrl);
-    channelVideos = channelMetaVideos.filter((v) => !kuronekoIds.has(v.video_id)).slice(0, 20);
-  }
+  const channelMetaVideos = normalizeChannelMeta(readJsonIfExists(CHANNEL_META_PATH, null), channelUrl);
+  channelVideos = uniqueByVideoId([
+    ...channelVideos,
+    ...channelMetaVideos
+  ]).filter((v) => !kuronekoIds.has(v.video_id));
   latestVideo = channelVideos[0] || null;
 
   let studioVideos = [];
@@ -324,8 +326,16 @@ async function main() {
       studioVideos = [];
     }
   }
+  const studioMetaVideos = normalizeChannelMeta(readJsonIfExists(STUDIO_CHANNEL_META_PATH, null), STUDIO_CHANNEL_URL);
+  studioVideos = uniqueByVideoId([
+    ...studioVideos,
+    ...studioMetaVideos
+  ]);
 
-  const studioPodcastJa = studioVideos.filter((video) => String(video.title || '').includes(PODCAST_JA_TITLE));
+  const studioPodcastJa = studioVideos.filter((video) => {
+    const title = String(video.title || '');
+    return title.includes(PODCAST_JA_TITLE) || title.includes(PODCAST_JA_ALT_TITLE);
+  });
   const studioPodcastEn = studioVideos.filter((video) => String(video.title || '').includes(PODCAST_EN_TITLE));
   const studioRegularVideos = studioVideos.filter((video) => !isPodcastTitle(video.title));
   const studioJaVideos = studioRegularVideos.filter((video) => hasJapanese(video.title));
