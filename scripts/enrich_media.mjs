@@ -244,7 +244,7 @@ function hasJapanese(text) {
 
 function isPodcastTitle(title) {
   const value = String(title || '');
-  return value.startsWith(PODCAST_JA_TITLE) || value.startsWith(PODCAST_EN_TITLE);
+  return value.includes(PODCAST_JA_TITLE) || value.includes(PODCAST_EN_TITLE);
 }
 
 function isKuronekoTitle(title) {
@@ -325,8 +325,8 @@ async function main() {
     }
   }
 
-  const studioPodcastJa = studioVideos.filter((video) => String(video.title || '').startsWith(PODCAST_JA_TITLE));
-  const studioPodcastEn = studioVideos.filter((video) => String(video.title || '').startsWith(PODCAST_EN_TITLE));
+  const studioPodcastJa = studioVideos.filter((video) => String(video.title || '').includes(PODCAST_JA_TITLE));
+  const studioPodcastEn = studioVideos.filter((video) => String(video.title || '').includes(PODCAST_EN_TITLE));
   const studioRegularVideos = studioVideos.filter((video) => !isPodcastTitle(video.title));
   const studioJaVideos = studioRegularVideos.filter((video) => hasJapanese(video.title));
   const studioEnVideos = studioRegularVideos.filter((video) => !hasJapanese(video.title));
