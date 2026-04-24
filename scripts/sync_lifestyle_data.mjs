@@ -12,6 +12,18 @@ const INPUTS = {
 };
 const NOTE_RSS_URL = 'https://note.com/ryosao/rss';
 const UA = 'Mozilla/5.0 (compatible; MyPageBot/1.0)';
+const EXTRA_PROFILE_LINKS = [
+  {
+    category: '発信/プロフィール',
+    label: 'YouTube（メインチャンネル）',
+    url: 'https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w'
+  },
+  {
+    category: '発信/プロフィール',
+    label: 'YouTube（解説チャンネル）',
+    url: 'https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw'
+  }
+];
 
 const CATEGORY_SKILL_PATH = '/Users/saotome2/develop/MyPage/scripts/category_skill.json';
 const GITHUB_PUBLIC_REPOS_PATH = '/Users/saotome2/develop/MyPage/scripts/github_public_repos.json';
@@ -107,8 +119,17 @@ function parseProfile(markdown) {
   for (const name of profileSections) {
     const lines = sections.get(name) || [];
     for (const item of parseBulletLinks(lines)) {
-      links.push({ category: name, ...item });
+      const normalized = { category: name, ...item };
+      if (normalized.url === 'https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w') {
+        normalized.label = 'YouTube（メインチャンネル）';
+      }
+      links.push(normalized);
     }
+  }
+
+  for (const item of EXTRA_PROFILE_LINKS) {
+    const exists = links.some((link) => link.url === item.url);
+    if (!exists) links.push(item);
   }
 
   const workSections = ['受託窓口（国内）', '受託窓口（海外）'];

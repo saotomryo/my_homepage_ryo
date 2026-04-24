@@ -13,6 +13,8 @@ const DICT = new Map([
   ['受託窓口', 'Work Contact'],
   ['Lancers（プロフィール）', 'Lancers (Profile)'],
   ['Lancers（メニュー）', 'Lancers (Service Menu)'],
+  ['YouTube（メインチャンネル）', 'YouTube (Main Channel)'],
+  ['YouTube（解説チャンネル）', 'YouTube (Explainer Channel)'],
   ['動画生成', 'Video Generation'],
   ['国家版資金丸見えツール', 'National Budget Visualization Tool'],
   ['各政党の考え方を可視化するアプリケーション', 'Political Position Visualization Application'],

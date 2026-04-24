@@ -1,5 +1,9 @@
 {
   "youtube_channel_url": "https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w",
+  "youtube_channel_urls": [
+    "https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w",
+    "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw"
+  ],
   "youtube_studio_channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
   "latest_video": {
     "title": "Rethinking How National Budgets Are Used (Administrative Project Review App) - Dialogue Edition",

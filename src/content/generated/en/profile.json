@@ -30,7 +30,7 @@
     },
     {
       "category": "Publishing / Profile",
-      "label": "YouTube",
+      "label": "YouTube (Main Channel)",
       "url": "https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w"
     },
     {
@@ -47,6 +47,11 @@
       "category": "Community / Achievements",
       "label": "XROBOCON",
       "url": "https://www.xrobocon.tech/resources"
+    },
+    {
+      "category": "Publishing / Profile",
+      "label": "YouTube (Explainer Channel)",
+      "url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw"
     }
   ],
   "work_contacts": [

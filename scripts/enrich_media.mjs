@@ -15,6 +15,7 @@ const CHANNEL_META_PATH = path.join(
   'publications/youtube/metadata/channel_videos.json'
 );
 const STUDIO_CHANNEL_META_PATH = '/Users/saotome2/develop/MyPage/scripts/studio_channel_videos.json';
+const DEFAULT_YOUTUBE_CHANNEL_URL = 'https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w';
 const STUDIO_CHANNEL_URL = 'https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw';
 const PODCAST_JA_TITLE = '日本市場概説';
 const PODCAST_JA_ALT_TITLE = '日本市況概説';
@@ -112,6 +113,12 @@ async function fetchText(url) {
 function extractYoutubeChannelId(url) {
   const m = String(url || '').match(/youtube\.com\/channel\/([A-Za-z0-9_-]+)/u);
   return m ? m[1] : null;
+}
+
+function isYoutubeChannelLink(link) {
+  const url = String(link?.url || '');
+  const label = String(link?.label || '');
+  return /youtube\.com\/channel\//u.test(url) && /^youtube/iu.test(label);
 }
 
 function extractPlaylistId(url) {
@@ -274,6 +281,10 @@ function uniqueByVideoId(videos) {
   return out;
 }
 
+function uniqueStrings(values) {
+  return [...new Set(values.filter(Boolean).map((value) => String(value)))];
+}
+
 function buildPodcastCollection(title, videos) {
   const items = sortVideos(uniqueByVideoId(videos));
   const playlistUrl = items.map((item) => extractPlaylistUrl(item.description)).find(Boolean) || null;
@@ -289,10 +300,12 @@ async function main() {
   const articlesData = readJson(ARTICLES_PATH);
   const prevMedia = readJsonIfExists(MEDIA_PATH, {});
 
-  const youtubeLink = (profile.links || []).find((x) => String(x.label).toLowerCase() === 'youtube');
-  const channelUrl = youtubeLink?.url || null;
-  const channelId = channelUrl ? extractYoutubeChannelId(channelUrl) : null;
-  const studioChannelId = extractYoutubeChannelId(STUDIO_CHANNEL_URL);
+  const youtubeChannelLinks = (profile.links || []).filter(isYoutubeChannelLink);
+  const youtubeChannelUrls = uniqueStrings(youtubeChannelLinks.map((item) => item.url));
+  const channelUrl = youtubeChannelUrls[0] || DEFAULT_YOUTUBE_CHANNEL_URL;
+  const studioChannelUrl = youtubeChannelUrls.find((url) => url !== channelUrl) || STUDIO_CHANNEL_URL;
+  const channelId = extractYoutubeChannelId(channelUrl);
+  const studioChannelId = extractYoutubeChannelId(studioChannelUrl);
 
   let latestVideo = null;
   let channelVideos = [];
@@ -321,12 +334,12 @@ async function main() {
   if (studioChannelId) {
     try {
       const xml = await fetchText(`https://www.youtube.com/feeds/videos.xml?channel_id=${studioChannelId}`);
-      studioVideos = parseYoutubeEntries(xml, 30, STUDIO_CHANNEL_URL);
+      studioVideos = parseYoutubeEntries(xml, 30, studioChannelUrl);
     } catch {
       studioVideos = [];
     }
   }
-  const studioMetaVideos = normalizeChannelMeta(readJsonIfExists(STUDIO_CHANNEL_META_PATH, null), STUDIO_CHANNEL_URL);
+  const studioMetaVideos = normalizeChannelMeta(readJsonIfExists(STUDIO_CHANNEL_META_PATH, null), studioChannelUrl);
   studioVideos = uniqueByVideoId([
     ...studioVideos,
     ...studioMetaVideos
@@ -366,7 +379,8 @@ async function main() {
 
   const media = {
     youtube_channel_url: channelUrl,
-    youtube_studio_channel_url: STUDIO_CHANNEL_URL,
+    youtube_channel_urls: youtubeChannelUrls,
+    youtube_studio_channel_url: studioChannelUrl,
     latest_video: latestVideoJa,
     latest_video_ja: latestVideoJa,
     latest_video_en: latestVideoEn,
