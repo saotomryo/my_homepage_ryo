@@ -266,7 +266,14 @@ function extractPlaylistUrl(text) {
 }
 
 function sortVideos(videos) {
-  return [...videos].sort((a, b) => String(b.published_at || b.uploaded_at || '').localeCompare(String(a.published_at || a.uploaded_at || '')));
+  return [...videos].sort((a, b) => normalizeDateForSort(b.published_at || b.uploaded_at).localeCompare(normalizeDateForSort(a.published_at || a.uploaded_at)));
+}
+
+function normalizeDateForSort(value) {
+  const text = String(value || '');
+  const compact = text.match(/^(\d{4})(\d{2})(\d{2})$/u);
+  if (compact) return `${compact[1]}-${compact[2]}-${compact[3]}T00:00:00Z`;
+  return text;
 }
 
 function uniqueByVideoId(videos) {
