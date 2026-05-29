@@ -4,15 +4,55 @@
       "name": "政策シミュレーター",
       "summary": "政策の違いや考え方を見比べながら確認できるアプリケーションです。",
       "status": "active",
-      "last_activity": "2026-04-02T07:56:23Z",
+      "last_activity": "2026-05-29T07:49:24Z",
       "repo_urls": [
-        "https://github.com/saotomryo/policy-visualizer-jp"
+        "https://github.com/saotomryo/japan-policy-simulator"
       ],
       "app_urls": [
-        "https://saotomryo.github.io/policy-visualizer-jp/"
+        "https://saotomryo.github.io/japan-policy-simulator/"
       ],
-      "tags": [],
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "category_key": "politics"
+    },
+    {
+      "name": "生命進化ゲーム",
+      "summary": "46億年の生命進化をテーマにしたリアルタイム生命進化アクションシミュレーションゲームです。",
+      "status": "active",
+      "last_activity": "2026-05-21T08:33:43Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/evolutionary-odyssey"
+      ],
+      "app_urls": [
+        "https://saotomryo.github.io/evolutionary-odyssey/"
+      ],
+      "tags": [
+        "React",
+        "TypeScript",
+        "Vite"
+      ],
+      "category_key": "other_tech"
+    },
+    {
+      "name": "学園自治シミュレーター",
+      "summary": "AIで仮想学園の生徒の声を生成し、課題抽出、施策検討、結果確認まで進めるWebアプリケーションです。",
+      "status": "active",
+      "last_activity": "2026-05-14T07:42:50Z",
+      "repo_urls": [
+        "https://github.com/saotomryo/school-democracy-simulator"
+      ],
+      "app_urls": [
+        "https://saotomryo.github.io/school-democracy-simulator/"
+      ],
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "category_key": "other_tech"
     },
     {
       "name": "動画生成",

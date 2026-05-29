@@ -16,6 +16,9 @@ const DICT = new Map([
   ['YouTube（メインチャンネル）', 'YouTube (Main Channel)'],
   ['YouTube（解説チャンネル）', 'YouTube (Explainer Channel)'],
   ['動画生成', 'Video Generation'],
+  ['政策シミュレーター', 'Policy Simulator'],
+  ['生命進化ゲーム', 'Evolutionary Odyssey'],
+  ['学園自治シミュレーター', 'School Governance Simulator'],
   ['国家版資金丸見えツール', 'National Budget Visualization Tool'],
   ['各政党の考え方を可視化するアプリケーション', 'Political Position Visualization Application'],
   ['デジタル民主主義：新しい民主主義のカタチ', 'Digital Democracy: A New Form of Democracy'],
@@ -74,6 +77,9 @@ const DICT = new Map([
   ['NHK学生ロボコン2025「XROBOCON」のシミュレーター環境。', 'A simulator environment for NHK Student Robocon 2025 XROBOCON.'],
   ['Gemini Robotics-ER を使った自律ロボット制御デモ。', 'An autonomous robot control demo using Gemini Robotics-ER.'],
   ['このプロジェクトは、**画像アップロード → 日本語仕様の入力**を受け。', 'This project accepts image uploads and Japanese specification inputs for automated visual inspection workflows.'],
+  ['政策の違いや考え方を見比べながら確認できるアプリケーションです。', 'An application for comparing policy differences and viewpoints.'],
+  ['46億年の生命進化をテーマにしたリアルタイム生命進化アクションシミュレーションゲームです。', 'A real-time action simulation game themed around 4.6 billion years of life evolution.'],
+  ['AIで仮想学園の生徒の声を生成し、課題抽出、施策検討、結果確認まで進めるWebアプリケーションです。', 'A web application that uses AI to generate student voices in a fictional school, identify issues, explore policies, and review outcomes.'],
   ['黒猫の大冒険', 'Black Cat Adventure']
 ]);
 

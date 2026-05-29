@@ -3,6 +3,22 @@
     "repo_url": "https://github.com/saotomryo/my_homepage_ryo",
     "app_url": "https://ryosailabo.com/"
   },
+  {
+    "repo_url": "https://github.com/saotomryo/japan-policy-simulator",
+    "app_url": "https://saotomryo.github.io/japan-policy-simulator/"
+  },
+  {
+    "repo_url": "https://github.com/saotomryo/evolutionary-odyssey",
+    "app_url": "https://saotomryo.github.io/evolutionary-odyssey/"
+  },
+  {
+    "repo_url": "https://github.com/saotomryo/school-democracy-simulator",
+    "app_url": "https://saotomryo.github.io/school-democracy-simulator/"
+  },
+  {
+    "repo_url": "https://github.com/saotomryo/policy-visualizer-jp",
+    "app_url": "https://saotomryo.github.io/policy-visualizer-jp/"
+  },
   "https://github.com/saotomryo/article-to-video-pipeline",
   {
     "repo_url": "https://github.com/saotomryo/rssystem-budget-viz",
@@ -41,9 +57,5 @@
   "https://github.com/saotomryo/TrainingStreamlit",
   "https://github.com/saotomryo/intro",
   "https://github.com/saotomryo/VisStock",
-  "https://github.com/saotomryo/pnacompe",
-  {
-    "repo_url": "https://github.com/saotomryo/policy-visualizer-jp",
-    "app_url": "https://saotomryo.github.io/policy-visualizer-jp/"
-  }
+  "https://github.com/saotomryo/pnacompe"
 ]
