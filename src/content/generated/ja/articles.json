@@ -1,11 +1,154 @@
 {
   "items": [
     {
+      "date": "2026-05-26",
+      "title": "連載小説　学園デジタル民主主義　閑話(学園自治シミュレーターで実際に自治活動）",
+      "url": "https://note.com/ryosao/n/n8841409dc258",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/279688748/rectangle_large_type_2_c0a15c3ab095d665be9020446952bd11.jpeg?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　閑話(学園自治シミュレーターで実際に自治活動）｜五月女亮",
+      "og_description": "連載小説　学園デジタル民主主義の11話まで執筆が終わった状況です。  ここまでデジタル民主主義のツールを実際に見ながら、話を作っていきました。 現状のデジタル民主主義のツール群は、民意を拾ったり、合意形成のための参考資料を作成するための補助ツール群という位置付けです。  じゃあ、実際にこれらを使ってどのように施策を決めていくかというところを体験して実感することが大事だと思ったので、シミュレーターを作成してみました。  学園自治シミュレーター  基本的なコンセプトは昔の「信長の野望」などのターン制のシミュレーションゲームです。 昔のシミュレーションゲームは、開発や開墾をすれば収入が増え、",
+      "og_url": "https://note.com/ryosao/n/n8841409dc258"
+    },
+    {
+      "date": "2026-05-12",
+      "title": "連載小説　学園デジタル民主主義　第11話(ペルソナ)",
+      "url": "https://note.com/ryosao/n/nd204dde11dfb",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/275188129/rectangle_large_type_2_118d591e2ad4355755c3781dee09c1f9.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第11話(ペルソナ)｜五月女亮",
+      "og_description": "第11話 声の出どころ  「全校でやるなら、数が足りないですよね」  瀬尾が、画面の端に表示された数字を見ながら言った。  二組の付箋は八十件。 そこから広聴AIが抜き出した意見は、百件を少し超えていた。  画面の中では、それでも十分に多く見えた。 色のついた領域が並び、制服の暑さや、式典の日の扱い、からかいへの不安、保護者への説明が、それぞれ別の塊になっていた。  けれど、学校全体を考えるには少なすぎる。  悠真にも、それは分かった。  二組の声は、二組の声でしかない。  「単純に増やせばいいんじゃないですか」  瀬尾は続けた。 「二組のデータをもとに、似た意見を増やして、全校分くら",
+      "og_url": "https://note.com/ryosao/n/nd204dde11dfb"
+    },
+    {
+      "date": "2026-05-09",
+      "title": "連載小説　学園デジタル民主主義　第10話(広聴AI)",
+      "url": "https://note.com/ryosao/n/n941f6d29e166",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/274096536/rectangle_large_type_2_4f6ef07cbf0362358fbb6afac4dc9479.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第10話(広聴AI)｜五月女亮",
+      "og_description": "第10話 見え方を変える  翌日の放課後、悠真は二組の付箋を写したデータを持って、もう一度デジタル制作部の部室へ向かった。  手元のUSBメモリが、少しだけ重く感じる。  中に入っているのは、ただのCSVファイルだった。 表計算ソフトで開けば、行と列が並んでいるだけのものだ。  けれど悠真には、それがただの文字列には見えなかった。  「式典は制服がいい」 「私服にしたら毎朝考えるのがしんどい」 「暑い日は選べた方がいい」 「からかわれるのが怖い」 「新しく服を買わなくていいなら試してもいい」  一枚ずつ読んだ時には、ばらばらに見えた言葉だった。  模造紙に貼り、線を引き、見出しをつけて",
+      "og_url": "https://note.com/ryosao/n/n941f6d29e166"
+    },
+    {
+      "date": "2026-05-07",
+      "title": "連載小説　学園デジタル民主主義　閑話(デジタル民主主義の広聴AIで実際に分析してみました。）",
+      "url": "https://note.com/ryosao/n/n6e4afe77ccff",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/273757826/rectangle_large_type_2_78de80d706173e35725b45329b23a04a.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　閑話(デジタル民主主義の広聴AIで実際に分析してみました。）｜五月女亮",
+      "og_description": "連載小説　学園デジタル民主主義の9話まで執筆が終わり、これから実際のツールを動かしながら、学園の運営にどうデジタル民主主義のツールを組み込んでいく過程を描きます。  これから実際に私の方でツールを動かしたり、開発しながら、仮想データで分析したりしながら話を進めていきます。  今回は、各ツールを実際に使った内容について解説させていただきます。  導入するツールについて  まず、デジタル民主主義2030の「GitHub」のサイトから以下を導入します。    広聴AI(https://github.com/digitaldemocracy2030/kouchou-ai)    「いどばた」(",
+      "og_url": "https://note.com/ryosao/n/n6e4afe77ccff"
+    },
+    {
+      "date": "2026-05-02",
+      "title": "連載小説　学園デジタル民主主義　第9話(実装)",
+      "url": "https://note.com/ryosao/n/n4ebf66d56f63",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/272519209/rectangle_large_type_2_32baa3859e10bbbcd65dfffbbbdcb47e.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第9話(実装)｜五月女亮",
+      "og_description": "第9話 動かしてから考える  デジタル制作部の部室は、普通の教室の半分くらいの広さだった。  扉を開けた瞬間、悠真は一度足を止めた。  机の上に、大きめのモニターが二台。 壁際には三脚と小型のライト。 棚にはゲーム用のコントローラー、古いキーボード、ケーブルの束、箱に入ったままのマイク。  文化祭のポスターらしいものも貼ってある。 ただし、文字は色あせていて、何の企画だったのかはよく分からない。  雑然としている。  でも、散らかっているのとは少し違った。 使うものが、使う場所に積み上がっている感じだった。  「入り口で固まらないで」 奥の机から声がした。  黒に近い紺色の髪を、あごの",
+      "og_url": "https://note.com/ryosao/n/n4ebf66d56f63"
+    },
+    {
+      "date": "2026-05-01",
+      "title": "連載小説　学園デジタル民主主義　第8話（自治）",
+      "url": "https://note.com/ryosao/n/n439310c5dc09",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/272197017/rectangle_large_type_2_36bf56671b65aadf51aae17fdafc658b.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第8話（自治）｜五月女亮",
+      "og_description": "第8話 決め方を作る  翌朝、悠真のスマホには、神崎からの返事が来ていた。   神崎: 放課後、生徒会室で。白石さんも来られるなら一緒に。   短い文だった。  断られてはいない。 けれど、歓迎されている感じでもない。  悠真は、登校中の電車の中でその画面を何度も見た。  窓に映った自分の顔は、昨日より少し寝不足に見えた。 検索結果を追いかけ、開いたページを行ったり来たりして、気づけば日付が変わっていた。  ブロードリスニング。 広聴AI。 AIインタビュー。 デジタル熟議。 いどばた。  言葉だけは増えた。  でも、その分、自分が分かっていないことも増えた。  教室に入ると、莉子はも",
+      "og_url": "https://note.com/ryosao/n/n439310c5dc09"
+    },
+    {
+      "date": "2026-05-01",
+      "title": "連載小説　学園デジタル民主主義　第7話（ブロードリスニング）",
+      "url": "https://note.com/ryosao/n/n0b42b9056d9d",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/272026953/rectangle_large_type_2_a49341a0cc169f1c939d6db37124b35f.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第7話（ブロードリスニング）｜五月女亮",
+      "og_description": "第7話 声を聞く技術  家に帰ってからも、生徒会室の机が頭に残っていた。  一枚ずつの最終案。 その横に添えられた参考資料。 電子ファイルへのリンク。 同じように見える言葉の中に、別々に折りたたまれていた理由。  悠真は鞄を床に置き、制服の上着だけを椅子の背にかけた。  机の上には、丸めた模造紙がある。 二組の付箋は、もうほとんど写し終えている。 それでも、捨てる気にはなれなかった。  ノートパソコンを開く前に、スマホを手に取った。  莉子とのチャット画面を開く。  少し迷ってから、打った。   悠真: 今日の生徒会の件、まだ気になってる。   返事は思ったより早かった。   莉子:",
+      "og_url": "https://note.com/ryosao/n/n0b42b9056d9d"
+    },
+    {
+      "date": "2026-05-01",
+      "title": "連載小説　学園デジタル民主主義　第6話（生徒会）",
+      "url": "https://note.com/ryosao/n/n6bbcf3ddcef7",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/271970731/rectangle_large_type_2_25ff1211d7b7d43b51cceefd6856c904.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第6話（生徒会）｜五月女亮",
+      "og_description": "第6話 そろわない声  生徒会室の机は、思っていたより狭かった。  長机の上には、各クラスから出された最終案のプリントが一枚ずつ並んでいる。 その横に、参考資料として印刷されたメモや、電子ファイルへのリンクが添えられていた。 参考資料の内容は、クラスによって違っていた。  悠真は、二組の最終案のプリントと、参考資料として丸めた模造紙を抱えたまま、入口の近くで少し立ち止まった。  「森下くん？」  声をかけたのは、水野彩花だった。  生徒会副会長らしく、髪を後ろでひとつにまとめ、手元にはタブレットと赤いペンを置いている。 机の上のプリントと画面を見比べても、慌てた様子はない。 ただ、目だ",
+      "og_url": "https://note.com/ryosao/n/n6bbcf3ddcef7"
+    },
+    {
+      "date": "2026-04-30",
+      "title": "連載小説　学園デジタル民主主義　第5話（合意）",
+      "url": "https://note.com/ryosao/n/naf6c62459382",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/271685559/rectangle_large_type_2_00ab6c582ecf8fa5be44a2e9c7114969.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第5話（合意）｜五月女亮",
+      "og_description": "第5話 二組の案  放課後の教室で、悠真と莉子は机を二つつなげ、その上に模造紙を広げた。  黄色、青、ピンクの付箋が、少し浮き上がりながら貼りついている。 端がめくれているものもあった。  「これ、持ち帰ったら絶対どこか取れるね」 莉子が、浮いた付箋を指で押さえた。  「写真も撮っておく」 悠真はスマホを構えた。  「でも、写真だけだと分からないんだよな。なんでここに貼ったのかとか」「だから、今のうちにメモする」 莉子は当たり前のように言って、ペンを持った。  悠真はノートの新しいページを開いた。  要望。 不安。 条件。 まだ決めきれない点。  昨日よりは少しだけ、言葉の置き場所が見",
+      "og_url": "https://note.com/ryosao/n/naf6c62459382"
+    },
+    {
+      "date": "2026-04-29",
+      "title": "連載小説　学園デジタル民主主義　第4話（対話）",
+      "url": "https://note.com/ryosao/n/nb11a6f6f251c",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/271551003/rectangle_large_type_2_03cfcdb9a79fae1de1c4d4be6aec4065.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第4話（対話）｜五月女亮",
+      "og_description": "第4話 聞き直す会議  悠真のノートには、前の晩に引いた線がまだ残っていた。  変えたいこと。 変えたくないこと。 不安なこと。 条件。  四つの言葉を、何度も書き直した跡がある。 最初はきれいに並べようとして、途中でやめた。 きれいに並んでいることと、分かりやすいことは違う気がした。  朝の職員室は、コーヒーとコピー機の匂いがした。  「クラス活動枠を使いたい？」 川瀬先生は、出席簿に何かを書き込みながら聞き返した。  「はい。普通のホームルームだと、たぶん足りないので」 「それはそうだね」  先生はペンを置いた。  「でも、また長くなると嫌がる人もいると思います。だから、五十分で終",
+      "og_url": "https://note.com/ryosao/n/nb11a6f6f251c"
+    },
+    {
+      "date": "2026-04-28",
+      "title": "連載小説　学園デジタル民主主義　第3話（違和感）",
+      "url": "https://note.com/ryosao/n/n8bbe0b26b238",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/271130512/rectangle_large_type_2_22ced131ca8f9cb2f31c985db9ae4b3d.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第3話（違和感）｜五月女亮",
+      "og_description": "第3話 決まったはずなのに  翌朝の教室は、いつもより少しだけ湿っていた。  雨が降っているわけではない。 窓の外は薄く晴れていて、校庭には朝練を終えた運動部の声も残っている。  それでも、教室に入った瞬間、悠真は昨日と違う空気を感じた。  机の横に鞄をかける。 椅子を引く。 ノートを机に出す。  いつもの動作をしている間にも、近くの席から小さな声が聞こえてきた。  「昨日のやつ、あれで決まりなの？」 「現状維持って、結局何も変えないってことでしょ」 「でも多数決だったじゃん」 「多数決だったけどさ」  最後の声だけが、少し沈んでいた。  悠真は鞄の中に入れた提出用紙を思い出した。 昨",
+      "og_url": "https://note.com/ryosao/n/n8bbe0b26b238"
+    },
+    {
+      "date": "2026-04-27",
+      "title": "連載小説　学園デジタル民主主義　第2話（多数決）",
+      "url": "https://note.com/ryosao/n/n4286deb4b136",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/270858760/rectangle_large_type_2_bf3e52c59dae48f439fade7cc3fe428a.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第2話（多数決）｜五月女亮",
+      "og_description": "第2話　多数決でよくない？   翌朝、悠真は教室に入ってすぐ、机の中から昨日のプリントを取り出した。  赤い付箋は、まだ少し曲がっている。 四つ折りにした跡のところで、紙が浮いていた。  「ちゃんと持ってきてる」  前の席から莉子が振り返った。 「持ってこないと怒られるし」 「誰に？」 「たぶん、未来の自分に」  莉子が小さく笑った。  大地は隣で、購買のパンの袋を開けていた。 朝から焼きそばパンだった。  「制服のやつ、今日やんの？」 「ホームルームで少しだけ」 「少しで終わる？」 「終わると思う？」  大地はパンをかじったまま、少し考える顔をした。 考えているというより、考えるふり",
+      "og_url": "https://note.com/ryosao/n/n4286deb4b136"
+    },
+    {
+      "date": "2026-04-26",
+      "title": "連載小説　学園デジタル民主主義　第1話（始まり）",
+      "url": "https://note.com/ryosao/n/n954aa247649f",
+      "source": "note",
+      "category_key": "politics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/270441911/rectangle_large_type_2_75dc034593bd2cf0298d5892e7928396.png?fit=bounds&quality=85&width=1280",
+      "og_title": "連載小説　学園デジタル民主主義　第1話（始まり）｜五月女亮",
+      "og_description": "デジタル民主主義の各ツールを学校で試してみようというコンセプトで小説を書いていこうと思います。 完全に構想が固まっているわけではないので、随時変更されていく可能性もありますが、出来たところから公開していきたいと思います。  オープニング作りました         第1話　朝のプリント   朝の昇降口は、いつも少しだけ渋滞する。  靴箱の前で、大地が片足立ちになったまま鞄を探っていた。 上履きは片方だけ履いている。 もう片方は床に転がっていて、後ろから来た一年生がそれを避けるように横を通った。  「やばい。英単語の小テスト、今日だっけ」 「昨日も言ってたよ」  悠真が上履きに履き替えなが",
+      "og_url": "https://note.com/ryosao/n/n954aa247649f"
+    },
+    {
       "date": "2026-04-21",
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 終章",
       "url": "https://note.com/ryosao/n/nf1082742aa75",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269201962/rectangle_large_type_2_1e9715437f06e40f8faba2f87d73746b.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 終章｜五月女亮",
       "og_description": "終章　少しだけ生きやすい     春の終わり、みなみの部屋は相変わらず広くはなかった。 机の上にはノートPCとペンタブと、締切を書いた付箋が重なっている。 冷めたお茶の入ったマグカップも、前と同じようにそこにあった。 目に見える生活は、劇的には変わっていない。  変わったのは、画面の向こうに待っているものだった。 `チームあした` から届いた通知には、提言がマニフェスト案に採択されたと書かれていた。 インボイス制度の目的は維持しながら、小規模事業者には申告と納税負担を切り分けるべきだという提案。 みなみが書き始めた問いは、もう自分一人のメモではなくなっていた。  通知を開いた時、みなみ",
@@ -16,7 +159,7 @@
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第6章",
       "url": "https://note.com/ryosao/n/n70107b36eb16",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269185754/rectangle_large_type_2_c3fa95e7bf245ee6075b4357611f5bb3.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第6章｜五月女亮",
       "og_description": "第6章&amp;nbsp;オープンで作る  こまでで、みなみたちは一つの提言の形にたどり着いていた。 インボイス制度の目的は残す。 そのうえで、小規模事業者には実質的な増税をそのまま背負わせない。 それはたしかに前進だった。 ただ、その提言が `チームあした` 側で本当にマニフェスト候補として採択されるかどうかは、もうみなみたちの手元だけでは決まらなかった。 今はまず、返事を待つしかない。 けれど、玲奈はそこで話を終わらせなかった。      「制度が動くのを待つあいだ、実務は残ります」 玲奈は画面共有を開きながら言った。 「だから、ここからは別の仕事です」 ブラウザの白い画面に、簡単な項目が",
@@ -27,7 +170,7 @@
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第5章",
       "url": "https://note.com/ryosao/n/n578bf02ee220",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269177586/rectangle_large_type_2_bff3610a37ec64adb5c3f7e800807c95.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第5章｜五月女亮",
       "og_description": "第5章　二つの解決  日曜の午後、みなみは机の前に座って、`チームあした` の `話すマニフェスト` を開いた。 ノートPCの画面は白く、入力欄だけが静かに待っている。 答えを書く場所というより、まだ形になっていないものを置く場所に見えた。  ひかりと玲奈も、同じ時間にオンラインでつないでいた。 玲奈は最初に言った。 「今日は、いきなり正解を出そうとしない方がいいです。何が問題で、どこまでが制度の目的で、どこからが副作用なのかを分けましょう」 みなみはうなずいた。 今の自分に必要なのは、立派な意見より、息の継ぎ方に近かった。     入力欄の上には、短い案内文が出ていた。 困りごとをそ",
@@ -38,7 +181,7 @@
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第4章",
       "url": "https://note.com/ryosao/n/ne62be5b01570",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269153532/rectangle_large_type_2_56c67df79f4ebb524f2d47b82c5ffbf7.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第4章｜五月女亮",
       "og_description": "第4章　声を上げる  「今週、やっぱりごはん行ける？」 送ってから、少しだけ後悔した。 会いたいというより、一人で考えるのがしんどくなっていただけだと、自分でわかっていたからだ。  ひかりはすぐに返してきた。 「行ける。どうした」 短い文だった。 だから逃げにくかった。 みなみはしばらく画面を見てから、 「ちょっと相談したい」 とだけ送った。  駅前の小さな定食屋は、平日の夜でも少し混んでいた。 ひかりは席につくなり、メニューより先にみなみの顔を見た。 「何があったの」 「そんなに顔に出てる？」 「出てる。あと、連絡の文が短い時はたいてい危ない」  笑いながら言う声に、少しだけ助けられ",
@@ -49,7 +192,7 @@
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第3章",
       "url": "https://note.com/ryosao/n/n8d62acd20896",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269138426/rectangle_large_type_2_13f44bf4c1bcaea70a6c20566a65be75.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第3章｜五月女亮",
       "og_description": "第3章　詰みの自覚  週明けの午後、片岡から珍しく直接メッセージが来た。 「少しだけお電話いいですか」 松井ではなく、片岡。 その時点で、みなみは少し身構えた。  通話に出ると、片岡は挨拶のあと、すぐ本題に入った。 「みなみさん、いつも助かってます。先に言っておくと、作業そのものに不満があるわけではないです」 前置きが長い時は、たいてい中身が重い。 みなみは「はい」とだけ返した。  「今、外注先の整理を少しずつ進めていて」 片岡の声は落ち着いていた。 責める感じはない。 ただ、その落ち着き方が、もう個人の好みや情では動かない話なのだと伝えていた。 「インボイス登録されていない方について",
@@ -60,7 +203,7 @@
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第2章",
       "url": "https://note.com/ryosao/n/nf7517d2796fc",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269128713/rectangle_large_type_2_443cef8986c937516d9a49e0931cc362.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第2章｜五月女亮",
       "og_description": "第2章 インボイスの影  その週の金曜日、みなみは昼過ぎになっても新しい連絡を待っていた。 作業自体はまだ残っている。 けれど、次の案件がいつ入るかで、その月の呼吸の仕方が変わる。 机の端に置いたスマホは静かなままで、たまに明るくなっても、ほとんどが広告か支払い通知だった。  夕方近くになって、ようやく松井からメッセージが来た。 「お疲れさまです。来月分の件、少し確認したいことがあって」 それだけなら、いつもの文面と変わらない。 みなみはすぐに返信した。 すると、数分もしないうちに通話の着信が入った。  「すみません、急に」 松井の声は、いつも通り丁寧だった。 ただ、少し急いでいる時の",
@@ -71,7 +214,7 @@
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第1章",
       "url": "https://note.com/ryosao/n/n1e0364c33640",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269071540/rectangle_large_type_2_992a9f8642cee5263c4f0da96833e597.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 第1章｜五月女亮",
       "og_description": "第1章　静かな圧迫     昼前になって、ようやく一件、メッセージが返ってきた。 「ここ、もう少しだけ明るくできますか」 それだけだった。 でも、それだけで十分だった。 みなみは短く了解を返して、画面を拡大する。 線を少し直して、色を少し寄せて、また送る。 それを何度も繰り返しているうちに、一日の輪郭がいつも曖昧になる。     正午を少し過ぎて、みなみは袋麺をひとつ茹でた。 具はない。 あれば卵を落とすこともあるが、今日はそこまでしなくていいと思った。 湯気が立つあいだ、冷蔵庫の中を見ても、買い足すものは特になかった。 節約は慣れている。 慣れていることが、少しだけ怖い。  午後、コ",
@@ -82,7 +225,7 @@
       "title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 紹介編",
       "url": "https://note.com/ryosao/n/nba690bc69dbe",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/269125954/rectangle_large_type_2_5cffbbe6f7c76625f287b83e6884adfe.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説 民主主義参加（讃歌）： 少しずつでいい。でも、自分たちで決めていく。 紹介編｜五月女亮",
       "og_url": "https://note.com/ryosao/n/nba690bc69dbe",
@@ -93,7 +236,7 @@
       "title": "民主主義参加（讃歌）",
       "url": "https://note.com/ryosao/n/ndc7a047789aa",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/268873258/rectangle_large_type_2_9c23fc9b346d5b3e661a75eba333998d.png?fit=bounds&quality=85&width=1280",
       "og_title": "民主主義参加（讃歌）｜五月女亮",
       "og_description": "最近のトランプ政権の暴走を見たり、ロシアの様に民主制度の形はとっているが実際には独裁の国をみると民主制度が残っているだけでは、民主制度を守れないと痛感します。  ということで、音楽生成AIのSunoを使って民主主義の応援歌を作ってみました！（歌詞も画像もAIですが、細かく指示は出してます。）    いつも子供に何かあると「パパのせい」って言われていますが、パパのせいと言わずに自分で行動できる様になるのが成長ですね。 社会の問題は、個人だけでは解決できないですが、それでも動き出さなければ解決しません。 また、誰かに頼っても本当に解決してくれるかもわかりません。  このテーマで簡単な小説を",
@@ -126,7 +269,7 @@
       "title": "デジタル民主主義：新しい民主主義のカタチ",
       "url": "https://note.com/ryosao/n/nda6f5880fef8",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/259704604/rectangle_large_type_2_d22756b42dc1c36f03ba86b2a13cda4b.png?fit=bounds&quality=85&width=1280",
       "og_title": "デジタル民主主義：新しい民主主義のカタチ｜五月女亮",
       "og_description": "現代社会において、民主主義は大きな転換点を迎えています。従来の「数年に一度の投票」という間接的な関わりを超え、テクノロジーを活用して市民が日常的に政治や意思決定に参加する「デジタル民主主義（Digital Democracy）」が、世界中で注目を集めています。  本記事では、その概念から世界・日本での先駆的な取り組み、形成に役立つ理論、そして今この時代に推進する意義について解説します。  本記事の内容を元に以下の解説動画を作成しています。       1. デジタル民主主義とは  デジタル民主主義とは、情報通信技術（ICT）を活用して、民主的なプロセス（議論、参加、投票、意見集約、意思",
@@ -151,8 +294,7 @@
       "category_key": "hobby",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/252709663/rectangle_large_type_2_987327ba03c033c3e7c877d6d7295870.jpeg?fit=bounds&quality=85&width=1280",
       "og_title": "黒猫の大冒険！｜五月女亮",
-      "og_url": "https://note.com/ryosao/n/n0c7f00cf01c1",
-      "og_description": null
+      "og_url": "https://note.com/ryosao/n/n0c7f00cf01c1"
     },
     {
       "date": "2026-02-03",
@@ -162,8 +304,7 @@
       "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/248838675/rectangle_large_type_2_51ef9495c5aed5dfbae209581bb38184.png?fit=bounds&quality=85&width=1280",
       "og_title": "国のお金の使い方を考える｜五月女亮",
-      "og_url": "https://note.com/ryosao/n/n407dea59634c",
-      "og_description": null
+      "og_url": "https://note.com/ryosao/n/n407dea59634c"
     },
     {
       "date": "2026-01-29",
@@ -173,8 +314,7 @@
       "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/247493348/rectangle_large_type_2_5bdee30c252d25863f66566d664a9f7a.jpeg?fit=bounds&quality=85&width=1280",
       "og_title": "各政党の方針・姿勢のAIによる見える化アプリケーションについて（2026年衆院選マニュフェストより）｜五月女亮",
-      "og_url": "https://note.com/ryosao/n/nf4e55ba39d08",
-      "og_description": null
+      "og_url": "https://note.com/ryosao/n/nf4e55ba39d08"
     },
     {
       "date": "2026-01-22",
@@ -184,8 +324,7 @@
       "category_key": "other_tech",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/245737833/rectangle_large_type_2_1886b07aeba34c867253077b023e4ebc.jpeg?fit=bounds&quality=85&width=1280",
       "og_title": "そもそも国は何にお金を使っているのかを分析する｜五月女亮",
-      "og_url": "https://note.com/ryosao/n/n3a325f00b070",
-      "og_description": null
+      "og_url": "https://note.com/ryosao/n/n3a325f00b070"
     },
     {
       "date": "2026-01-21",
@@ -206,8 +345,7 @@
       "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/244230990/rectangle_large_type_2_4b04334a511db8cfb998d6fd088354cb.png?fit=bounds&quality=85&width=1280",
       "og_title": "立憲民主党と公明党の合併報道が出たので比べてみた｜五月女亮",
-      "og_url": "https://note.com/ryosao/n/n101c77e03e7f",
-      "og_description": null
+      "og_url": "https://note.com/ryosao/n/n101c77e03e7f"
     },
     {
       "date": "2026-01-14",
@@ -217,8 +355,7 @@
       "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/243671769/rectangle_large_type_2_6efae04af979272320bed1a2c415fd5d.png?fit=bounds&quality=85&width=1280",
       "og_title": "政党の「方針・姿勢」を可視化して比べる｜五月女亮",
-      "og_url": "https://note.com/ryosao/n/n95d9b75bdebe",
-      "og_description": null
+      "og_url": "https://note.com/ryosao/n/n95d9b75bdebe"
     },
     {
       "date": "2026-01-09",
@@ -250,8 +387,7 @@
       "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/238993007/rectangle_large_type_2_8b56f79272660b356d925cbf643e326d.jpeg?fit=bounds&quality=85&width=1280",
       "og_title": "多党化時代の政治メディアについて｜五月女亮",
-      "og_url": "https://note.com/ryosao/n/n8bc97e8747e7",
-      "og_description": null
+      "og_url": "https://note.com/ryosao/n/n8bc97e8747e7"
     },
     {
       "date": "2025-12-16",
@@ -261,8 +397,7 @@
       "category_key": "politics",
       "thumbnail_url": "https://res.cloudinary.com/zenn/image/upload/s--fdLhKfvN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%2594%259F%25E6%2588%2590AI%25E3%2581%25A7%25E3%2580%258C%25E6%2594%25BF%25E5%2585%259A%25E3%2581%25AE%25E5%2585%25AC%25E5%25BC%258F%25E7%2599%25BA%25E4%25BF%25A1%25E3%2580%258D%25E3%2581%258B%25E3%2582%2589%25E6%2594%25BF%25E7%25AD%2596%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2582%25B9%25E3%2582%2592%25E7%259B%25B8%25E5%25AF%25BE%25E8%25A9%2595%25E4%25BE%25A1%25E3%2581%2597%25E3%2581%25A6%25E5%258F%25AF%25E8%25A6%2596%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E4%25BA%2594%25E6%259C%2588%25E5%25A5%25B3%25E3%2580%2580%25E4%25BA%25AE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSkdDRmZEQjhGU3lveFdaemNKR2d6MllwZjY2aF9WNWtyVk14dkphNGpLb3NxblRnPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "og_title": "生成AIで「政党の公式発信」から政策スタンスを相対評価して可視化する",
-      "og_url": "https://zenn.dev/ryo_saotome/articles/4bb384dfd438fe",
-      "og_description": null
+      "og_url": "https://zenn.dev/ryo_saotome/articles/4bb384dfd438fe"
     },
     {
       "date": "2025-11-24",
