@@ -365,6 +365,18 @@ h1 {
   background: #fff;
 }
 
+.is-extra {
+  display: none;
+}
+
+.is-extra.is-expanded {
+  display: flex;
+}
+
+li.is-extra.is-expanded {
+  display: list-item;
+}
+
 .article-thumb-link {
   display: block;
 }
@@ -454,6 +466,22 @@ h1 {
 
 .category-panel.is-active {
   display: block;
+}
+
+.expand-toggle {
+  margin: 1rem 0 1.4rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.expand-toggle:hover {
+  background: #f8fafc;
+  border-color: var(--accent);
 }
 
 @media (min-width: 1024px) {

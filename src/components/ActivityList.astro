@@ -38,6 +38,9 @@ interface Props {
 const { locale, articles, projects, videos = [] } = Astro.props;
 
 const categories = ['politics', 'ai', 'robotics', 'other_tech', 'hobby'] as const;
+const INITIAL_VIDEO_COUNT = 6;
+const INITIAL_ARTICLE_COUNT = 6;
+const INITIAL_PROJECT_COUNT = 10;
 
 const labels = {
   ja: {
@@ -57,7 +60,10 @@ const labels = {
     webApp: 'アプリケーションのリンクはこちら',
     read: '記事を読む',
     watch: '動画を見る',
-    none: '該当するデータはまだありません。'
+    none: '該当するデータはまだありません。',
+    showAll: 'すべて表示',
+    collapse: '折りたたむ',
+    remaining: '件を表示'
   },
   en: {
     sections: {
@@ -76,7 +82,10 @@ const labels = {
     webApp: 'Open the application',
     read: 'Read Article',
     watch: 'Watch Video',
-    none: 'No items in this category yet.'
+    none: 'No items in this category yet.',
+    showAll: 'Show all',
+    collapse: 'Collapse',
+    remaining: 'more'
   }
 };
 
@@ -90,6 +99,12 @@ function formatDateOnly(value) {
   if (typeof value !== 'string' || !value) return '-';
   const m = value.match(/^(\d{4}-\d{2}-\d{2})/u);
   return m ? m[1] : value;
+}
+
+function expandLabel(total, initial) {
+  const rest = total - initial;
+  if (locale === 'ja') return `${t.showAll}（残り${rest}${t.remaining}）`;
+  return `${t.showAll} (${rest} ${t.remaining})`;
 }
 ---
 
@@ -122,8 +137,8 @@ function formatDateOnly(value) {
           <>
             <h3>{t.videos}</h3>
             <div class="video-card-grid">
-              {videoItems.slice(0, 6).map((video) => (
-                <article class="video-card">
+              {videoItems.map((video, itemIdx) => (
+                <article class={`video-card ${itemIdx >= INITIAL_VIDEO_COUNT ? 'is-extra' : ''}`} data-expand-item={`${cat}-videos`}>
                   <a href={video.watch_url} target="_blank" rel="noreferrer">
                     {video.thumbnail_url ? (
                       <img class="article-thumb" src={video.thumbnail_url} alt={video.title} loading="lazy" />
@@ -138,6 +153,18 @@ function formatDateOnly(value) {
                 </article>
               ))}
             </div>
+            {videoItems.length > INITIAL_VIDEO_COUNT && (
+              <button
+                class="expand-toggle"
+                type="button"
+                data-expand-toggle={`${cat}-videos`}
+                data-open-label={expandLabel(videoItems.length, INITIAL_VIDEO_COUNT)}
+                data-close-label={t.collapse}
+                aria-expanded="false"
+              >
+                {expandLabel(videoItems.length, INITIAL_VIDEO_COUNT)}
+              </button>
+            )}
           </>
         )}
 
@@ -145,8 +172,8 @@ function formatDateOnly(value) {
           <>
             <h3>{t.latestArticles}</h3>
             <div class="article-grid">
-              {articleItems.slice(0, 6).map((article) => (
-                <article class="article-card">
+              {articleItems.map((article, itemIdx) => (
+                <article class={`article-card ${itemIdx >= INITIAL_ARTICLE_COUNT ? 'is-extra' : ''}`} data-expand-item={`${cat}-articles`}>
                   <a href={article.url} target="_blank" rel="noreferrer" class="article-thumb-link">
                     {article.thumbnail_url ? (
                       <img class="article-thumb" src={article.thumbnail_url} alt={article.title} loading="lazy" />
@@ -163,6 +190,18 @@ function formatDateOnly(value) {
                 </article>
               ))}
             </div>
+            {articleItems.length > INITIAL_ARTICLE_COUNT && (
+              <button
+                class="expand-toggle"
+                type="button"
+                data-expand-toggle={`${cat}-articles`}
+                data-open-label={expandLabel(articleItems.length, INITIAL_ARTICLE_COUNT)}
+                data-close-label={t.collapse}
+                aria-expanded="false"
+              >
+                {expandLabel(articleItems.length, INITIAL_ARTICLE_COUNT)}
+              </button>
+            )}
           </>
         )}
 
@@ -170,8 +209,8 @@ function formatDateOnly(value) {
           <>
             <h3>{t.devProjects}</h3>
             <ul>
-              {projectItems.slice(0, 10).map((project) => (
-                <li>
+              {projectItems.map((project, itemIdx) => (
+                <li class={itemIdx >= INITIAL_PROJECT_COUNT ? 'is-extra' : ''} data-expand-item={`${cat}-projects`}>
                   <strong>{project.name}</strong>
                   {project.summary && <p class="project-summary">{project.summary}</p>}
                   <small>{t.updated}: {formatDateOnly(project.last_activity)}</small>
@@ -188,6 +227,18 @@ function formatDateOnly(value) {
                 </li>
               ))}
             </ul>
+            {projectItems.length > INITIAL_PROJECT_COUNT && (
+              <button
+                class="expand-toggle"
+                type="button"
+                data-expand-toggle={`${cat}-projects`}
+                data-open-label={expandLabel(projectItems.length, INITIAL_PROJECT_COUNT)}
+                data-close-label={t.collapse}
+                aria-expanded="false"
+              >
+                {expandLabel(projectItems.length, INITIAL_PROJECT_COUNT)}
+              </button>
+            )}
           </>
         )}
       </div>
@@ -215,6 +266,20 @@ function formatDateOnly(value) {
 
     tabs.forEach((tab) => {
       tab.addEventListener('click', () => activate(tab.getAttribute('data-target')));
+    });
+
+    root.querySelectorAll('.expand-toggle').forEach((button) => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-expand-toggle');
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        root.querySelectorAll(`[data-expand-item="${target}"]`).forEach((item) => {
+          item.classList.toggle('is-expanded', !expanded);
+        });
+        button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        button.textContent = expanded
+          ? button.getAttribute('data-open-label')
+          : button.getAttribute('data-close-label');
+      });
     });
   }
 </script>
