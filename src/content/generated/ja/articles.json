@@ -8,8 +8,8 @@
       "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/292548197/rectangle_large_type_2_9975745bef5fe3d63f48e34a8d468181.png?fit=bounds&quality=85&width=1280",
       "og_title": "連載小説　学園デジタル民主主義　あとがき｜五月女亮",
-      "og_description": null,
-      "og_url": "https://note.com/ryosao/n/ne06a801409b8"
+      "og_url": "https://note.com/ryosao/n/ne06a801409b8",
+      "og_description": null
     },
     {
       "date": "2026-07-08",
@@ -96,8 +96,8 @@
       "category_key": "politics",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/286230958/rectangle_large_type_2_3a198d9ff230d66ed90b30f5d240b284.png?fit=bounds&quality=85&width=1280",
       "og_title": "AIによる仮想政策シミュレーター紹介｜五月女亮",
-      "og_description": null,
-      "og_url": "https://note.com/ryosao/n/nab705c862ab6"
+      "og_url": "https://note.com/ryosao/n/nab705c862ab6",
+      "og_description": null
     },
     {
       "date": "2026-05-26",
@@ -291,7 +291,7 @@
       "title": "自動で日本の市況を海外に発信する",
       "url": "https://note.com/ryosao/n/n43a27f45b6eb",
       "source": "note",
-      "category_key": "other_tech",
+      "category_key": "economy",
       "thumbnail_url": "https://assets.st-note.com/production/uploads/images/259588131/rectangle_large_type_2_10a6c032d5415b42339f2076bd573787.png?fit=bounds&quality=85&width=1280",
       "og_title": "自動で日本の市況を海外に発信する｜五月女亮",
       "og_description": "はじめに  物価高・円安がなかなか止まらず、将来の不安は増す一方です。 いわゆる消費税減税や現金給付などを物価高対策と言っていますが、これらは生活支援ではありますが、物価高対策という意味においては物価高の促進策です。 特に現状では、減税や現金給付などで浮いたお金を海外の投資に回したり、海外製品の購入に使われたりということで経済対策としても効果は限定的になるのではと思っています。  特に日本は、資源やITインフラ、AIといった分野では海外に頼らざるを得なく、インバウンド収入も既に臨界に近いといった現状があるので、対策としては以下の二つになると思います。 ・輸出を増やす ・海外からの投資を",
@@ -649,7 +649,7 @@
       "title": "Streamlitによる為替チャートの作成",
       "url": "https://qiita.com/ryosao/items/2429c1b04e0c91975c2b",
       "source": "qiita",
-      "category_key": "other_tech"
+      "category_key": "economy"
     },
     {
       "date": "2021-04-13",
@@ -670,14 +670,14 @@
       "title": "PyTorchで画像分析により為替(FX）予測　②",
       "url": "https://qiita.com/ryosao/items/70e51cead23e58237623",
       "source": "qiita",
-      "category_key": "other_tech"
+      "category_key": "economy"
     },
     {
       "date": "2021-03-10",
       "title": "PyTorchで画像分析により為替(FX）予測　①",
       "url": "https://qiita.com/ryosao/items/32e30baa7374f78aeaf0",
       "source": "qiita",
-      "category_key": "other_tech"
+      "category_key": "economy"
     },
     {
       "date": "2021-03-03",

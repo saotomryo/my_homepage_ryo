@@ -30,6 +30,17 @@ const GITHUB_PUBLIC_REPOS_PATH = '/Users/saotome2/develop/MyPage/scripts/github_
 
 const FALLBACK_CATEGORY_RULES = [
   {
+    key: 'economy',
+    patterns: [
+      '経済', '投資', '市況', '市場', '株', '株式', '日経', '日経平均', '為替', 'fx',
+      '金利', '物価', 'インフレ', 'デフレ', '景気', '金融', '資産', '家計', '給付',
+      '社会保障', '税', 'コスト比較', '蓄電池', '原子力コスト',
+      'economy', 'economic', 'investment', 'invest', 'market', 'nikkei', 'stock',
+      'forex', 'exchange rate', 'finance', 'financial', 'interest rate', 'inflation',
+      'bond', 'yen', 'japan market'
+    ]
+  },
+  {
     key: 'politics',
     patterns: [
       '政治', '政党', '選挙', 'マニフェスト', '国会', '行政', '政策', '予算', '政府',

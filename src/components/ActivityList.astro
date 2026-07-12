@@ -37,7 +37,7 @@ interface Props {
 
 const { locale, articles, projects, videos = [] } = Astro.props;
 
-const categories = ['politics', 'ai', 'robotics', 'other_tech', 'hobby'] as const;
+const categories = ['politics', 'economy', 'ai', 'robotics', 'other_tech', 'hobby'] as const;
 const INITIAL_VIDEO_COUNT = 6;
 const INITIAL_ARTICLE_COUNT = 6;
 const INITIAL_PROJECT_COUNT = 10;
@@ -46,6 +46,7 @@ const labels = {
   ja: {
     sections: {
       politics: '政治関連',
+      economy: '経済・投資関連',
       ai: 'AI関連',
       robotics: 'ロボット関連',
       other_tech: '他技術関連',
@@ -68,6 +69,7 @@ const labels = {
   en: {
     sections: {
       politics: 'Politics',
+      economy: 'Economy / Investing',
       ai: 'AI',
       robotics: 'Robotics',
       other_tech: 'Other Tech',
