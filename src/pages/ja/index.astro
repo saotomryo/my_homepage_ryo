@@ -26,7 +26,7 @@ const cards = [
   <section class="stats">
     <p>記事: {siteMeta.counts.articles}</p>
     <p>プロジェクト: {siteMeta.counts.projects}</p>
-    <p>更新: {siteMeta.updated_at}</p>
+    <p>更新: {siteMeta.updated_at.slice(0, 10)}</p>
   </section>
 
   <section>

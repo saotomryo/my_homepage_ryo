@@ -9,12 +9,12 @@ interface Props {
 const { locale, name, headline, summary } = Astro.props;
 const text = {
   ja: {
-    badge: 'Personal Hub',
+    badge: 'ENGINEERING & EXPLORATION',
     cta1: '活動を見る',
     cta2: '仕事を依頼する'
   },
   en: {
-    badge: 'Personal Hub',
+    badge: 'ENGINEERING & EXPLORATION',
     cta1: 'View Activities',
     cta2: 'Hire Me'
   }
@@ -30,6 +30,7 @@ function withBase(inputPath: string) {
 ---
 
 <section class="hero">
+  <div class="hero-copy">
   <p class="badge">{t.badge}</p>
   <h1>{name}</h1>
   <p class="headline">{headline}</p>
@@ -37,5 +38,9 @@ function withBase(inputPath: string) {
   <div class="hero-actions">
     <a href={withBase(`/${locale}/activities`)}>{t.cta1}</a>
     <a href={withBase(`/${locale}/links`)}>{t.cta2}</a>
+  </div>
+  </div>
+  <div class="hero-art hero-studio">
+    <img src={withBase('/images/hero-studio.jpg')} width="1536" height="1024" fetchpriority="high" alt={locale === 'ja' ? 'ピアノ、ロボット、コード、執筆が集まるクリエイティブな作業空間のイラスト' : 'An illustrated creative studio combining piano, robotics, coding, and writing'} />
   </div>
 </section>

@@ -81,8 +81,8 @@ function withBase(inputPath: string) {
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href={withBase(`/${locale}`)}>Ryo Saotome</a>
-      <nav>
+      <a class="logo" href={withBase(`/${locale}`)}><span class="logo-mark" aria-hidden="true">rs.</span>Ryo Saotome</a>
+      <nav aria-label={locale === 'ja' ? 'メインメニュー' : 'Main navigation'}>
         <a href={withBase(`/${locale}`)}>{t.home}</a>
         <a href={withBase(`/${locale}/about`)}>{t.about}</a>
         <a href={withBase(`/${locale}/links`)}>{t.links}</a>
@@ -90,10 +90,21 @@ function withBase(inputPath: string) {
         <a href={withBase(`/${locale}/kuroneko`)}>{t.kuroneko}</a>
         <a href={withBase(`/${locale}/market-brief`)}>{t.marketBrief}</a>
       </nav>
-      <a class="lang" href={withBase(switchedPath)}>{t.lang}: {oppositeLocale.toUpperCase()}</a>
+      <a class="lang" href={withBase(switchedPath)} lang={oppositeLocale}>{oppositeLocale === 'en' ? 'EN / English' : 'JA / 日本語'}</a>
     </header>
     <main class="container">
       <slot />
     </main>
+    <footer class="site-footer">
+      <a class="footer-name" href={withBase(`/${locale}`)}>Ryo Saotome<span>Engineering & Exploration</span></a>
+      <p>© {new Date().getFullYear()} Ryo Saotome</p>
+    </footer>
+    <script>
+      document.querySelectorAll('.site-header nav a').forEach((link) => {
+        if (new URL((link as HTMLAnchorElement).href).pathname.replace(/\/$/, '') === window.location.pathname.replace(/\/$/, '')) {
+          link.setAttribute('aria-current', 'page');
+        }
+      });
+    </script>
   </body>
 </html>
