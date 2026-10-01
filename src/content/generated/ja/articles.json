@@ -1,6 +1,72 @@
 {
   "items": [
     {
+      "date": "2026-09-21",
+      "title": "AIが回答を深掘りする、AIインタビュー付きアンケートシステムを作ってみた",
+      "url": "https://note.com/ryosao/n/n01a5746dd22e",
+      "source": "note",
+      "category_key": "ai",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/315828304/rectangle_large_type_2_f8652628120eb2dbb2a45205b7d97df1.png?fit=bounds&quality=85&width=1280",
+      "og_title": "AIが回答を深掘りする、AIインタビュー付きアンケートシステムを作ってみた｜五月女亮",
+      "og_description": "AIが「聞き手」になる  チームみらいから、テーマに沿ってAIと対話しながら意見を伝える「AIインタビュー」が公開されています。匿名で参加でき、AIが聞き手になる仕組みです。チームみらい AIインタビュー  従来のアンケートでは、選択式なら回答しやすい一方、その理由や背景までは分かりません。自由記述欄を設けても、何を書けばよいか迷うことが多いのではないでしょうか？  AIが問いかけることで、考えを言葉にする手助けをするのがAIインタビューです。例えば「満足した」という回答に「特に印象に残った内容は何ですか？」と尋ね、具体的な経験や理由を聞いていきます。  こうした機能は、回答に応じた追",
+      "og_url": "https://note.com/ryosao/n/n01a5746dd22e"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "プロンプトベース画像検査――ASTRAで試してみた",
+      "url": "https://note.com/ryosao/n/nfdd970bcd23d",
+      "source": "note",
+      "category_key": "other_tech",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/312936376/rectangle_large_type_2_d68fa6a7ac6fac0e5677e5748d55f04c.jpeg?fit=bounds&quality=85&width=1280",
+      "og_title": "プロンプトベース画像検査――ASTRAで試してみた｜五月女亮",
+      "og_description": "以前の記事では、画像とプロンプトを組み合わせてOK・NGを判定する「プロンプトベース画像検査アプリ」を紹介しました。  前回：プロンプトベース画像検査アプリの可能性  前回の記事からAIモデルの発展も著しいため、最新のAIではどのようになるのかと思い、今回はASTRA（gpt-6-astra）でねじの外観検査を試してみました。  結果を先に書くと、標準のプロンプトでは正常な画像までNGになってしまいました。しかし、OK・NG画像から検査用プロンプトを作り、誤判定をもとに調整したところ、今回評価した10枚ではすべて正しく判定できました。  個人的には、Few-shotの少数のデータから言",
+      "og_url": "https://note.com/ryosao/n/nfdd970bcd23d"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "ドローンシミュレータを作ってAI自動運転をさせてみよう(その1)",
+      "url": "https://note.com/ryosao/n/nc8d79933cee1",
+      "source": "note",
+      "category_key": "robotics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/311831534/rectangle_large_type_2_a602a248be3fad1451b23f180b10c884.jpeg?fit=bounds&quality=85&width=1280",
+      "og_title": "ドローンシミュレータを作ってAI自動運転をさせてみよう(その1)｜五月女亮",
+      "og_description": "1.はじめに   ウクライナ戦争ではドローンによって戦争のあり方も大きく変わっているようです。 今後、軍事面で培われた技術と量産化による低価格およびAIとの連携により、軍事以外のシーンでも世の中あり方を大きく変えそうです。  試してみたいけど、購入するにはそれなに高いですし、都市に住んでいるとなかなか飛ばせる場所もないというのが実情です。  ということでシミュレーター環境でどういうことが出来そうなのかを検証して確認してみようと思います。       2.PC上で動かせるドローンシミュレーター  ここでは、プログラムから期待を動かしてドローンを操作することができるシミュレーターをいくつか",
+      "og_url": "https://note.com/ryosao/n/nc8d79933cee1"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "自動運転AIをシミュレーターで試してみた（その２）",
+      "url": "https://note.com/ryosao/n/n3ea419d7dd1f",
+      "source": "note",
+      "category_key": "robotics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/309855895/rectangle_large_type_2_c46a616074b6ecb680021e343e8ca2ac.jpeg?fit=bounds&quality=85&width=1280",
+      "og_title": "自動運転AIをシミュレーターで試してみた（その２）｜五月女亮",
+      "og_description": null,
+      "og_url": "https://note.com/ryosao/n/n3ea419d7dd1f"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "自動運転AIをシミュレーターで試してみた",
+      "url": "https://note.com/ryosao/n/n8dfbbee77f4f",
+      "source": "note",
+      "category_key": "robotics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/307770557/rectangle_large_type_2_508a3fe00323dad217372a6b5f8bc6c3.jpeg?fit=bounds&quality=85&width=1280",
+      "og_title": "自動運転AIをシミュレーターで試してみた｜五月女亮",
+      "og_description": "先日テスラがネバダ州で5,000台の有料ロボタクシーの展開が承認されたということで、自動運転車の普及が一気に進んでいきそうです。（当初は2,500台を目指すそうですが、既存のタクシー事業者に匹敵する数です。）  日本にいるとまだ自動運転車が実感出来ないわけですが、この流れだと数年以内に日本でもそれなりの数普及すると考えざるおえないですね。  海外旅行にでも行って自動運転車の現状を見てみたいところですが、お金も時間もなかなか難しいので、まずはシミュレーターや公開AIモデルをベースに見てみようと思いました。       自動運転シミュレーターの候補   自動運転用シミュレーターには、いくつ",
+      "og_url": "https://note.com/ryosao/n/n8dfbbee77f4f"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Gemini robotics er2を使ってみた（失敗例）",
+      "url": "https://note.com/ryosao/n/na687bf5df7ba",
+      "source": "note",
+      "category_key": "robotics",
+      "thumbnail_url": "https://assets.st-note.com/production/uploads/images/306540884/rectangle_large_type_2_4009047f732d8419466b2c8abc93df44.jpeg?fit=bounds&quality=85&width=1280",
+      "og_title": "Gemini robotics er2を使ってみた（失敗例）｜五月女亮",
+      "og_description": null,
+      "og_url": "https://note.com/ryosao/n/na687bf5df7ba"
+    },
+    {
       "date": "2026-07-08",
       "title": "連載小説　学園デジタル民主主義　あとがき",
       "url": "https://note.com/ryosao/n/ne06a801409b8",

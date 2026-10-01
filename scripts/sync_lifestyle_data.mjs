@@ -465,7 +465,8 @@ async function main() {
   } catch {
     noteRssItems = [];
   }
-  const mergedArticles = mergeCatalogWithNoteRss(rawArticles, noteRssItems);
+  const retainedArticles = mergeCatalogWithNoteRss(prevArticles, rawArticles.items);
+  const mergedArticles = mergeCatalogWithNoteRss(retainedArticles, noteRssItems);
   const articles = mergeArticleMetadata(mergedArticles, prevArticles);
   const projects = parseProjects(readText(INPUTS.projects), readText(INPUTS.projectsMd));
   const siteMeta = buildSiteMeta(profile, articles, projects);

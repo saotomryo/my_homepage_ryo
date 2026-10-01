@@ -1,44 +1,110 @@
 {
-  "youtube_channel_url": "https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w",
+  "youtube_channel_url": null,
   "youtube_channel_urls": [
     "https://www.youtube.com/channel/UCoTf7wmTw8tvQ2Bl0qoXp1w",
     "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw"
   ],
   "youtube_studio_channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
   "latest_video": {
-    "title": "前日の日経平均はなぜ反発した？｜Japan Market Daily",
-    "video_id": "536cEOay63s",
-    "watch_url": "https://www.youtube.com/watch?v=536cEOay63s",
-    "embed_url": "https://www.youtube.com/embed/536cEOay63s",
-    "thumbnail_url": "https://i.ytimg.com/vi/536cEOay63s/hqdefault.jpg",
-    "published_at": "2026-07-10T01:25:35+00:00",
-    "description": "7月9日の日本市場は、続落ではなく反発となりました。\n\n\n日経平均株価は前日比+1.384%の67,743.85円で取引を終えています。\n\n\n現在の焦点は、\n\n\n円建て債券への需要拡大と金利上昇を背景に、資金が金融株へ選別的にシフトし始めているのか、それとも今回の上昇は空売りの買い戻し（ショートカバー）による一時的な反発に過ぎないのか、という点です。",
+    "title": "【90秒】円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+    "video_id": "CbrAIaEseBQ",
+    "watch_url": "https://www.youtube.com/shorts/CbrAIaEseBQ",
+    "embed_url": "https://www.youtube.com/embed/CbrAIaEseBQ",
+    "thumbnail_url": "https://i.ytimg.com/vi/CbrAIaEseBQ/hqdefault.jpg",
+    "published_at": "2026-07-31T10:33:15+00:00",
+    "description": "2026/7/31の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
     "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
     "category_key": "economy"
   },
   "latest_video_ja": {
-    "title": "前日の日経平均はなぜ反発した？｜Japan Market Daily",
-    "video_id": "536cEOay63s",
-    "watch_url": "https://www.youtube.com/watch?v=536cEOay63s",
-    "embed_url": "https://www.youtube.com/embed/536cEOay63s",
-    "thumbnail_url": "https://i.ytimg.com/vi/536cEOay63s/hqdefault.jpg",
-    "published_at": "2026-07-10T01:25:35+00:00",
-    "description": "7月9日の日本市場は、続落ではなく反発となりました。\n\n\n日経平均株価は前日比+1.384%の67,743.85円で取引を終えています。\n\n\n現在の焦点は、\n\n\n円建て債券への需要拡大と金利上昇を背景に、資金が金融株へ選別的にシフトし始めているのか、それとも今回の上昇は空売りの買い戻し（ショートカバー）による一時的な反発に過ぎないのか、という点です。",
+    "title": "【90秒】円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+    "video_id": "CbrAIaEseBQ",
+    "watch_url": "https://www.youtube.com/shorts/CbrAIaEseBQ",
+    "embed_url": "https://www.youtube.com/embed/CbrAIaEseBQ",
+    "thumbnail_url": "https://i.ytimg.com/vi/CbrAIaEseBQ/hqdefault.jpg",
+    "published_at": "2026-07-31T10:33:15+00:00",
+    "description": "2026/7/31の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
     "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
     "category_key": "economy"
   },
   "latest_video_en": {
-    "title": "Why Did the Nikkei Rebound? | Japan Market Daily",
-    "video_id": "K2w8yYh9oiw",
-    "watch_url": "https://www.youtube.com/watch?v=K2w8yYh9oiw",
-    "embed_url": "https://www.youtube.com/embed/K2w8yYh9oiw",
-    "thumbnail_url": "https://i.ytimg.com/vi/K2w8yYh9oiw/hqdefault.jpg",
-    "published_at": "2026-07-10T01:21:20+00:00",
-    "description": "Japan Market Daily | July 10\n\n\n\n\n\n\nThe completed July 9 session was a rebound, not another decline: Nikkei 225 +1.384% to 67,743.85.\n\n\n\n\n\n\nThe question now is whether yen-bond demand and higher rates are driving a selective rotation into financials, or whether this was only a short-covering bounce.",
+    "title": "Reported Yen Intervention Resets Japan Risk as Kioxia Tests Tech Sentiment | Japan Market Daily",
+    "video_id": "0ajqAw6YxkQ",
+    "watch_url": "https://www.youtube.com/shorts/0ajqAw6YxkQ",
+    "embed_url": "https://www.youtube.com/embed/0ajqAw6YxkQ",
+    "thumbnail_url": "https://i.ytimg.com/vi/0ajqAw6YxkQ/hqdefault.jpg",
+    "published_at": "2026-07-31T10:33:14+00:00",
+    "description": "Today's Japan Market Brief(07/31/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
     "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
     "category_key": "economy"
   },
   "channel_videos": [
+    {
+      "title": "【90秒】円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "CbrAIaEseBQ",
+      "watch_url": "https://www.youtube.com/shorts/CbrAIaEseBQ",
+      "embed_url": "https://www.youtube.com/embed/CbrAIaEseBQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/CbrAIaEseBQ/hqdefault.jpg",
+      "published_at": "2026-07-31T10:33:15+00:00",
+      "description": "2026/7/31の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "6nggf9Z11Cw",
+      "watch_url": "https://www.youtube.com/watch?v=6nggf9Z11Cw",
+      "embed_url": "https://www.youtube.com/embed/6nggf9Z11Cw",
+      "thumbnail_url": "https://i.ytimg.com/vi/6nggf9Z11Cw/hqdefault.jpg",
+      "published_at": "2026-07-31T06:06:47+00:00",
+      "description": "日経平均株価は0.71%上昇し、61,867.43円となりました。\n\n\nただし、最大の焦点は、ドル売り・円買いの為替介入が行われたとの報道を受け、USD/JPYが160.23円付近まで下落したことです。\n\n\n日本市場を巡るリスクの軸は、円安による企業収益の押し上げから、政策当局の対応力が試されるなかで、どの通貨を選ぶべきかという判断へと移りつつあります。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "原油高と政策リスクで日経平均が反落｜Japan Market Daily",
+      "video_id": "xxbaqY7PQ9c",
+      "watch_url": "https://www.youtube.com/watch?v=xxbaqY7PQ9c",
+      "embed_url": "https://www.youtube.com/embed/xxbaqY7PQ9c",
+      "thumbnail_url": "https://i.ytimg.com/vi/xxbaqY7PQ9c/hqdefault.jpg",
+      "published_at": "2026-07-14T04:56:00+00:00",
+      "description": "Japan Market Daily｜7月14日\n\n\n前営業日、日本株の反発は途切れました。日経平均株価は1.918%下落し、67,242.73円で取引を終えました。\n\n\n問題は株価だけではありません。ドル円は162円近辺で推移する一方、原油を巡るリスクが企業収益の見通しを圧迫しています。\n\n\nさらに、AI関連銘柄への上昇の集中が続くなか、日本株市場全体にどこまで買いが広がっているかが重要な確認ポイントとなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】原油高が日本株を直撃、政策リスクも浮上｜Japan Market Daily",
+      "video_id": "o_Wkg5a0kBs",
+      "watch_url": "https://www.youtube.com/shorts/o_Wkg5a0kBs",
+      "embed_url": "https://www.youtube.com/embed/o_Wkg5a0kBs",
+      "thumbnail_url": "https://i.ytimg.com/vi/o_Wkg5a0kBs/hqdefault.jpg",
+      "published_at": "2026-07-14T04:55:48+00:00",
+      "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "pNCXQ9C9vko",
+      "watch_url": "https://www.youtube.com/watch?v=pNCXQ9C9vko",
+      "embed_url": "https://www.youtube.com/embed/pNCXQ9C9vko",
+      "thumbnail_url": "https://i.ytimg.com/vi/pNCXQ9C9vko/hqdefault.jpg",
+      "published_at": "2026-07-13T00:35:33+00:00",
+      "description": "前営業日の日本株は反発基調を維持しました。日経平均株価は1.201%上昇し、68,557.73円で取引を終えました。\n\n\n焦点は為替です。ドル円は162円近辺で推移しており、円安は引き続き企業収益への追い風となっています。\n\n\n一方で、為替介入への警戒や日銀の利上げ観測が続くなか、円安は同時に政策リスクを見極める重要なポイントにもなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "J8no6vCmUSg",
+      "watch_url": "https://www.youtube.com/shorts/J8no6vCmUSg",
+      "embed_url": "https://www.youtube.com/embed/J8no6vCmUSg",
+      "thumbnail_url": "https://i.ytimg.com/vi/J8no6vCmUSg/hqdefault.jpg",
+      "published_at": "2026-07-13T00:26:21+00:00",
+      "description": "2026/7/13の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
     {
       "title": "前日の日経平均はなぜ反発した？｜Japan Market Daily",
       "video_id": "536cEOay63s",
@@ -58,28 +124,6 @@
       "thumbnail_url": "https://i.ytimg.com/vi/OONSsfOyQQs/hqdefault.jpg",
       "published_at": "2026-07-10T01:19:58+00:00",
       "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "昨日の日経平均はなぜ急落した？｜Japan Market Daily",
-      "video_id": "2aErs6TNjNk",
-      "watch_url": "https://www.youtube.com/watch?v=2aErs6TNjNk",
-      "embed_url": "https://www.youtube.com/embed/2aErs6TNjNk",
-      "thumbnail_url": "https://i.ytimg.com/vi/2aErs6TNjNk/hqdefault.jpg",
-      "published_at": "2026-07-09T00:42:59+00:00",
-      "description": "日経平均は、USD/JPYが162.5円近辺にあったにもかかわらず、2.12%下落しました。\n\n\nこれが示しているのは、円安がもはや単純な日本株の追い風ではなくなっているということです。\n\n\n市場は現在、日本が為替介入リスク、JGB利回りの上昇、政策への信認を同時に管理できるのかを試し始めています。",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "【90秒】昨日の日経平均はなぜ急落した？｜Japan Market Daily Short 2026/7/9",
-      "video_id": "CRUeisSL2KI",
-      "watch_url": "https://www.youtube.com/shorts/CRUeisSL2KI",
-      "embed_url": "https://www.youtube.com/embed/CRUeisSL2KI",
-      "thumbnail_url": "https://i.ytimg.com/vi/CRUeisSL2KI/hqdefault.jpg",
-      "published_at": "2026-07-09T00:39:01+00:00",
-      "description": "2026/7/9の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -276,6 +320,72 @@
   ],
   "channel_videos_ja": [
     {
+      "title": "【90秒】円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "CbrAIaEseBQ",
+      "watch_url": "https://www.youtube.com/shorts/CbrAIaEseBQ",
+      "embed_url": "https://www.youtube.com/embed/CbrAIaEseBQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/CbrAIaEseBQ/hqdefault.jpg",
+      "published_at": "2026-07-31T10:33:15+00:00",
+      "description": "2026/7/31の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "6nggf9Z11Cw",
+      "watch_url": "https://www.youtube.com/watch?v=6nggf9Z11Cw",
+      "embed_url": "https://www.youtube.com/embed/6nggf9Z11Cw",
+      "thumbnail_url": "https://i.ytimg.com/vi/6nggf9Z11Cw/hqdefault.jpg",
+      "published_at": "2026-07-31T06:06:47+00:00",
+      "description": "日経平均株価は0.71%上昇し、61,867.43円となりました。\n\n\nただし、最大の焦点は、ドル売り・円買いの為替介入が行われたとの報道を受け、USD/JPYが160.23円付近まで下落したことです。\n\n\n日本市場を巡るリスクの軸は、円安による企業収益の押し上げから、政策当局の対応力が試されるなかで、どの通貨を選ぶべきかという判断へと移りつつあります。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "原油高と政策リスクで日経平均が反落｜Japan Market Daily",
+      "video_id": "xxbaqY7PQ9c",
+      "watch_url": "https://www.youtube.com/watch?v=xxbaqY7PQ9c",
+      "embed_url": "https://www.youtube.com/embed/xxbaqY7PQ9c",
+      "thumbnail_url": "https://i.ytimg.com/vi/xxbaqY7PQ9c/hqdefault.jpg",
+      "published_at": "2026-07-14T04:56:00+00:00",
+      "description": "Japan Market Daily｜7月14日\n\n\n前営業日、日本株の反発は途切れました。日経平均株価は1.918%下落し、67,242.73円で取引を終えました。\n\n\n問題は株価だけではありません。ドル円は162円近辺で推移する一方、原油を巡るリスクが企業収益の見通しを圧迫しています。\n\n\nさらに、AI関連銘柄への上昇の集中が続くなか、日本株市場全体にどこまで買いが広がっているかが重要な確認ポイントとなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】原油高が日本株を直撃、政策リスクも浮上｜Japan Market Daily",
+      "video_id": "o_Wkg5a0kBs",
+      "watch_url": "https://www.youtube.com/shorts/o_Wkg5a0kBs",
+      "embed_url": "https://www.youtube.com/embed/o_Wkg5a0kBs",
+      "thumbnail_url": "https://i.ytimg.com/vi/o_Wkg5a0kBs/hqdefault.jpg",
+      "published_at": "2026-07-14T04:55:48+00:00",
+      "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "pNCXQ9C9vko",
+      "watch_url": "https://www.youtube.com/watch?v=pNCXQ9C9vko",
+      "embed_url": "https://www.youtube.com/embed/pNCXQ9C9vko",
+      "thumbnail_url": "https://i.ytimg.com/vi/pNCXQ9C9vko/hqdefault.jpg",
+      "published_at": "2026-07-13T00:35:33+00:00",
+      "description": "前営業日の日本株は反発基調を維持しました。日経平均株価は1.201%上昇し、68,557.73円で取引を終えました。\n\n\n焦点は為替です。ドル円は162円近辺で推移しており、円安は引き続き企業収益への追い風となっています。\n\n\n一方で、為替介入への警戒や日銀の利上げ観測が続くなか、円安は同時に政策リスクを見極める重要なポイントにもなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "J8no6vCmUSg",
+      "watch_url": "https://www.youtube.com/shorts/J8no6vCmUSg",
+      "embed_url": "https://www.youtube.com/embed/J8no6vCmUSg",
+      "thumbnail_url": "https://i.ytimg.com/vi/J8no6vCmUSg/hqdefault.jpg",
+      "published_at": "2026-07-13T00:26:21+00:00",
+      "description": "2026/7/13の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
       "title": "前日の日経平均はなぜ反発した？｜Japan Market Daily",
       "video_id": "536cEOay63s",
       "watch_url": "https://www.youtube.com/watch?v=536cEOay63s",
@@ -294,28 +404,6 @@
       "thumbnail_url": "https://i.ytimg.com/vi/OONSsfOyQQs/hqdefault.jpg",
       "published_at": "2026-07-10T01:19:58+00:00",
       "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "昨日の日経平均はなぜ急落した？｜Japan Market Daily",
-      "video_id": "2aErs6TNjNk",
-      "watch_url": "https://www.youtube.com/watch?v=2aErs6TNjNk",
-      "embed_url": "https://www.youtube.com/embed/2aErs6TNjNk",
-      "thumbnail_url": "https://i.ytimg.com/vi/2aErs6TNjNk/hqdefault.jpg",
-      "published_at": "2026-07-09T00:42:59+00:00",
-      "description": "日経平均は、USD/JPYが162.5円近辺にあったにもかかわらず、2.12%下落しました。\n\n\nこれが示しているのは、円安がもはや単純な日本株の追い風ではなくなっているということです。\n\n\n市場は現在、日本が為替介入リスク、JGB利回りの上昇、政策への信認を同時に管理できるのかを試し始めています。",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "【90秒】昨日の日経平均はなぜ急落した？｜Japan Market Daily Short 2026/7/9",
-      "video_id": "CRUeisSL2KI",
-      "watch_url": "https://www.youtube.com/shorts/CRUeisSL2KI",
-      "embed_url": "https://www.youtube.com/embed/CRUeisSL2KI",
-      "thumbnail_url": "https://i.ytimg.com/vi/CRUeisSL2KI/hqdefault.jpg",
-      "published_at": "2026-07-09T00:39:01+00:00",
-      "description": "2026/7/9の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -512,13 +600,68 @@
   ],
   "channel_videos_en": [
     {
-      "title": "Why Did the Nikkei Rebound? | Japan Market Daily",
-      "video_id": "K2w8yYh9oiw",
-      "watch_url": "https://www.youtube.com/watch?v=K2w8yYh9oiw",
-      "embed_url": "https://www.youtube.com/embed/K2w8yYh9oiw",
-      "thumbnail_url": "https://i.ytimg.com/vi/K2w8yYh9oiw/hqdefault.jpg",
-      "published_at": "2026-07-10T01:21:20+00:00",
-      "description": "Japan Market Daily | July 10\n\n\n\n\n\n\nThe completed July 9 session was a rebound, not another decline: Nikkei 225 +1.384% to 67,743.85.\n\n\n\n\n\n\nThe question now is whether yen-bond demand and higher rates are driving a selective rotation into financials, or whether this was only a short-covering bounce.",
+      "title": "Reported Yen Intervention Resets Japan Risk as Kioxia Tests Tech Sentiment | Japan Market Daily",
+      "video_id": "0ajqAw6YxkQ",
+      "watch_url": "https://www.youtube.com/shorts/0ajqAw6YxkQ",
+      "embed_url": "https://www.youtube.com/embed/0ajqAw6YxkQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/0ajqAw6YxkQ/hqdefault.jpg",
+      "published_at": "2026-07-31T10:33:14+00:00",
+      "description": "Today's Japan Market Brief(07/31/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Reported Yen Intervention Resets Japan Risk as Kioxia Tests Tech Sentiment | Japan Market Daily",
+      "video_id": "VkEhHZNonuE",
+      "watch_url": "https://www.youtube.com/watch?v=VkEhHZNonuE",
+      "embed_url": "https://www.youtube.com/embed/VkEhHZNonuE",
+      "thumbnail_url": "https://i.ytimg.com/vi/VkEhHZNonuE/hqdefault.jpg",
+      "published_at": "2026-07-31T06:04:23+00:00",
+      "description": "Japan Market Daily: Nikkei 225 rose 0.71% to 61,867.43, but the main story was reported dollar-selling, yen-buying intervention pushing USD/JPY toward 160.23. Japan risk is shifting from weak-yen support to policy-tested currency selection.",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Oil Shock Tests Japan Stocks as Policy Risk Rises | Japan Market Daily Short",
+      "video_id": "e3Rp1Isjsss",
+      "watch_url": "https://www.youtube.com/shorts/e3Rp1Isjsss",
+      "embed_url": "https://www.youtube.com/embed/e3Rp1Isjsss",
+      "thumbnail_url": "https://i.ytimg.com/vi/e3Rp1Isjsss/hqdefault.jpg",
+      "published_at": "2026-07-14T04:48:06+00:00",
+      "description": "Today's Japan Market Brief(07/14/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Nikkei Falls as Oil and Policy Risk Hit Japan Stocks | Japan Market Daily",
+      "video_id": "qmlJILWICyE",
+      "watch_url": "https://www.youtube.com/watch?v=qmlJILWICyE",
+      "embed_url": "https://www.youtube.com/embed/qmlJILWICyE",
+      "thumbnail_url": "https://i.ytimg.com/vi/qmlJILWICyE/hqdefault.jpg",
+      "published_at": "2026-07-14T04:46:05+00:00",
+      "description": "Japan Market Daily | July 14\n\n\n\n\n\n\nThe previous session broke Japan's rebound: Nikkei 225 -1.918% to 67,242.73.\n\n\n\n\n\n\nThe issue is not just stocks. USD/JPY stayed near 162, oil risk hit the earnings outlook, and AI-led concentration is making Japan's equity breadth a key checkpoint.",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Why Did the Nikkei Rise as Yen Risk Stayed High? | Japan Market Daily",
+      "video_id": "FDL1J-nOsUo",
+      "watch_url": "https://www.youtube.com/watch?v=FDL1J-nOsUo",
+      "embed_url": "https://www.youtube.com/embed/FDL1J-nOsUo",
+      "thumbnail_url": "https://i.ytimg.com/vi/FDL1J-nOsUo/hqdefault.jpg",
+      "published_at": "2026-07-13T00:28:37+00:00",
+      "description": "Japan Market Daily | July 13\n\n\n\n\n\n\nThe previous session kept Japan's rebound alive: Nikkei 225 +1.201% to 68,557.73.\n\n\n\n\n\n\nThe tension is FX. Dollar-yen stayed near 162, so yen weakness remains an earnings tailwind but also a policy-risk checkpoint as intervention talk and BOJ-hike expectations stay active.",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Why Did the Nikkei Rise as Yen Risk Stayed High? | Japan Market Daily Short",
+      "video_id": "1JTeMFt_1LM",
+      "watch_url": "https://www.youtube.com/shorts/1JTeMFt_1LM",
+      "embed_url": "https://www.youtube.com/embed/1JTeMFt_1LM",
+      "thumbnail_url": "https://i.ytimg.com/vi/1JTeMFt_1LM/hqdefault.jpg",
+      "published_at": "2026-07-13T00:26:17+00:00",
+      "description": "Today's Japan Market Brief(07/13/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -530,28 +673,6 @@
       "thumbnail_url": "https://i.ytimg.com/vi/jiLY3RUjhI4/hqdefault.jpg",
       "published_at": "2026-07-10T01:17:32+00:00",
       "description": "Today's Japan Market Brief(07/10/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "Why Did the Nikkei Drop Yesterday? | Japan Market Daily",
-      "video_id": "bP04cyadC_4",
-      "watch_url": "https://www.youtube.com/watch?v=bP04cyadC_4",
-      "embed_url": "https://www.youtube.com/embed/bP04cyadC_4",
-      "thumbnail_url": "https://i.ytimg.com/vi/bP04cyadC_4/hqdefault.jpg",
-      "published_at": "2026-07-09T00:41:45+00:00",
-      "description": "Japan's Nikkei fell 2.12% even with USD/JPY near 162.5. \n\n\n\n\n\n\nThat is the signal: yen weakness is no longer a clean equity tailwind.\n\n\n\n\n\n\n Markets are now testing whether Japan can manage intervention risk, higher JGB yields, and policy credibility at the same time.",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "Why Did the Nikkei Drop Yesterday? | Japan Market Daily Short 07/09/2026",
-      "video_id": "7NKs3ZLcyBU",
-      "watch_url": "https://www.youtube.com/shorts/7NKs3ZLcyBU",
-      "embed_url": "https://www.youtube.com/embed/7NKs3ZLcyBU",
-      "thumbnail_url": "https://i.ytimg.com/vi/7NKs3ZLcyBU/hqdefault.jpg",
-      "published_at": "2026-07-09T00:36:45+00:00",
-      "description": "Today's Japan Market Brief(07/09/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -748,6 +869,72 @@
   ],
   "videos": [
     {
+      "title": "【90秒】円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "CbrAIaEseBQ",
+      "watch_url": "https://www.youtube.com/shorts/CbrAIaEseBQ",
+      "embed_url": "https://www.youtube.com/embed/CbrAIaEseBQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/CbrAIaEseBQ/hqdefault.jpg",
+      "published_at": "2026-07-31T10:33:15+00:00",
+      "description": "2026/7/31の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "6nggf9Z11Cw",
+      "watch_url": "https://www.youtube.com/watch?v=6nggf9Z11Cw",
+      "embed_url": "https://www.youtube.com/embed/6nggf9Z11Cw",
+      "thumbnail_url": "https://i.ytimg.com/vi/6nggf9Z11Cw/hqdefault.jpg",
+      "published_at": "2026-07-31T06:06:47+00:00",
+      "description": "日経平均株価は0.71%上昇し、61,867.43円となりました。\n\n\nただし、最大の焦点は、ドル売り・円買いの為替介入が行われたとの報道を受け、USD/JPYが160.23円付近まで下落したことです。\n\n\n日本市場を巡るリスクの軸は、円安による企業収益の押し上げから、政策当局の対応力が試されるなかで、どの通貨を選ぶべきかという判断へと移りつつあります。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "原油高と政策リスクで日経平均が反落｜Japan Market Daily",
+      "video_id": "xxbaqY7PQ9c",
+      "watch_url": "https://www.youtube.com/watch?v=xxbaqY7PQ9c",
+      "embed_url": "https://www.youtube.com/embed/xxbaqY7PQ9c",
+      "thumbnail_url": "https://i.ytimg.com/vi/xxbaqY7PQ9c/hqdefault.jpg",
+      "published_at": "2026-07-14T04:56:00+00:00",
+      "description": "Japan Market Daily｜7月14日\n\n\n前営業日、日本株の反発は途切れました。日経平均株価は1.918%下落し、67,242.73円で取引を終えました。\n\n\n問題は株価だけではありません。ドル円は162円近辺で推移する一方、原油を巡るリスクが企業収益の見通しを圧迫しています。\n\n\nさらに、AI関連銘柄への上昇の集中が続くなか、日本株市場全体にどこまで買いが広がっているかが重要な確認ポイントとなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】原油高が日本株を直撃、政策リスクも浮上｜Japan Market Daily",
+      "video_id": "o_Wkg5a0kBs",
+      "watch_url": "https://www.youtube.com/shorts/o_Wkg5a0kBs",
+      "embed_url": "https://www.youtube.com/embed/o_Wkg5a0kBs",
+      "thumbnail_url": "https://i.ytimg.com/vi/o_Wkg5a0kBs/hqdefault.jpg",
+      "published_at": "2026-07-14T04:55:48+00:00",
+      "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "pNCXQ9C9vko",
+      "watch_url": "https://www.youtube.com/watch?v=pNCXQ9C9vko",
+      "embed_url": "https://www.youtube.com/embed/pNCXQ9C9vko",
+      "thumbnail_url": "https://i.ytimg.com/vi/pNCXQ9C9vko/hqdefault.jpg",
+      "published_at": "2026-07-13T00:35:33+00:00",
+      "description": "前営業日の日本株は反発基調を維持しました。日経平均株価は1.201%上昇し、68,557.73円で取引を終えました。\n\n\n焦点は為替です。ドル円は162円近辺で推移しており、円安は引き続き企業収益への追い風となっています。\n\n\n一方で、為替介入への警戒や日銀の利上げ観測が続くなか、円安は同時に政策リスクを見極める重要なポイントにもなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "J8no6vCmUSg",
+      "watch_url": "https://www.youtube.com/shorts/J8no6vCmUSg",
+      "embed_url": "https://www.youtube.com/embed/J8no6vCmUSg",
+      "thumbnail_url": "https://i.ytimg.com/vi/J8no6vCmUSg/hqdefault.jpg",
+      "published_at": "2026-07-13T00:26:21+00:00",
+      "description": "2026/7/13の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
       "title": "前日の日経平均はなぜ反発した？｜Japan Market Daily",
       "video_id": "536cEOay63s",
       "watch_url": "https://www.youtube.com/watch?v=536cEOay63s",
@@ -766,28 +953,6 @@
       "thumbnail_url": "https://i.ytimg.com/vi/OONSsfOyQQs/hqdefault.jpg",
       "published_at": "2026-07-10T01:19:58+00:00",
       "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "昨日の日経平均はなぜ急落した？｜Japan Market Daily",
-      "video_id": "2aErs6TNjNk",
-      "watch_url": "https://www.youtube.com/watch?v=2aErs6TNjNk",
-      "embed_url": "https://www.youtube.com/embed/2aErs6TNjNk",
-      "thumbnail_url": "https://i.ytimg.com/vi/2aErs6TNjNk/hqdefault.jpg",
-      "published_at": "2026-07-09T00:42:59+00:00",
-      "description": "日経平均は、USD/JPYが162.5円近辺にあったにもかかわらず、2.12%下落しました。\n\n\nこれが示しているのは、円安がもはや単純な日本株の追い風ではなくなっているということです。\n\n\n市場は現在、日本が為替介入リスク、JGB利回りの上昇、政策への信認を同時に管理できるのかを試し始めています。",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "【90秒】昨日の日経平均はなぜ急落した？｜Japan Market Daily Short 2026/7/9",
-      "video_id": "CRUeisSL2KI",
-      "watch_url": "https://www.youtube.com/shorts/CRUeisSL2KI",
-      "embed_url": "https://www.youtube.com/embed/CRUeisSL2KI",
-      "thumbnail_url": "https://i.ytimg.com/vi/CRUeisSL2KI/hqdefault.jpg",
-      "published_at": "2026-07-09T00:39:01+00:00",
-      "description": "2026/7/9の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -984,6 +1149,72 @@
   ],
   "videos_ja": [
     {
+      "title": "【90秒】円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "CbrAIaEseBQ",
+      "watch_url": "https://www.youtube.com/shorts/CbrAIaEseBQ",
+      "embed_url": "https://www.youtube.com/embed/CbrAIaEseBQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/CbrAIaEseBQ/hqdefault.jpg",
+      "published_at": "2026-07-31T10:33:15+00:00",
+      "description": "2026/7/31の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "円買い介入実施報道で日本株の前提が変化｜Japan Market Daily",
+      "video_id": "6nggf9Z11Cw",
+      "watch_url": "https://www.youtube.com/watch?v=6nggf9Z11Cw",
+      "embed_url": "https://www.youtube.com/embed/6nggf9Z11Cw",
+      "thumbnail_url": "https://i.ytimg.com/vi/6nggf9Z11Cw/hqdefault.jpg",
+      "published_at": "2026-07-31T06:06:47+00:00",
+      "description": "日経平均株価は0.71%上昇し、61,867.43円となりました。\n\n\nただし、最大の焦点は、ドル売り・円買いの為替介入が行われたとの報道を受け、USD/JPYが160.23円付近まで下落したことです。\n\n\n日本市場を巡るリスクの軸は、円安による企業収益の押し上げから、政策当局の対応力が試されるなかで、どの通貨を選ぶべきかという判断へと移りつつあります。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "原油高と政策リスクで日経平均が反落｜Japan Market Daily",
+      "video_id": "xxbaqY7PQ9c",
+      "watch_url": "https://www.youtube.com/watch?v=xxbaqY7PQ9c",
+      "embed_url": "https://www.youtube.com/embed/xxbaqY7PQ9c",
+      "thumbnail_url": "https://i.ytimg.com/vi/xxbaqY7PQ9c/hqdefault.jpg",
+      "published_at": "2026-07-14T04:56:00+00:00",
+      "description": "Japan Market Daily｜7月14日\n\n\n前営業日、日本株の反発は途切れました。日経平均株価は1.918%下落し、67,242.73円で取引を終えました。\n\n\n問題は株価だけではありません。ドル円は162円近辺で推移する一方、原油を巡るリスクが企業収益の見通しを圧迫しています。\n\n\nさらに、AI関連銘柄への上昇の集中が続くなか、日本株市場全体にどこまで買いが広がっているかが重要な確認ポイントとなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】原油高が日本株を直撃、政策リスクも浮上｜Japan Market Daily",
+      "video_id": "o_Wkg5a0kBs",
+      "watch_url": "https://www.youtube.com/shorts/o_Wkg5a0kBs",
+      "embed_url": "https://www.youtube.com/embed/o_Wkg5a0kBs",
+      "thumbnail_url": "https://i.ytimg.com/vi/o_Wkg5a0kBs/hqdefault.jpg",
+      "published_at": "2026-07-14T04:55:48+00:00",
+      "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "pNCXQ9C9vko",
+      "watch_url": "https://www.youtube.com/watch?v=pNCXQ9C9vko",
+      "embed_url": "https://www.youtube.com/embed/pNCXQ9C9vko",
+      "thumbnail_url": "https://i.ytimg.com/vi/pNCXQ9C9vko/hqdefault.jpg",
+      "published_at": "2026-07-13T00:35:33+00:00",
+      "description": "前営業日の日本株は反発基調を維持しました。日経平均株価は1.201%上昇し、68,557.73円で取引を終えました。\n\n\n焦点は為替です。ドル円は162円近辺で推移しており、円安は引き続き企業収益への追い風となっています。\n\n\n一方で、為替介入への警戒や日銀の利上げ観測が続くなか、円安は同時に政策リスクを見極める重要なポイントにもなっています。",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "【90秒】7/10の日経平均はなぜ続伸した？円安リスクも確認｜Japan Market Daily",
+      "video_id": "J8no6vCmUSg",
+      "watch_url": "https://www.youtube.com/shorts/J8no6vCmUSg",
+      "embed_url": "https://www.youtube.com/embed/J8no6vCmUSg",
+      "thumbnail_url": "https://i.ytimg.com/vi/J8no6vCmUSg/hqdefault.jpg",
+      "published_at": "2026-07-13T00:26:21+00:00",
+      "description": "2026/7/13の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
       "title": "前日の日経平均はなぜ反発した？｜Japan Market Daily",
       "video_id": "536cEOay63s",
       "watch_url": "https://www.youtube.com/watch?v=536cEOay63s",
@@ -1002,28 +1233,6 @@
       "thumbnail_url": "https://i.ytimg.com/vi/OONSsfOyQQs/hqdefault.jpg",
       "published_at": "2026-07-10T01:19:58+00:00",
       "description": "2026/7/10の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "昨日の日経平均はなぜ急落した？｜Japan Market Daily",
-      "video_id": "2aErs6TNjNk",
-      "watch_url": "https://www.youtube.com/watch?v=2aErs6TNjNk",
-      "embed_url": "https://www.youtube.com/embed/2aErs6TNjNk",
-      "thumbnail_url": "https://i.ytimg.com/vi/2aErs6TNjNk/hqdefault.jpg",
-      "published_at": "2026-07-09T00:42:59+00:00",
-      "description": "日経平均は、USD/JPYが162.5円近辺にあったにもかかわらず、2.12%下落しました。\n\n\nこれが示しているのは、円安がもはや単純な日本株の追い風ではなくなっているということです。\n\n\n市場は現在、日本が為替介入リスク、JGB利回りの上昇、政策への信認を同時に管理できるのかを試し始めています。",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "【90秒】昨日の日経平均はなぜ急落した？｜Japan Market Daily Short 2026/7/9",
-      "video_id": "CRUeisSL2KI",
-      "watch_url": "https://www.youtube.com/shorts/CRUeisSL2KI",
-      "embed_url": "https://www.youtube.com/embed/CRUeisSL2KI",
-      "thumbnail_url": "https://i.ytimg.com/vi/CRUeisSL2KI/hqdefault.jpg",
-      "published_at": "2026-07-09T00:39:01+00:00",
-      "description": "2026/7/9の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -1220,13 +1429,68 @@
   ],
   "videos_en": [
     {
-      "title": "Why Did the Nikkei Rebound? | Japan Market Daily",
-      "video_id": "K2w8yYh9oiw",
-      "watch_url": "https://www.youtube.com/watch?v=K2w8yYh9oiw",
-      "embed_url": "https://www.youtube.com/embed/K2w8yYh9oiw",
-      "thumbnail_url": "https://i.ytimg.com/vi/K2w8yYh9oiw/hqdefault.jpg",
-      "published_at": "2026-07-10T01:21:20+00:00",
-      "description": "Japan Market Daily | July 10\n\n\n\n\n\n\nThe completed July 9 session was a rebound, not another decline: Nikkei 225 +1.384% to 67,743.85.\n\n\n\n\n\n\nThe question now is whether yen-bond demand and higher rates are driving a selective rotation into financials, or whether this was only a short-covering bounce.",
+      "title": "Reported Yen Intervention Resets Japan Risk as Kioxia Tests Tech Sentiment | Japan Market Daily",
+      "video_id": "0ajqAw6YxkQ",
+      "watch_url": "https://www.youtube.com/shorts/0ajqAw6YxkQ",
+      "embed_url": "https://www.youtube.com/embed/0ajqAw6YxkQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/0ajqAw6YxkQ/hqdefault.jpg",
+      "published_at": "2026-07-31T10:33:14+00:00",
+      "description": "Today's Japan Market Brief(07/31/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Reported Yen Intervention Resets Japan Risk as Kioxia Tests Tech Sentiment | Japan Market Daily",
+      "video_id": "VkEhHZNonuE",
+      "watch_url": "https://www.youtube.com/watch?v=VkEhHZNonuE",
+      "embed_url": "https://www.youtube.com/embed/VkEhHZNonuE",
+      "thumbnail_url": "https://i.ytimg.com/vi/VkEhHZNonuE/hqdefault.jpg",
+      "published_at": "2026-07-31T06:04:23+00:00",
+      "description": "Japan Market Daily: Nikkei 225 rose 0.71% to 61,867.43, but the main story was reported dollar-selling, yen-buying intervention pushing USD/JPY toward 160.23. Japan risk is shifting from weak-yen support to policy-tested currency selection.",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Oil Shock Tests Japan Stocks as Policy Risk Rises | Japan Market Daily Short",
+      "video_id": "e3Rp1Isjsss",
+      "watch_url": "https://www.youtube.com/shorts/e3Rp1Isjsss",
+      "embed_url": "https://www.youtube.com/embed/e3Rp1Isjsss",
+      "thumbnail_url": "https://i.ytimg.com/vi/e3Rp1Isjsss/hqdefault.jpg",
+      "published_at": "2026-07-14T04:48:06+00:00",
+      "description": "Today's Japan Market Brief(07/14/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Nikkei Falls as Oil and Policy Risk Hit Japan Stocks | Japan Market Daily",
+      "video_id": "qmlJILWICyE",
+      "watch_url": "https://www.youtube.com/watch?v=qmlJILWICyE",
+      "embed_url": "https://www.youtube.com/embed/qmlJILWICyE",
+      "thumbnail_url": "https://i.ytimg.com/vi/qmlJILWICyE/hqdefault.jpg",
+      "published_at": "2026-07-14T04:46:05+00:00",
+      "description": "Japan Market Daily | July 14\n\n\n\n\n\n\nThe previous session broke Japan's rebound: Nikkei 225 -1.918% to 67,242.73.\n\n\n\n\n\n\nThe issue is not just stocks. USD/JPY stayed near 162, oil risk hit the earnings outlook, and AI-led concentration is making Japan's equity breadth a key checkpoint.",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Why Did the Nikkei Rise as Yen Risk Stayed High? | Japan Market Daily",
+      "video_id": "FDL1J-nOsUo",
+      "watch_url": "https://www.youtube.com/watch?v=FDL1J-nOsUo",
+      "embed_url": "https://www.youtube.com/embed/FDL1J-nOsUo",
+      "thumbnail_url": "https://i.ytimg.com/vi/FDL1J-nOsUo/hqdefault.jpg",
+      "published_at": "2026-07-13T00:28:37+00:00",
+      "description": "Japan Market Daily | July 13\n\n\n\n\n\n\nThe previous session kept Japan's rebound alive: Nikkei 225 +1.201% to 68,557.73.\n\n\n\n\n\n\nThe tension is FX. Dollar-yen stayed near 162, so yen weakness remains an earnings tailwind but also a policy-risk checkpoint as intervention talk and BOJ-hike expectations stay active.",
+      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
+      "category_key": "economy"
+    },
+    {
+      "title": "Why Did the Nikkei Rise as Yen Risk Stayed High? | Japan Market Daily Short",
+      "video_id": "1JTeMFt_1LM",
+      "watch_url": "https://www.youtube.com/shorts/1JTeMFt_1LM",
+      "embed_url": "https://www.youtube.com/embed/1JTeMFt_1LM",
+      "thumbnail_url": "https://i.ytimg.com/vi/1JTeMFt_1LM/hqdefault.jpg",
+      "published_at": "2026-07-13T00:26:17+00:00",
+      "description": "Today's Japan Market Brief(07/13/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -1238,28 +1502,6 @@
       "thumbnail_url": "https://i.ytimg.com/vi/jiLY3RUjhI4/hqdefault.jpg",
       "published_at": "2026-07-10T01:17:32+00:00",
       "description": "Today's Japan Market Brief(07/10/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "Why Did the Nikkei Drop Yesterday? | Japan Market Daily",
-      "video_id": "bP04cyadC_4",
-      "watch_url": "https://www.youtube.com/watch?v=bP04cyadC_4",
-      "embed_url": "https://www.youtube.com/embed/bP04cyadC_4",
-      "thumbnail_url": "https://i.ytimg.com/vi/bP04cyadC_4/hqdefault.jpg",
-      "published_at": "2026-07-09T00:41:45+00:00",
-      "description": "Japan's Nikkei fell 2.12% even with USD/JPY near 162.5. \n\n\n\n\n\n\nThat is the signal: yen weakness is no longer a clean equity tailwind.\n\n\n\n\n\n\n Markets are now testing whether Japan can manage intervention risk, higher JGB yields, and policy credibility at the same time.",
-      "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-      "category_key": "economy"
-    },
-    {
-      "title": "Why Did the Nikkei Drop Yesterday? | Japan Market Daily Short 07/09/2026",
-      "video_id": "7NKs3ZLcyBU",
-      "watch_url": "https://www.youtube.com/shorts/7NKs3ZLcyBU",
-      "embed_url": "https://www.youtube.com/embed/7NKs3ZLcyBU",
-      "thumbnail_url": "https://i.ytimg.com/vi/7NKs3ZLcyBU/hqdefault.jpg",
-      "published_at": "2026-07-09T00:36:45+00:00",
-      "description": "Today's Japan Market Brief(07/09/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
       "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
       "category_key": "economy"
     },
@@ -1456,92 +1698,13 @@
   ],
   "podcasts_ja": {
     "title": "日本市場概説",
-    "playlist_url": "https://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM",
-    "videos": [
-      {
-        "title": "日本市場概説20260708_ショート版 #市場解説",
-        "video_id": "7EVFMrJxz1Q",
-        "watch_url": "https://www.youtube.com/shorts/7EVFMrJxz1Q",
-        "embed_url": "https://www.youtube.com/embed/7EVFMrJxz1Q",
-        "thumbnail_url": "https://i.ytimg.com/vi/7EVFMrJxz1Q/hqdefault.jpg",
-        "published_at": "2026-07-08T01:21:41+00:00",
-        "description": "2026/7/8の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
-        "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-        "category_key": "economy"
-      },
-      {
-        "title": "日本市況概説_20260708",
-        "video_id": "0Kgu8OGBvRk",
-        "watch_url": "https://www.youtube.com/watch?v=0Kgu8OGBvRk",
-        "embed_url": "https://www.youtube.com/embed/0Kgu8OGBvRk",
-        "thumbnail_url": "https://i.ytimg.com/vi/0Kgu8OGBvRk/hqdefault.jpg",
-        "published_at": "2026-07-08T01:12:07+00:00",
-        "description": "日経平均はほぼ横ばいだった一方、TOPIXは0.83%下落しました。USD/JPYが162.3円近辺にあったにもかかわらずです。\n\n\n\n\n\n\n円安をめぐる相場の見方は変わりつつあります。もはや単なる輸出企業への追い風や為替介入リスクだけではありません。\n\n\n\n\n\n\n円建て債券への関心が高まっていることは、投資家が日本の金融セクターへの信頼性も試し始めていることを示しています。",
-        "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-        "category_key": "economy"
-      },
-      {
-        "title": "日本市況概説_20260707",
-        "video_id": "3SvwBhS0Aw4",
-        "watch_url": "https://www.youtube.com/watch?v=3SvwBhS0Aw4",
-        "embed_url": "https://www.youtube.com/embed/3SvwBhS0Aw4",
-        "thumbnail_url": "https://i.ytimg.com/vi/3SvwBhS0Aw4/hqdefault.jpg",
-        "published_at": "2026-07-07T00:59:11+00:00",
-        "description": "日経平均は、USD/JPYが162円方向へ進む中で1.47%上昇しました。しかし、今日の賃金データによって焦点は変わりました。\n\n\n\n\n\n\n円安は依然として企業収益を下支えしていますが、インフレ圧力の下で実質賃金の伸びは鈍化しました。\n\n\n\n\n\n\n現在の日本株トレードは、消費者が円安によるコスト増を吸収できるかどうかに左右される局面に入っています。",
-        "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-        "category_key": "economy"
-      },
-      {
-        "title": "日本市場概説20260707_ショート版 #市場解説",
-        "video_id": "hTjiJZuDpLM",
-        "watch_url": "https://www.youtube.com/shorts/hTjiJZuDpLM",
-        "embed_url": "https://www.youtube.com/embed/hTjiJZuDpLM",
-        "thumbnail_url": "https://i.ytimg.com/vi/hTjiJZuDpLM/hqdefault.jpg",
-        "published_at": "2026-07-07T00:54:38+00:00",
-        "description": "2026/7/6の日本市場の概説です。\n\nより詳しい解説は以下のポッドキャストからご視聴下さい\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB9fN9Ev4J-3QzbJsXI9haVM\n\n\n英語版はこちら\nhttps://youtube.com/shorts/HcxZFcsKcgg?feature=share\n\n#市場解説\n#株式投資",
-        "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-        "category_key": "economy"
-      }
-    ]
+    "playlist_url": null,
+    "videos": []
   },
   "podcasts_en": {
     "title": "Japan Market Brief",
-    "playlist_url": "https://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF",
-    "videos": [
-      {
-        "title": "Japan Market Brief short 07/08/2026 #japanmarket",
-        "video_id": "jvSmcTVKnBU",
-        "watch_url": "https://www.youtube.com/shorts/jvSmcTVKnBU",
-        "embed_url": "https://www.youtube.com/embed/jvSmcTVKnBU",
-        "thumbnail_url": "https://i.ytimg.com/vi/jvSmcTVKnBU/hqdefault.jpg",
-        "published_at": "2026-07-08T01:21:06+00:00",
-        "description": "Today's Japan Market Brief(07/08/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
-        "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-        "category_key": "economy"
-      },
-      {
-        "title": "Japan Market Brief 07/08/2026",
-        "video_id": "ojDmjwaQgZE",
-        "watch_url": "https://www.youtube.com/watch?v=ojDmjwaQgZE",
-        "embed_url": "https://www.youtube.com/embed/ojDmjwaQgZE",
-        "thumbnail_url": "https://i.ytimg.com/vi/ojDmjwaQgZE/hqdefault.jpg",
-        "published_at": "2026-07-08T01:07:11+00:00",
-        "description": "Japan's Nikkei was almost flat while TOPIX fell 0.83%, even with USD/JPY near 162.3. \n\n\n\n\n\n\nThe yen story is shifting: it is no longer just exporter support or intervention risk. \n\n\n\n\n\n\nRising interest in yen bonds means investors are also testing Japan's financial-sector credibility.",
-        "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-        "category_key": "economy"
-      },
-      {
-        "title": "Japan Market Brief short 07/07/2026 #japanmarket",
-        "video_id": "HcxZFcsKcgg",
-        "watch_url": "https://www.youtube.com/shorts/HcxZFcsKcgg",
-        "embed_url": "https://www.youtube.com/embed/HcxZFcsKcgg",
-        "thumbnail_url": "https://i.ytimg.com/vi/HcxZFcsKcgg/hqdefault.jpg",
-        "published_at": "2026-07-07T00:54:34+00:00",
-        "description": "Today's Japan Market Brief(07/07/2026)\n\nPodcast is follow.\nhttps://www.youtube.com/playlist?list=PLiKMZcPo7vB_3B_tG90ddVZFzitwQ_3lF\n\nJapanese PodCast is follow.\nhttps://youtu.be/xL8RrwwehfU\n\nChannel URL is follow\nhttps://youtube.com/shorts/OzIct3ywm7E?feature=share\n\n#japanmarket",
-        "channel_url": "https://www.youtube.com/channel/UCovpiwy8xN_PRtZRE77Cigw",
-        "category_key": "economy"
-      }
-    ]
+    "playlist_url": null,
+    "videos": []
   },
   "playlist_kuroneko": {
     "title": "Black Cat Adventure",
